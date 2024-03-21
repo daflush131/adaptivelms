@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Registration Page</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Your custom styles can be added here -->
+    <style>
+        body {
+            background: url('your-background-image.jpg') center/cover no-repeat fixed;
+            background-color: #343a40; /* Dark theme color */
+            color: #ffffff; /* Text color */
+        }
+
+        .registration-container {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 50px;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3); /* Box shadow for better visibility */
+            text-align: center;
+        }
+
+        .form-group label {
+            color: #ffffff; /* Label color */
+        }
+
+        .form-group input {
+            color: #000000; /* Input text color */
+            background-color: #ffffff; /* Input background color */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* Primary button color */
+            border-color: #007bff; /* Primary button border color */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container registration-container">
+    <h2 class="text-center mb-4">Student Registration</h2>
+
+    <form method="post" action="{% url 'accounts:register' %}">
+        {% csrf_token %}
+
+        <div class="form-group">
+            <label for="studentNo">Student No.</label>
+            {{ user_form.username }}
+        </div>
+    
+        <div class="form-group">
+            <label for="email">Email</label>
+            {{ user_form.email }}
+        </div>
+    
+        <div class="form-group">
+            <label for="firstName">First Name</label>
+            {{ user_form.first_name }}
+        </div>
+
+        <div class="form-group">
+            <label for="lastName">Last Name</label>
+            {{ user_form.last_name }}
+        </div>
+    
+        <div class="form-group">
+            <label for="course">Course</label>
+            {{ profile_form.course }}
+        </div>
+    
+        <div class="form-group">
+            <label for="year">Year and Section</label>
+            {{ profile_form.yearandsection }}
+        </div>
+
+        <div class="form-group">
+            <label for="password1">Password</label>
+            {{ user_form.password1 }}
+        </div>
+    
+        <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            {{ user_form.password2 }}
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+    </form>
+</div>
+
+<!-- Bootstrap JS and Popper.js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

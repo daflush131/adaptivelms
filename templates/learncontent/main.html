@@ -1,0 +1,47 @@
+{% extends 'accounts/base.html' %} {% block content %}
+
+<head>
+    <title>Lessons</title>
+</head>
+<div class="container mt-5">
+    <h3><a href="{% url 'learncontent:ils' %}">Take the ILS Questionnaire to Start Learning</a></h3>
+    {% if user.userprofile.learning_style == '' %}
+        <div style="pointer-events: none;">
+        {% elif user.userprofile.learning_style != '' %}
+        <div>
+        {% endif %}
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url 'learncontent:lesson1' %}">Lesson 1: Force and Motion</a></h5>
+                    <p class="card-text">Introduction to the fundamental concepts of force and motion in physics. Topics include Newton's laws of motion, types of forces, and their effects on objects.</p>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url 'learncontent:lesson2' %}">Lesson 2: Statics</a></h5>
+                    <p class="card-text">Understanding static equilibrium and the forces acting on stationary objects. Topics include the analysis of forces in balance and the concept of torque.</p>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url 'learncontent:lesson3' %}">Lesson 3: Work, Energy, Power</a></h5>
+                    <p class="card-text">
+                        Exploration of the concepts of work, energy, and power in the context of engineering physics. Covering the relationships between force, displacement, and energy transformations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title"><a href="{% url 'learncontent:lesson4' %}">Lesson 4: Impulse and Momentum</a></h5>
+                    <p class="card-text">
+                        Examining the principles of impulse and momentum and their applications. Understanding the conservation of linear momentum and the effects of forces on moving objects.
+                    </p>
+                </div>
+            </div>
+        </div>
+</div>
+
+{% endblock %}

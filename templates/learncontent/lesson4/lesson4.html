@@ -1,0 +1,44 @@
+{% extends 'accounts/base.html' %}
+
+{% block content %}
+
+<div id="lesson_content">
+    {% if user.userprofile.learning_style == 'ACT' %} 
+    <h1 class="text-center">Lesson 4 &nbsp;[Contents:&nbsp;<a href="#diagrams" data-target="#section2">Diagrams</a>, <a href="#exercises" data-target="#section3">Exercises</a>, <a href="#experiment_demo" data-target="#section4">Experiment Demo</a>, <a href="#video" data-target="#section5">Video</a>]</h1>
+    <div class="border p-3 mt-4">
+        <h2 class="text-center"><u class="text-decoration-underline" id="diagrams">Diagrams</u></h2>
+        {% include 'learncontent/lesson4/active/diagrams.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="exercises">Exercises</u></h2>
+        {% include 'learncontent/lesson4/active/exercises.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="experiment_demo">Experiment Demo</u></h2>
+        {% include 'learncontent/lesson4/active/experiment_demo.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="video">Video</u></h2>
+        {% include 'learncontent/lesson4/active/video.html' %}
+    </div>
+    {% elif user.userprofile.learning_style == 'REF' %} 
+        {% include 'learncontent/lesson1/reflective/content.html' %} 
+    {% elif user.userprofile.learning_style == 'SNS' %} 
+        {% include 'learncontent/lesson1/sensing/content.html' %} 
+    {% elif user.userprofile.learning_style == 'INT' %} 
+        {% include 'learncontent/lesson1/intuitive/content.html' %} 
+    {% elif user.userprofile.learning_style == 'VIS' %} 
+        {% include 'learncontent/lesson1/visual/content.html' %} 
+    {% elif user.userprofile.learning_style == 'VRB' %} 
+        {% include 'learncontent/lesson1/verbal/content.html' %} 
+    {% elif user.userprofile.learning_style == 'SEQ' %} 
+        {% include 'learncontent/lesson1/sequential/content.html' %} 
+    {% elif user.userprofile.learning_style == 'GLO' %} 
+        {% include 'learncontent/lesson1/global/content.html' %} 
+    {% else %}
+        <!-- User has no learning style, prompt to take the ILS questionnaire -->
+        <p>Please take the ILS questionnaire to determine your learning style.</p>
+    {% endif %}
+</div>
+
+{% endblock %}

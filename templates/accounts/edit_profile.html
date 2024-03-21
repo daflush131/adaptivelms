@@ -1,0 +1,24 @@
+
+{% extends 'accounts/base.html' %}
+{% block content %}
+<head>
+    <title>Edit Profile</title>
+</head>
+<div class="container profile-container">
+    <br>
+    <h2 class="text-center mb-4">Edit Profile</h2>
+    <form method="post" enctype="multipart/form-data" action="{% url "accounts:updateprofile" %}">
+        {% csrf_token %}
+        {{ user_form.as_p }}
+        <button type="submit">Update Profile</button>
+      </form>
+
+</div>
+
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    {% endblock %}
+

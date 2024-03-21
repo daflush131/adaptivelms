@@ -1,0 +1,800 @@
+{% extends 'accounts/base.html' %} 
+{% block content %}
+<body>
+    <h1>ILS Questionnaire</h1>
+    <form id="ilsForm" class="form">
+        <div class="form-group">
+            <label>
+                1. I understand something better after I
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q1" id="q1a" value="a">
+                    <label class="form-check-label" for="q1a">a) try it out.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q1" id="q1b" value="b">
+                    <label class="form-check-label" for="q1b">b) think it through.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                2. I would rather be considered
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q2" id="q2a" value="a">
+                    <label class="form-check-label" for="q2a">a) realistic.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q2" id="q2b" value="b">
+                    <label class="form-check-label" for="q2b">b) innovative.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                3. When I think about what I did yesterday, I am most likely to get
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q3" id="q3a" value="a">
+                    <label class="form-check-label" for="q3a">a) a picture.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q3" id="q3b" value="b">
+                    <label class="form-check-label" for="q3b">b) words.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                4. I tend to
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q4" id="q4a" value="a">
+                    <label class="form-check-label" for="q4a">a) understand details of a subject but may be fuzzy about its overall structure.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q4" id="q4b" value="b">
+                    <label class="form-check-label" for="q4b">b) understand the overall structure but may be fuzzy about details.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                5. When I am learning something new, it helps me to
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q5" id="q5a" value="a">
+                    <label class="form-check-label" for="q5a">a) talk about it.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q5" id="q5b" value="b">
+                    <label class="form-check-label" for="q5b">b) think about it.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                6. If I were a teacher, I would rather teach a course
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q6" id="q6a" value="a">
+                    <label class="form-check-label" for="q6a">a) that deals with facts and real-life situations.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q6" id="q6b" value="b">
+                    <label class="form-check-label" for="q6b">b) that deals with ideas and theories.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                7. I prefer to get new information in
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q7" id="q7a" value="a">
+                    <label class="form-check-label" for="q7a">a) pictures, diagrams, graphs, or maps.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q7" id="q7b" value="b">
+                    <label class="form-check-label" for="q7b">b) written directions or verbal information.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                8. Once I understand
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q8" id="q8a" value="a">
+                    <label class="form-check-label" for="q8a">a) all the parts, I understand the whole thing.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q8" id="q8b" value="b">
+                    <label class="form-check-label" for="q8b">b) the whole thing, I see how the parts fit.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                9. In a study group working on difficult material, I am more likely to
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q9" id="q9a" value="a">
+                    <label class="form-check-label" for="q9a">a) jump in and contribute ideas.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q9" id="q9b" value="b">
+                    <label class="form-check-label" for="q9b">b) sit back and listen.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                10. I find it easier
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q10" id="q10a" value="a">
+                    <label class="form-check-label" for="q10a">a) to learn facts.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q10" id="q10b" value="b">
+                    <label class="form-check-label" for="q10b">b) to learn concepts.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                11. In a book with lots of pictures and charts, I am likely to
+                <br>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q11" id="q11a" value="a">
+                    <label class="form-check-label" for="q11a">a) look over the pictures and charts carefully.</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="q11" id="q11b" value="b">
+                    <label class="form-check-label" for="q11b">b) focus on the written text.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                12. When I solve math problems
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q12" id="q12a" value="a">
+                    <label class="form-check-label" for="q12a">a) I usually work my way to the solutions one step at a time.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q12" id="q12b" value="b">
+                    <label class="form-check-label" for="q12b">b) I often just see the solutions but then have to struggle to figure out the steps to get to them.</label>
+                </div>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label>
+                13. In classes I have taken
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q13" id="q13a" value="a">
+                    <label class="form-check-label" for="q13a">a) I have usually gotten to know many of the students.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q13" id="q13b" value="b">
+                    <label class="form-check-label" for="q13b">b) I have rarely gotten to know many of the students.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                14. In reading nonfiction, I prefer
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q14" id="q14a" value="a">
+                    <label class="form-check-label" for="q14a">a) something that teaches me new facts or tells me how to do something.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q14" id="q14b" value="b">
+                    <label class="form-check-label" for="q14b">b) something that gives me new ideas to think about.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                15. I like teachers
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q15" id="q15a" value="a">
+                    <label class="form-check-label" for="q15a">a) who put a lot of diagrams on the board.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q15" id="q15b" value="b">
+                    <label class="form-check-label" for="q15b">b) who spend a lot of time explaining.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                16. When I’m analyzing a story or a novel
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q16" id="q16a" value="a">
+                    <label class="form-check-label" for="q16a">a) I think of the incidents and try to put them together to figure out the themes.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q16" id="q16b" value="b">
+                    <label class="form-check-label" for="q16b">b) I just know what the themes are when I finish reading and then I have to go back and find the incidents that demonstrate them.</label>
+                </div>
+            </label>
+        </div>
+        
+    
+        <div class="form-group">
+            <label>
+                17. When I start a homework problem, I am more likely to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q17" id="q17a" value="a">
+                    <label class="form-check-label" for="q17a">a) start working on the solution immediately.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q17" id="q17b" value="b">
+                    <label class="form-check-label" for="q17b">b) try to fully understand the problem first.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                18. I prefer the idea of
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q18" id="q18a" value="a">
+                    <label class="form-check-label" for="q18a">a) certainty.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q18" id="q18b" value="b">
+                    <label class="form-check-label" for="q18b">b) theory.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                19. I remember best
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q19" id="q19a" value="a">
+                    <label class="form-check-label" for="q19a">a) what I see.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q19" id="q19b" value="b">
+                    <label class="form-check-label" for="q19b">b) what I hear.</label>
+                </div>
+            </label>
+        </div>
+        
+    
+        <div class="form-group">
+            <label>
+                20. It is more important to me that an instructor
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q20" id="q20a" value="a">
+                    <label class="form-check-label" for="q20a">a) lay out the material in clear sequential steps.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q20" id="q20b" value="b">
+                    <label class="form-check-label" for="q20b">b) give me an overall picture and relate the material to other subjects.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                21. I prefer to study
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q21" id="q21a" value="a">
+                    <label class="form-check-label" for="q21a">a) in a study group.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q21" id="q21b" value="b">
+                    <label class="form-check-label" for="q21b">b) alone.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                22. I am more likely to be considered
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q22" id="q22a" value="a">
+                    <label class="form-check-label" for="q22a">a) careful about the details of my work.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q22" id="q22b" value="b">
+                    <label class="form-check-label" for="q22b">b) creative about how to do my work.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                23. When I get directions to a new place, I prefer
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q23" id="q23a" value="a">
+                    <label class="form-check-label" for="q23a">a) a map.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q23" id="q23b" value="b">
+                    <label class="form-check-label" for="q23b">b) written instructions.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                24. I learn
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q24" id="q24a" value="a">
+                    <label class="form-check-label" for="q24a">a) at a fairly regular pace. If I study hard, I’ll “get it.”</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q24" id="q24b" value="b">
+                    <label class="form-check-label" for="q24b">b) in fits and starts. I’ll be totally confused and then suddenly it all “clicks.”</label>
+                </div>
+            </label>
+        </div>
+    
+        <div class="form-group">
+            <label>
+                25. I would rather first
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q25" id="q25a" value="a">
+                    <label class="form-check-label" for="q25a">a) try things out.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q25" id="q25b" value="b">
+                    <label class="form-check-label" for="q25b">b) think about how I’m going to do it.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                26. When I am reading for enjoyment, I like writers to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q26" id="q26a" value="a">
+                    <label class="form-check-label" for="q26a">a) clearly say what they mean.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q26" id="q26b" value="b">
+                    <label class="form-check-label" for="q26b">b) say things in creative, interesting ways.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                27. When I see a diagram or sketch in class, I am most likely to remember
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q27" id="q27a" value="a">
+                    <label class="form-check-label" for="q27a">a) the picture.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q27" id="q27b" value="b">
+                    <label class="form-check-label" for="q27b">b) what the instructor said about it.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                28. When considering a body of information, I am more likely to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q28" id="q28a" value="a">
+                    <label class="form-check-label" for="q28a">a) focus on details and miss the big picture.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q28" id="q28b" value="b">
+                    <label class="form-check-label" for="q28b">b) try to understand the big picture before getting into the details.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                29. I more easily remember
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q29" id="q29a" value="a">
+                    <label class="form-check-label" for="q29a">a) something I have done.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q29" id="q29b" value="b">
+                    <label class="form-check-label" for="q29b">b) something I have thought a lot about.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                30. When I have to perform a task, I prefer to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q30" id="q30a" value="a">
+                    <label class="form-check-label" for="q30a">a) master one way of doing it.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q30" id="q30b" value="b">
+                    <label class="form-check-label" for="q30b">b) come up with new ways of doing it.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                31. When someone is showing me data, I prefer
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q31" id="q31a" value="a">
+                    <label class="form-check-label" for="q31a">a) charts or graphs.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q31" id="q31b" value="b">
+                    <label class="form-check-label" for="q31b">b) text summarizing the results.</label>
+                </div>
+            </label>
+        </div>
+        
+    
+        <div class="form-group">
+            <label>
+                32. When writing a paper, I am more likely to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q32" id="q32a" value="a">
+                    <label class="form-check-label" for="q32a">a) work on (think about or write) the beginning of the paper and progress forward.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q32" id="q32b" value="b">
+                    <label class="form-check-label" for="q32b">b) work on (think about or write) different parts of the paper and then order them.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                33. When I have to work on a group project, I first want to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q33" id="q33a" value="a">
+                    <label class="form-check-label" for="q33a">a) have “group brainstorming” where everyone contributes ideas.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q33" id="q33b" value="b">
+                    <label class="form-check-label" for="q33b">b) brainstorm individually and then come together as a group to compare ideas.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                34. I consider it higher praise to call someone
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q34" id="q34a" value="a">
+                    <label class="form-check-label" for="q34a">a) sensible.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q34" id="q34b" value="b">
+                    <label class="form-check-label" for="q34b">b) imaginative.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                35. When I meet people at a party, I am more likely to remember
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q35" id="q35a" value="a">
+                    <label class="form-check-label" for="q35a">a) what they looked like.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q35" id="q35b" value="b">
+                    <label class="form-check-label" for="q35b">b) what they said about themselves.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                36. When I am learning a new subject, I prefer to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q36" id="q36a" value="a">
+                    <label class="form-check-label" for="q36a">a) stay focused on that subject, learning as much about it as I can.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q36" id="q36b" value="b">
+                    <label class="form-check-label" for="q36b">b) try to make connections between that subject and related subjects.</label>
+                </div>
+            </label>
+        </div>        
+    
+        <div class="form-group">
+            <label>
+                37. I am more likely to be considered
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q37" id="q37a" value="a">
+                    <label class="form-check-label" for="q37a">a) outgoing.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q37" id="q37b" value="b">
+                    <label class="form-check-label" for="q37b">b) reserved.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                38. I prefer courses that emphasize
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q38" id="q38a" value="a">
+                    <label class="form-check-label" for="q38a">a) concrete material (facts, data).</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q38" id="q38b" value="b">
+                    <label class="form-check-label" for="q38b">b) abstract material (concepts, theories).</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                39. For entertainment, I would rather
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q39" id="q39a" value="a">
+                    <label class="form-check-label" for="q39a">a) watch television.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q39" id="q39b" value="b">
+                    <label class="form-check-label" for="q39b">b) read a book.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                40. Some teachers start their lectures with an outline of what they will cover. Such outlines are
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q40" id="q40a" value="a">
+                    <label class="form-check-label" for="q40a">a) somewhat helpful to me.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q40" id="q40b" value="b">
+                    <label class="form-check-label" for="q40b">b) very helpful to me.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                41. The idea of doing homework in groups, with one grade for the entire group,
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q41" id="q41a" value="a">
+                    <label class="form-check-label" for="q41a">a) appeals to me.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q41" id="q41b" value="b">
+                    <label class="form-check-label" for="q41b">b) does not appeal to me.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                42. When I am doing long calculations,
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q42" id="q42a" value="a">
+                    <label class="form-check-label" for="q42a">a) I tend to repeat all my steps and check my work carefully.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q42" id="q42b" value="b">
+                    <label class="form-check-label" for="q42b">b) I find checking my work tiresome and have to force myself to do it.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                43. I tend to picture places I have been
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q43" id="q43a" value="a">
+                    <label class="form-check-label" for="q43a">a) easily and fairly accurately.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q43" id="q43b" value="b">
+                    <label class="form-check-label" for="q43b">b) with difficulty and without much detail.</label>
+                </div>
+            </label>
+        </div>
+        
+        <div class="form-group">
+            <label>
+                44. When solving problems in a group, I would be more likely to
+                <br>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q44" id="q44a" value="a">
+                    <label class="form-check-label" for="q44a">a) think of the steps in the solution process.</label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="q44" id="q44b" value="b">
+                    <label class="form-check-label" for="q44b">b) think of possible consequences or applications of the solution in a wide range of areas.</label>
+                </div>
+            </label>
+        </div>
+        
+        <button type="button" class="btn btn-primary" onclick="captureAnswers()">Submit Answers</button>
+    </form>
+    <table class="table table-bordered table-striped mt-4">
+        <thead class="thead-dark">
+            <tr>
+                <th>Learning Style</th>
+                <th>'a' Score</th>
+                <th>'b' Score</th>
+                <th>Preferred Styles</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="actRefRow">
+                <td>ACT/REF</td>
+                <td id="actScore"></td>
+                <td id="refScore"></td>
+                <td id="actRefStyles"></td>
+            </tr>
+            <tr id="snsIntRow">
+                <td>SNS/INT</td>
+                <td id="snsScore"></td>
+                <td id="intScore"></td>
+                <td id="snsIntStyles"></td>
+            </tr>
+            <tr id="visVrbRow">
+                <td>VIS/VRB</td>
+                <td id="visScore"></td>
+                <td id="vrbScore"></td>
+                <td id="visVrbStyles"></td>
+            </tr>
+            <tr id="seqGloRow">
+                <td>SEQ/GLO</td>
+                <td id="seqScore"></td>
+                <td id="gloScore"></td>
+                <td id="seqGloStyles"></td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <script>
+        // Function to capture selected answers
+        function captureAnswers() {
+            const answers = {};
+    
+            for (let i = 1; i <= 44; i++) {
+                const radioButtons = document.getElementsByName(`q${i}`);
+                let selectedAnswer = null;
+    
+                radioButtons.forEach(radioButton => {
+                    if (radioButton.checked) {
+                        selectedAnswer = radioButton.value;
+                    }
+                });
+    
+                if (selectedAnswer) {
+                    answers[`q${i}`] = selectedAnswer;
+                } else {
+                    // Notify user if a question is not answered
+                    alert(`Please answer question ${i}`);
+                    return; // Exit function if a question is not answered
+                }
+            }
+    
+            // Log the captured answers (you can modify this part based on your needs)
+            console.log("Captured Answers:", answers);
+    
+            // Calculate learning style scores
+            const actRefScore = calculateDimensionScore(['q1', 'q5', 'q9', 'q13', 'q17', 'q21', 'q25', 'q29', 'q33', 'q37', 'q41'], answers);
+            const snsIntScore = calculateDimensionScore(['q2', 'q6', 'q10', 'q14', 'q18', 'q22', 'q26', 'q30', 'q34', 'q38', 'q42'], answers);
+            const visVrbScore = calculateDimensionScore(['q3', 'q7', 'q11', 'q15', 'q19', 'q23', 'q27', 'q31', 'q35', 'q39', 'q43'], answers);
+            const seqGloScore = calculateDimensionScore(['q4', 'q8', 'q12', 'q16', 'q20', 'q24', 'q28', 'q32', 'q36', 'q40', 'q44'], answers);
+    
+            // Display scores in the table
+            displayScore('actRefRow', actRefScore);
+            displayScore('snsIntRow', snsIntScore);
+            displayScore('visVrbRow', visVrbScore);
+            displayScore('seqGloRow', seqGloScore);
+
+            determinePreferredStyles()
+        }
+    
+        // Function to calculate the score for a specific dimension
+        function calculateDimensionScore(questions, answers) {
+            let aCount = 0;
+            let bCount = 0;
+    
+            questions.forEach(question => {
+                const answer = answers[question];
+    
+                if (answer === 'a') {
+                    aCount++;
+                } else if (answer === 'b') {
+                    bCount++;
+                }
+            });
+    
+            return { 'a': aCount, 'b': bCount };
+        }
+    
+        // Function to display scores in the table
+        function displayScore(rowId, scores) {
+            document.getElementById(`${rowId}`).children[1].textContent = scores['a'];
+            document.getElementById(`${rowId}`).children[2].textContent = scores['b'];
+        }
+        function determinePreferredStyles() {
+            // Get the scores
+            let actScore = parseInt(document.getElementById("actScore").innerText);
+            let refScore = parseInt(document.getElementById("refScore").innerText);
+            let snsScore = parseInt(document.getElementById("snsScore").innerText);
+            let intScore = parseInt(document.getElementById("intScore").innerText);
+            let visScore = parseInt(document.getElementById("visScore").innerText);
+            let vrbScore = parseInt(document.getElementById("vrbScore").innerText);
+            let seqScore = parseInt(document.getElementById("seqScore").innerText);
+            let gloScore = parseInt(document.getElementById("gloScore").innerText);
+        
+            // Determine preferred styles based on scores
+            let actRefStyles = (actScore > refScore) ? (actScore - refScore) + 'a' + '- ACT': (refScore - actScore) + 'b' + '- REF';
+            let snsIntStyles = (snsScore > intScore) ? (snsScore - intScore) + 'a' + '- SNS': (intScore - snsScore) + 'b' + '- INT';
+            let visVrbStyles = (visScore > vrbScore) ? (visScore - vrbScore) + 'a' + '- VIS': (vrbScore - visScore) + 'b' + '- VRB';
+            let seqGloStyles = (seqScore > gloScore) ? (seqScore - gloScore) + 'a' + '- SEQ': (gloScore - seqScore) + 'b' + '- GLO';
+        
+            // Update the table with preferred styles
+            document.getElementById("actRefStyles").innerText = actRefStyles;
+            document.getElementById("snsIntStyles").innerText = snsIntStyles;
+            document.getElementById("visVrbStyles").innerText = visVrbStyles;
+            document.getElementById("seqGloStyles").innerText = seqGloStyles;
+        }
+        
+    </script>
+      
+</body>
+{% endblock %}
