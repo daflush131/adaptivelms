@@ -10,6 +10,3 @@ __pycache__/
 
 # Ignore the virtual environment
 env/
-
-# Ignore database migrations
-**/migrations/
