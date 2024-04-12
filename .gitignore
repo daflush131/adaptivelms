@@ -1,11 +1,11 @@
 # Django
 *.pyc
-__pycache__/
 *.sqlite3
 *.pyo
 *.pyc
 *.pyo
 *.pyc
+**/__pycache__/
 
 
 # Ignore the virtual environment
