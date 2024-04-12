@@ -1,1 +1,26 @@
+# Django
+*.pyc
+__pycache__/
+*.sqlite3
+*.pyo
+*.pyc
+*.pyo
+*.pyc
+
+# Static files
+staticfiles/
+
+# Media files
+media/
+
+# Django development server
+*.log
+
+# Ignore the virtual environment
 env/
+
+# Ignore local settings
+local_settings.py
+
+# Ignore database migrations
+**/migrations/
