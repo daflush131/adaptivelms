@@ -5,7 +5,7 @@
 *.pyc
 *.pyo
 *.pyc
-**/__pycache__/
+**/pycache/
 
 
 # Ignore the virtual environment
