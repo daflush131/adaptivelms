@@ -6,21 +6,6 @@ __pycache__/
 *.pyc
 *.pyo
 *.pyc
-
-# Static files
-staticfiles/
-
-# Media files
-media/
-
-# Django development server
-*.log
-
-# Ignore the virtual environment
-env/
-
-# Ignore local settings
-local_settings.py
-
+**/__pycache__/
 # Ignore database migrations
 **/migrations/
