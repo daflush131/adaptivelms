@@ -5,10 +5,10 @@ from django.contrib.auth.models import User
 
 class ILSResult(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    active_reflective_score = models.CharField(max_length=10, blank=True)
-    sensing_intuitive_score = models.CharField(max_length=10, blank=True)
-    visual_verbal_score = models.CharField(max_length=10, blank=True)
-    sequential_global_score = models.CharField(max_length=10, blank=True)
+    first = models.CharField(max_length=10, blank=True)
+    second = models.CharField(max_length=10, blank=True)
+    third = models.CharField(max_length=10, blank=True)
+    fourth = models.CharField(max_length=10, blank=True)
 
 
 class UserProfile(models.Model):
