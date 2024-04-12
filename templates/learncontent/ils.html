@@ -668,58 +668,21 @@
         
         <button type="button" class="btn btn-primary" onclick="captureAnswers()">Submit Answers</button>
     </form>
-    <table class="table table-bordered table-striped mt-4">
-        <thead class="thead-dark">
-            <tr>
-                <th>Learning Style</th>
-                <th>'a' Score</th>
-                <th>'b' Score</th>
-                <th>Preferred Styles</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr id="actRefRow">
-                <td>ACT/REF</td>
-                <td id="actScore"></td>
-                <td id="refScore"></td>
-                <td id="actRefStyles"></td>
-            </tr>
-            <tr id="snsIntRow">
-                <td>SNS/INT</td>
-                <td id="snsScore"></td>
-                <td id="intScore"></td>
-                <td id="snsIntStyles"></td>
-            </tr>
-            <tr id="visVrbRow">
-                <td>VIS/VRB</td>
-                <td id="visScore"></td>
-                <td id="vrbScore"></td>
-                <td id="visVrbStyles"></td>
-            </tr>
-            <tr id="seqGloRow">
-                <td>SEQ/GLO</td>
-                <td id="seqScore"></td>
-                <td id="gloScore"></td>
-                <td id="seqGloStyles"></td>
-            </tr>
-        </tbody>
-    </table>
-    
+
     <script>
-        // Function to capture selected answers
         function captureAnswers() {
             const answers = {};
-    
+        
             for (let i = 1; i <= 44; i++) {
                 const radioButtons = document.getElementsByName(`q${i}`);
                 let selectedAnswer = null;
-    
+        
                 radioButtons.forEach(radioButton => {
                     if (radioButton.checked) {
                         selectedAnswer = radioButton.value;
                     }
                 });
-    
+        
                 if (selectedAnswer) {
                     answers[`q${i}`] = selectedAnswer;
                 } else {
@@ -728,71 +691,64 @@
                     return; // Exit function if a question is not answered
                 }
             }
-    
+        
             // Log the captured answers (you can modify this part based on your needs)
             console.log("Captured Answers:", answers);
-    
+        
             // Calculate learning style scores
             const actRefScore = calculateDimensionScore(['q1', 'q5', 'q9', 'q13', 'q17', 'q21', 'q25', 'q29', 'q33', 'q37', 'q41'], answers);
             const snsIntScore = calculateDimensionScore(['q2', 'q6', 'q10', 'q14', 'q18', 'q22', 'q26', 'q30', 'q34', 'q38', 'q42'], answers);
             const visVrbScore = calculateDimensionScore(['q3', 'q7', 'q11', 'q15', 'q19', 'q23', 'q27', 'q31', 'q35', 'q39', 'q43'], answers);
             const seqGloScore = calculateDimensionScore(['q4', 'q8', 'q12', 'q16', 'q20', 'q24', 'q28', 'q32', 'q36', 'q40', 'q44'], answers);
-    
-            // Display scores in the table
-            displayScore('actRefRow', actRefScore);
-            displayScore('snsIntRow', snsIntScore);
-            displayScore('visVrbRow', visVrbScore);
-            displayScore('seqGloRow', seqGloScore);
-
-            determinePreferredStyles()
+        
+            // Determine preferred learning style for each dimension
+            const actRefPreferred = actRefScore.a > actRefScore.b ? 'ACT' : 'REF';
+            const snsIntPreferred = snsIntScore.a > snsIntScore.b ? 'SNS' : 'INT';
+            const visVrbPreferred = visVrbScore.a > visVrbScore.b ? 'VIS' : 'VRB';
+            const seqGloPreferred = seqGloScore.a > seqGloScore.b ? 'SEQ' : 'GLO';
+            
+            // Calculate new scores based on differences
+            const actRefDiff = Math.abs(actRefScore.a - actRefScore.b);
+            const snsIntDiff = Math.abs(snsIntScore.a - snsIntScore.b);
+            const visVrbDiff = Math.abs(visVrbScore.a - visVrbScore.b);
+            const seqGloDiff = Math.abs(seqGloScore.a - seqGloScore.b);
+            
+            const scoresWithStyles = [
+            { diff: actRefDiff, style: actRefPreferred },
+            { diff: snsIntDiff, style: snsIntPreferred },
+            { diff: visVrbDiff, style: visVrbPreferred },
+            { diff: seqGloDiff, style: seqGloPreferred }
+            ];
+          
+            // Sort the array based on difference scores in descending order
+            scoresWithStyles.sort((a, b) => b.diff - a.diff);
+            
+            const sortedScoresArray = [];
+            scoresWithStyles.forEach(score => {
+                sortedScoresArray.push([score.diff, score.style]);
+              });
+            console.log("Sorted scores with preferred learning styles:");
+            console.log(sortedScoresArray);
+          
         }
-    
-        // Function to calculate the score for a specific dimension
+        
         function calculateDimensionScore(questions, answers) {
             let aCount = 0;
             let bCount = 0;
-    
+        
             questions.forEach(question => {
                 const answer = answers[question];
-    
+        
                 if (answer === 'a') {
                     aCount++;
                 } else if (answer === 'b') {
                     bCount++;
                 }
             });
-    
+        
             return { 'a': aCount, 'b': bCount };
         }
-    
-        // Function to display scores in the table
-        function displayScore(rowId, scores) {
-            document.getElementById(`${rowId}`).children[1].textContent = scores['a'];
-            document.getElementById(`${rowId}`).children[2].textContent = scores['b'];
-        }
-        function determinePreferredStyles() {
-            // Get the scores
-            let actScore = parseInt(document.getElementById("actScore").innerText);
-            let refScore = parseInt(document.getElementById("refScore").innerText);
-            let snsScore = parseInt(document.getElementById("snsScore").innerText);
-            let intScore = parseInt(document.getElementById("intScore").innerText);
-            let visScore = parseInt(document.getElementById("visScore").innerText);
-            let vrbScore = parseInt(document.getElementById("vrbScore").innerText);
-            let seqScore = parseInt(document.getElementById("seqScore").innerText);
-            let gloScore = parseInt(document.getElementById("gloScore").innerText);
         
-            // Determine preferred styles based on scores
-            let actRefStyles = (actScore > refScore) ? (actScore - refScore) + 'a' + '- ACT': (refScore - actScore) + 'b' + '- REF';
-            let snsIntStyles = (snsScore > intScore) ? (snsScore - intScore) + 'a' + '- SNS': (intScore - snsScore) + 'b' + '- INT';
-            let visVrbStyles = (visScore > vrbScore) ? (visScore - vrbScore) + 'a' + '- VIS': (vrbScore - visScore) + 'b' + '- VRB';
-            let seqGloStyles = (seqScore > gloScore) ? (seqScore - gloScore) + 'a' + '- SEQ': (gloScore - seqScore) + 'b' + '- GLO';
-        
-            // Update the table with preferred styles
-            document.getElementById("actRefStyles").innerText = actRefStyles;
-            document.getElementById("snsIntStyles").innerText = snsIntStyles;
-            document.getElementById("visVrbStyles").innerText = visVrbStyles;
-            document.getElementById("seqGloStyles").innerText = seqGloStyles;
-        }
         
     </script>
       
