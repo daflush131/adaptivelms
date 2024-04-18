@@ -666,79 +666,88 @@
             </label>
         </div>
         
-        <button type="button" class="btn btn-primary" onclick="captureAnswers()">Submit Answers</button>
     </form>
 
-    <script>
+    <form id="learningsyle" method="post" action="{% url 'learncontent:save_scores' %}">
+        {% csrf_token %}
+        <input type="hidden" id="first" name="first" value="">
+        <input type="hidden" id="second" name="second" value="">
+        <input type="hidden" id="third" name="third" value="">
+        <input type="hidden" id="fourth" name="fourth" value="">
+
+        <button type="submit" class="btn btn-primary" id="captureButton">Submit Answers</button>
+    </form>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const sortedScoresArray = [];
+
         function captureAnswers() {
             const answers = {};
-        
+
             for (let i = 1; i <= 44; i++) {
-                const radioButtons = document.getElementsByName(`q${i}`);
+                const radioButtons = $(`input[name="q${i}"]:checked`);
                 let selectedAnswer = null;
-        
-                radioButtons.forEach(radioButton => {
-                    if (radioButton.checked) {
-                        selectedAnswer = radioButton.value;
-                    }
-                });
-        
+
+                if (radioButtons.length > 0) {
+                    selectedAnswer = radioButtons.val();
+                }
+
                 if (selectedAnswer) {
                     answers[`q${i}`] = selectedAnswer;
                 } else {
-                    // Notify user if a question is not answered
                     alert(`Please answer question ${i}`);
-                    return; // Exit function if a question is not answered
+                    return;
                 }
             }
-        
-            // Log the captured answers (you can modify this part based on your needs)
+
             console.log("Captured Answers:", answers);
-        
-            // Calculate learning style scores
+
             const actRefScore = calculateDimensionScore(['q1', 'q5', 'q9', 'q13', 'q17', 'q21', 'q25', 'q29', 'q33', 'q37', 'q41'], answers);
             const snsIntScore = calculateDimensionScore(['q2', 'q6', 'q10', 'q14', 'q18', 'q22', 'q26', 'q30', 'q34', 'q38', 'q42'], answers);
             const visVrbScore = calculateDimensionScore(['q3', 'q7', 'q11', 'q15', 'q19', 'q23', 'q27', 'q31', 'q35', 'q39', 'q43'], answers);
             const seqGloScore = calculateDimensionScore(['q4', 'q8', 'q12', 'q16', 'q20', 'q24', 'q28', 'q32', 'q36', 'q40', 'q44'], answers);
-        
-            // Determine preferred learning style for each dimension
+
             const actRefPreferred = actRefScore.a > actRefScore.b ? 'ACT' : 'REF';
             const snsIntPreferred = snsIntScore.a > snsIntScore.b ? 'SNS' : 'INT';
             const visVrbPreferred = visVrbScore.a > visVrbScore.b ? 'VIS' : 'VRB';
             const seqGloPreferred = seqGloScore.a > seqGloScore.b ? 'SEQ' : 'GLO';
-            
-            // Calculate new scores based on differences
+
             const actRefDiff = Math.abs(actRefScore.a - actRefScore.b);
             const snsIntDiff = Math.abs(snsIntScore.a - snsIntScore.b);
             const visVrbDiff = Math.abs(visVrbScore.a - visVrbScore.b);
             const seqGloDiff = Math.abs(seqGloScore.a - seqGloScore.b);
-            
+
             const scoresWithStyles = [
-            { diff: actRefDiff, style: actRefPreferred },
-            { diff: snsIntDiff, style: snsIntPreferred },
-            { diff: visVrbDiff, style: visVrbPreferred },
-            { diff: seqGloDiff, style: seqGloPreferred }
+                { diff: actRefDiff, style: actRefPreferred },
+                { diff: snsIntDiff, style: snsIntPreferred },
+                { diff: visVrbDiff, style: visVrbPreferred },
+                { diff: seqGloDiff, style: seqGloPreferred }
             ];
-          
-            // Sort the array based on difference scores in descending order
+
             scoresWithStyles.sort((a, b) => b.diff - a.diff);
-            
-            const sortedScoresArray = [];
+
             scoresWithStyles.forEach(score => {
                 sortedScoresArray.push([score.diff, score.style]);
-              });
-            console.log("Sorted scores with preferred learning styles:");
+            });
+            console.log(typeof sortedScoresArray);
             console.log(sortedScoresArray);
-          
+
+            $('#first').val(sortedScoresArray[0][1]);
+            $('#second').val(sortedScoresArray[1][1]);
+            $('#third').val(sortedScoresArray[2][1]);
+            $('#fourth').val(sortedScoresArray[3][1]);
+
         }
-        
+
         function calculateDimensionScore(questions, answers) {
             let aCount = 0;
             let bCount = 0;
-        
+
             questions.forEach(question => {
                 const answer = answers[question];
-        
+
                 if (answer === 'a') {
                     aCount++;
                 } else if (answer === 'b') {
@@ -747,8 +756,12 @@
             });
             return { 'a': aCount, 'b': bCount };
         }
-        
-    </script>
+
+        // Call captureAnswers function when a button with id "captureButton" is clicked
+        $('#captureButton').click(captureAnswers);
+    });
+</script>
+
       
 </body>
 {% endblock %}

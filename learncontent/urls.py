@@ -1,6 +1,6 @@
 # learncontent/urls.py
 from django.urls import path
-from .views import learncontent, lesson1, lesson2, lesson3, lesson4, ils
+from .views import learncontent, lesson1, lesson2, lesson3, lesson4, ils, save_learningstyle
 
 app_name = 'learncontent'
 
@@ -11,4 +11,5 @@ urlpatterns = [
     path('lesson3/', lesson3, name='lesson3'),
     path('lesson4/', lesson4, name='lesson4'),
     path('ils/',ils,name='ils'),
+    path('save_scores/', save_learningstyle, name='save_scores'),
 ]
