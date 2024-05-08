@@ -60,11 +60,15 @@
             // Function to check the answer
             $(document).on('click', '.check-answer', function() {
                 var correctAnswer = $(this).data('correct');
-                var selectedAnswer = $(this).siblings('.option').children('input[type="radio"]:checked').val();
-                if (selectedAnswer === correctAnswer) {
+                var selectedAnswer = $(this).closest('.question').find('input[type="radio"]:checked').val();
+                console.log('correct answer = ' + correctAnswer + 'selected answer = ' + selectedAnswer)
+                console.log(typeof correctAnswer)
+                console.log(typeof parseInt(selectedAnswer))
+                if (parseInt(selectedAnswer) === correctAnswer) {
+
                     alert('Correct!');
                 } else {
-                    alert('Incorrect. The correct answer is option ' + (parseInt(correctAnswer) + 1));
+                    alert('Incorrect. The correct answer is option ' + (correctAnswer));
                 }
             });
         });
