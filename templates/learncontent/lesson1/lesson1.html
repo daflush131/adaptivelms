@@ -1,10 +1,13 @@
 {% extends 'accounts/base.html' %}
 
 {% block content %}
-<title>Lesson 1: Forces and Motion</title>
+
 <div id="lesson_content" >
     {% if user.userprofile.learning_style == 'ACT' %} 
-    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;<a href="#diagram" data-target="#section2">Diagram</a>, <a href="#demo" data-target="#section3">Demo</a>, <a href="#video" data-target="#section4">Video</a>]</h1>
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#diagram" data-target="#section2">Diagram</a>,
+         <a href="#demo" data-target="#section3">Demo</a>,
+          <a href="#video" data-target="#section4">Video</a>]</h1>
     <div class="border p-3 mt-4">
         <h2 class="text-center"><u class="text-decoration-underline" id="diagram">Diagram</u></h2>
         {% include 'learncontent/lesson1/active/diagram.html' %}
@@ -19,7 +22,8 @@
     </div>
 
     {% elif user.userprofile.learning_style == 'REF' %}
-    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;<a href="#readings" data-target="#section2">Readings</a>, <a href="#examples" data-target="#section3">Examples</a>]</h1>
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;<a href="#readings" data-target="#section2">Readings</a>,
+         <a href="#examples" data-target="#section3">Examples</a>]</h1>
     <div class="border p-3 mt-4">
         <h2 class="text-center"><u class="text-decoration-underline" id="readings">Readings</u></h2>
         {% include 'learncontent/lesson1/reflective/readings.html' %}
@@ -30,22 +34,98 @@
     </div>
 
     {% elif user.userprofile.learning_style == 'SNS' %} 
-        {% include 'learncontent/lesson1/sensing/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#readings" data-target="#section2">Readings</a>, 
+        <a href="#videos" data-target="#section3">Videos</a>]</h1>
+    <div class="border p-3 mt-4">
+        <h2 class="text-center"><u class="text-decoration-underline" id="readings">Readings</u></h2>
+        {% include 'learncontent/lesson1/sensing/readings.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="videos">Videos</u></h2>
+        {% include 'learncontent/lesson1/sensing/videos.html' %}
+    </div>
+
+     
     {% elif user.userprofile.learning_style == 'INT' %} 
-        {% include 'learncontent/lesson1/intuitive/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#readings" data-target="#section2">Readings</a>,
+         <a href="#ppt" data-target="#section3">PPT</a>]</h1>
+    <div class="border p-3 mt-4">
+        <h2 class="text-center"><u class="text-decoration-underline" id="readings">Readings</u></h2>
+        {% include 'learncontent/lesson1/intuitive/ppt.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="ppt">PPT</u></h2>
+        {% include 'learncontent/lesson1/intuitive/ppt.html' %}
+    </div> 
+    
     {% elif user.userprofile.learning_style == 'VIS' %} 
-        {% include 'learncontent/lesson1/visual/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#examples" data-target="#section2">Examples</a>,
+        <a href="#demo" data-target="#section3">Demo</a>,
+         <a href="#video" data-target="#section4">Video</a>]</h1>
+   <div class="border p-3 mt-4">
+       <h2 class="text-center"><u class="text-decoration-underline" id="examples">Examples</u></h2>
+       {% include 'learncontent/lesson1/visual/examples.html' %}
+   </div>
+   <div class="border p-3 mt-4">
+       <h2><u class="text-decoration-underline" id="demo">Demo</u></h2>
+       {% include 'learncontent/lesson1/visual/demo.html' %}
+   </div>
+   <div class="border p-3 mt-4">
+       <h2><u class="text-decoration-underline" id="video">Video</u></h2>
+       {% include 'learncontent/lesson1/visual/video.html' %}
+   </div>
+
     {% elif user.userprofile.learning_style == 'VRB' %} 
-        {% include 'learncontent/lesson1/verbal/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#readings" data-target="#section2">Readings</a>,
+         <a href="#demo" data-target="#section3">DEMO</a>]</h1>
+    <div class="border p-3 mt-4">
+        <h2 class="text-center"><u class="text-decoration-underline" id="readings">Readings</u></h2>
+        {% include 'learncontent/lesson1/verbal/readings.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="demo">Demo</u></h2>
+        {% include 'learncontent/lesson1/verbal/demo.html' %}
+    </div> 
+
     {% elif user.userprofile.learning_style == 'SEQ' %} 
-        {% include 'learncontent/lesson1/sequential/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#examples" data-target="#section2">Examples</a>,
+        <a href="#readings" data-target="#section3">Readings</a>,
+         <a href="#video" data-target="#section4">Video</a>]</h1>
+   <div class="border p-3 mt-4">
+       <h2 class="text-center"><u class="text-decoration-underline" id="examples">Examples</u></h2>
+       {% include 'learncontent/lesson1/sequential/examples.html' %}
+   </div>
+   <div class="border p-3 mt-4">
+       <h2><u class="text-decoration-underline" id="reading">Reading</u></h2>
+       {% include 'learncontent/lesson1/sequential/readings.html' %}
+   </div>
+   <div class="border p-3 mt-4">
+       <h2><u class="text-decoration-underline" id="video">Video</u></h2>
+       {% include 'learncontent/lesson1/sequential/videos.html' %}
+   </div>
+
     {% elif user.userprofile.learning_style == 'GLO' %} 
-        {% include 'learncontent/lesson1/global/content.html' %} 
+    <h1 class="text-center">Lesson 1 &nbsp;[Contents:&nbsp;
+        <a href="#readings" data-target="#section2">Readings</a>,
+         <a href="#video" data-target="#section3">Videos</a>]</h1>
+    <div class="border p-3 mt-4">
+        <h2 class="text-center"><u class="text-decoration-underline" id="readings">Readings</u></h2>
+        {% include 'learncontent/lesson1/global/readings.html' %}
+    </div>
+    <div class="border p-3 mt-4">
+        <h2><u class="text-decoration-underline" id="video">Video</u></h2>
+        {% include 'learncontent/lesson1/global/video.html' %}
+    </div> 
+    
     {% else %}
         <!-- User has no learning style, prompt to take the ILS questionnaire -->
         <p>Please take the ILS questionnaire to determine your learning style.</p>
     {% endif %}
-    
 </div>
 
 {% endblock %}
