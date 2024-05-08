@@ -27,7 +27,7 @@ class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     course = models.CharField(max_length=100, blank=True)
     yearandsection = models.CharField(max_length=10, blank=True)
-    learning_style = models.CharField(max_length=3, choices=LEARNING_STYLE_CHOICES, blank=True)
+    learning_style = models.CharField(max_length=3, choices=LEARNING_STYLE_CHOICES, blank=True, null=True)
     cluster = models.PositiveSmallIntegerField(null=True)
 
     def __str__(self):

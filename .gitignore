@@ -18,3 +18,4 @@ accounts/migrations/0024_pretestscore_answers_delete_pretestanswers.py
 accounts/migrations/0025_rename_posttestscore_posttest_and_more.py
 accounts/migrations/0026_remove_pretest_answers_pretest_l1_answers_and_more.py
 accounts/migrations/0027_userprofile_cluster.py
+accounts/migrations/0028_alter_userprofile_learning_style.py
