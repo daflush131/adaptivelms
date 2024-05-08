@@ -11,11 +11,17 @@ from .forms import LoginForm, UserProfileForm, UserMainForm, CustomUserChangeFor
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.urls import reverse_lazy
+from django.conf import settings
 
 
 class CustomLoginView(LoginView):
     form_class = LoginForm
     template_name = 'accounts/login.html'
+    
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            return redirect('dashboard:dashboard')
+        return super().get(request, *args, **kwargs)
 
 class CustomLogoutView(LogoutView):
     next_page = 'accounts:login'  # Specify the login URL after logout

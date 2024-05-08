@@ -65,46 +65,63 @@
       </div>
   </div>
   
-    <script>
-        var height = 0;
+  <script>
+    const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTUxNDAzNDYsImlhdCI6MTcxNTEzMzE0Niwicm9sZSI6InVzZXIiLCJ1c3IiOiJkYWZsdXNoIn0.fw1C35im8lt5Nsj2ULcz9MToYzXWpoB7u4mtf5sgT0A';
+    const baseUrl = 'https://backend.thinger.io/v3/users/daflush/devices/ESP8266-FREEFALL/resources/';
 
-        function sendCommand(command) {
-            fetch('http://192.168.0.103/command?c=' + command);
-        }
+    function sendCommand(command) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', baseUrl + command, true);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                console.log(xhr.responseText);
+            } else {
+                console.error('Request failed with status:', xhr.status);
+            }
+        };
+        xhr.onerror = function() {
+            console.error('Request failed');
+        };
+        xhr.send();
+    }
 
-        function getHeight() {
-            height = document.getElementById("height").value;
-            fetch('http://192.168.0.103/height?h=' + height);
-            console.log('height is: ' + height);
-            
-            // Enable or disable buttons based on whether a height is selected
-            var startButton = document.getElementById("startButton");
-            var dropButton = document.getElementById("dropButton");
-            var resetButton = document.getElementById("resetButton");
+    function getHeight(heightCommand) {
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', baseUrl + heightCommand, true);
+        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+        xhr.onload = function() {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                console.log(xhr.responseText);
+            } else {
+                console.error('Request failed with status:', xhr.status);
+            }
+        };
+        xhr.onerror = function() {
+            console.error('Request failed');
+        };
+        xhr.send();
+    }
 
-            startButton.disabled = (height === "");
-            dropButton.disabled = (height === "");
-            resetButton.disabled = (height === "");
+    function startExperiment() {
+        sendCommand('C1');
+    }
 
-        }
+    function dropBall() {
+        sendCommand('C3');
+        document.getElementById("height").value = 0;
+        getHeight('H1'); // Update server with the new height
+    }
 
-        function startExperiment() {
-            sendCommand(1);
-            console.log(typeof 'start')
-        }
+    function resetExperiment() {
+        sendCommand('C2');
+        document.getElementById("height").value = 0;
+        getHeight('H1'); // Update server with the new height
+    }
+</script>
 
-        function dropBall() {
-            sendCommand(3);
-            document.getElementById("height").value = 0;
-            fetch('http://192.168.0.103/height?h=' + this);
-        }
 
-        function resetExperiment() {
-            sendCommand(2);
-            document.getElementById("height").value = 0;
-            fetch('http://192.168.0.103/height?h=' + this);
-        }
-    </script>
+
 
     <!-- Add Bootstrap JS and Popper.js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

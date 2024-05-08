@@ -8,12 +8,13 @@
     {% if user.userprofile.learning_style == '' %}
         <div style="pointer-events: none;">
         {% elif user.userprofile.learning_style != '' %}
-        <div>
-        {% endif %}
             <div class="card mt-4">
                 <div class="card-body">
                     <h5 class="card-title"><a href="{% url 'learncontent:lesson1' %}">Lesson 1: Force and Motion</a></h5>
                     <p class="card-text">Introduction to the fundamental concepts of force and motion in physics. Topics include Newton's laws of motion, types of forces, and their effects on objects.</p>
+                    <h5 class="card-title"><a href="{% url 'learncontent:pretest' lesson_number=1 %}">Pre-Test for Lesson 1</a></h5>
+                    <h5 class="card-title"><a href="{% url 'learncontent:practice_questions' lesson_number=1 %}">Practice Questions for Lesson 1</a></h5>
+                    <h5 class="card-title"><a href="">Post-Test for Lesson 1</a></h5>
                 </div>
             </div>
 
@@ -21,6 +22,9 @@
                 <div class="card-body">
                     <h5 class="card-title"><a href="{% url 'learncontent:lesson2' %}">Lesson 2: Statics</a></h5>
                     <p class="card-text">Understanding static equilibrium and the forces acting on stationary objects. Topics include the analysis of forces in balance and the concept of torque.</p>
+                    <h5 class="card-title"><a href="{% url 'learncontent:pretest' lesson_number=2 %}">Pre-Test for Lesson 2</a></h5>
+                    <h5 class="card-title"><a href="{% url 'learncontent:practice_questions' lesson_number=2 %}">Practice Questions for Lesson 2</a></h5>
+                    <h5 class="card-title"><a href="">Post-Test for Lesson 2</a></h5>
                 </div>
             </div>
 
@@ -30,6 +34,9 @@
                     <p class="card-text">
                         Exploration of the concepts of work, energy, and power in the context of engineering physics. Covering the relationships between force, displacement, and energy transformations.
                     </p>
+                    <h5 class="card-title"><a href="{% url 'learncontent:pretest' lesson_number=3 %}">Pre-Test for Lesson 3</a></h5>
+                    <h5 class="card-title"><a href="{% url 'learncontent:practice_questions' lesson_number=3 %}">Practice Questions for Lesson 3</a></h5>
+                    <h5 class="card-title"><a href="">Post-Test for Lesson 3</a></h5>
                 </div>
             </div>
 
@@ -39,9 +46,18 @@
                     <p class="card-text">
                         Examining the principles of impulse and momentum and their applications. Understanding the conservation of linear momentum and the effects of forces on moving objects.
                     </p>
+                    <h5 class="card-title"><a href="{% url 'learncontent:pretest' lesson_number=4 %}">Pre-Test for Lesson 4</a></h5>
+                    <h5 class="card-title"><a href="{% url 'learncontent:practice_questions' lesson_number=4 %}">Practice Questions for Lesson 4</a></h5>
+                    <h5 class="card-title"><a href="">Post-Test for Lesson 4</a></h5>
                 </div>
             </div>
+        <div>
+        {% endif %}
+           
         </div>
 </div>
+<script>
+    
+</script>
 
 {% endblock %}

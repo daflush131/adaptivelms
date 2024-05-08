@@ -738,7 +738,8 @@
             $('#second').val(sortedScoresArray[1][1]);
             $('#third').val(sortedScoresArray[2][1]);
             $('#fourth').val(sortedScoresArray[3][1]);
-
+            
+            $('#learningsyle').submit();
         }
 
         function calculateDimensionScore(questions, answers) {
@@ -758,7 +759,10 @@
         }
 
         // Call captureAnswers function when a button with id "captureButton" is clicked
-        $('#captureButton').click(captureAnswers);
+        $('#captureButton').click(function(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+            captureAnswers(); // Call the function to capture and process answers
+        });
     });
 </script>
 

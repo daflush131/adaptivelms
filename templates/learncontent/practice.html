@@ -1,0 +1,72 @@
+{% extends 'accounts/base.html' %} {% load static %} {% block content %}
+    <title>Practice Questions</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <div>
+        <h1 id="practice-questions-heading">Practice Questions for Lesson</h1>
+        <div id="practice-questions-container"></div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            var baseUrl = "{% static '' %}";
+            var lessonNumber = window.location.pathname.split('/')[2].replace('lesson', '');
+            var jsonUrl = baseUrl + "p" + lessonNumber + "_easy.json";
+
+            // Update title
+            $('title').text('Practice Questions for Lesson ' + lessonNumber);
+
+            // Update h1 heading
+            $('#practice-questions-heading').text('Practice Questions for Lesson ' + lessonNumber);
+
+            $.ajax({
+                url: jsonUrl,
+                method: "GET",
+                dataType: "json",
+                success: function(data) {
+                    data.forEach(function(question, index) {
+                        var questionHtml = '<div class="question">' +
+                            '<p>' + (index + 1) + '. ' + question.question + '</p>';
+                        if (question.image_url) {
+                            // If the image URL contains Django template syntax, replace it with the actual URL
+                            if (question.image_url.includes("{% static ")) {
+                                question.image_url = question.image_url.replace("{% static '", baseUrl);
+                                question.image_url = question.image_url.replace("' %}", "");
+                            }
+                            // Append the image to the HTML
+                            questionHtml += '<img src="' + question.image_url + '" alt="Question Image">';
+                        }
+                        question.options.forEach(function(option, optionIndex) {
+                            questionHtml += '<div class="option">' +
+                                '<input type="radio" name="question_' + index + '" value="' + optionIndex + '">' +
+                                '<label>' + option + '</label>' +
+                                '</div>';
+                        });
+                        // Add a button to check the answer
+                        questionHtml += '<button class="check-answer" data-correct="' + question.correct_answer + '">Check Answer</button>';
+                        questionHtml += '</div>';
+                        $('#practice-questions-container').append(questionHtml);
+                    });
+                },
+                error: function(xhr, status, error) {
+                    console.error("Failed to load practice questions data:", error);
+                }
+            });
+
+            // Allow clicking on the label to select the corresponding radio button
+            $(document).on('click', '.option label', function() {
+                $(this).prev('input[type="radio"]').prop('checked', true);
+            });
+
+            // Function to check the answer
+            $(document).on('click', '.check-answer', function() {
+                var correctAnswer = $(this).data('correct');
+                var selectedAnswer = $(this).siblings('.option').children('input[type="radio"]:checked').val();
+                if (selectedAnswer === correctAnswer) {
+                    alert('Correct!');
+                } else {
+                    alert('Incorrect. The correct answer is option ' + (parseInt(correctAnswer) + 1));
+                }
+            });
+        });
+    </script>
+{% endblock %}

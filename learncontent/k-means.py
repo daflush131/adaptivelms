@@ -1,56 +1,69 @@
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.cluster import KMeans
+import random
 
-def generate_random_data(num_points, num_clusters=3):
-    np.random.seed(42)
-    data = []
-    for _ in range(num_clusters):
-        center = np.random.rand() * 10  # Use a single random value for the center
-        cluster = center + np.random.uniform(1, 5, size=(num_points // num_clusters,))
-        data.append(cluster)
-    return np.concatenate(data)
+# Function to calculate the Euclidean distance between two points
+def euclidean_distance(a, b):
+    return sum((x - y) ** 2 for x, y in zip(a, b)) ** 0.5
 
-def k_means(data, k=3, max_iters=100):
-    data = data.reshape(-1, 1)  # Reshape to make it 2D
+# K-means clustering function
+def k_means(data, k, max_iterations=100):
     # Randomly initialize centroids
-    centroids = np.random.choice(data.flatten(), k, replace=False)
+    centroids = random.sample(data, k)
 
-    for _ in range(max_iters):
-        # Assign each data point to the nearest centroid
-        labels = np.argmin(np.abs(data - centroids), axis=1)
+    for _ in range(max_iterations):
+        # Assign points to nearest centroid
+        clusters = [[] for _ in range(k)]
+        for point in data:
+            distances = [euclidean_distance(point, centroid) for centroid in centroids]
+            cluster_index = distances.index(min(distances))
+            clusters[cluster_index].append(point)
 
-        # Update centroids based on the mean of assigned data points
-        new_centroids = np.array([data[labels == i].mean() for i in range(k)])
+        # Update centroids
+        new_centroids = [[sum(dim) / len(cluster) for dim in zip(*cluster)] for cluster in clusters]
 
         # Check for convergence
-        if np.all(centroids == new_centroids):
+        if centroids == new_centroids:
             break
 
         centroids = new_centroids
 
-    return centroids, labels
+    return clusters
 
-def plot_clusters(data, centroids, labels):
-    unique_labels = np.unique(labels)
-    colors = plt.cm.viridis(np.linspace(0, 1, len(unique_labels)))
+# Sample function to gather student data from Django model
+def get_student_data():
+    # Assuming each student's data is in the format [total_score, total_correct_items]
+    student_data = [
+        [85, 20],
+        [70, 15],
+        [90, 25],
+        [60, 10],
+        [95, 30],
+        [55, 12]
+    ]
+    return student_data
 
-    for label, color in zip(unique_labels, colors):
-        cluster_points = data[labels == label]
-        plt.scatter(cluster_points.flatten(), np.zeros_like(cluster_points), c=color, alpha=0.7, edgecolors='k', label=f'Cluster {label}')
+# Function to perform clustering and associate students with clusters
+def perform_clustering(k):
+    # Get student data
+    student_data = get_student_data()
 
-    plt.scatter(centroids.flatten(), np.zeros_like(centroids), c='red', marker='X', s=200, label='Centroids')
-    plt.title('K-Means Clustering')
-    plt.xlabel('Pre-test Scores')
-    plt.legend()
-    plt.show()
+    # Perform k-means clustering
+    clusters = k_means(student_data, k)
 
-# Generate random data within the range [1, 10]
-random_data = generate_random_data(10)
+    # Sort clusters based on average score and average number of correct items
+    sorted_clusters = sorted(clusters, key=lambda x: (sum(p[0] for p in x) / len(x), sum(p[1] for p in x) / len(x)))
 
-# Perform k-means clustering
-k_value = 3  # You can change this value
-final_centroids, cluster_labels = k_means(random_data, k=k_value)
+    # Associate each student with a cluster
+    student_cluster_mapping = {}
+    for i, cluster in enumerate(sorted_clusters):
+        for student in cluster:
+            student_cluster_mapping[tuple(student)] = i + 1  # Cluster numbering starts from 1
 
-# Plot the results
-plot_clusters(random_data, final_centroids, cluster_labels)
+    return student_cluster_mapping
+
+# Example usage:
+num_clusters = 3
+student_cluster_mapping = perform_clustering(num_clusters)
+
+# Print the mapping of each student to their cluster
+for student, cluster in student_cluster_mapping.items():
+    print(f"Student with data {student} belongs to Cluster {cluster}")
