@@ -1,0 +1,223 @@
+
+[
+  {
+    "question": "How does increasing the mass of an object affect its inertia?",
+    "options": [
+      "Increases inertia",
+      "Decreases inertia",
+      "Does not affect inertia",
+      "Completely eliminates inertia"
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "When an object's mass increases, what happens to its weight on the Earth's surface?",
+    "options": [
+      "It decreases.",
+      "It increases.",
+      "It remains constant.",
+      "It becomes zero."
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "What factor(s) determine the maximum static frictional force between an object and a surface?",
+    "options": [
+      "The mass of the object",
+      "The velocity of the object",
+      "The relative roughness of the two surfaces in contact and the magnitude of the normal force",
+      "The coefficient of kinetic friction between the two surfaces"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A person is standing in a bus. When the bus starts moving forward suddenly, what happens?",
+    "options": [
+      "The person moves forward",
+      "The person remains stationary",
+      "The person is unaffected",
+      "The person moves backward"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "When a moving bus suddenly stops, what happens to a person sitting?",
+    "options": [
+      "Stands up",
+      "Falls forward",
+      "Falls backward",
+      "Is unaffected"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "The driver of a car suddenly sees a broad wall in front of him. What should he do?",
+    "options": [
+      "Jump out of the car",
+      "Turn sharply",
+      "Keep going",
+      "Brake sharply"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "When we shake the branch of a tree, its fruits and dry leaves fall down. This is an example of ___________",
+    "options": [
+      "Inertia of motion",
+      "Inertia of rest",
+      "Inertia of direction",
+      "Newton’s third law of motion"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "Which of the following kinetic friction is smaller?",
+    "options": [
+      "Limiting friction",
+      "Static friction",
+      "Rolling friction",
+      "Sliding friction"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Friction can be increased by ___________",
+    "options": [
+      "Using sand",
+      "Lubricants",
+      "Using air cushion",
+      "Using ball bearings"
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "Which of the following statements is true regarding static friction?",
+    "options": [
+      "It always opposes the motion of an object.",
+      "It depends on the velocity of the object.",
+      "It is independent of the surfaces in contact.",
+      "It is always greater than kinetic friction."
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A 2-kg crate is pulled over a rough horizontal surface by the force of 25N which makes an angle of 37∘ with the horizontal. Assume the coefficient of friction is 0.2. Find the normal force applied to the crate by the surface.",
+    "options": [
+      "3 N",
+      "4 N",
+      "5 N",
+      "6 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Two inclined planes are arranged as shown below. The two bodies, 8 N and 10 N, are tied at the ends of a cord that passes over a massless, frictionless pulley. Find the acceleration of the system.",
+    "options": [
+      "4.1 m/s2",
+      "1.1 m/s2",
+      "3.1 m/s2",
+      "6.1 m/s2"
+    ],
+    "image_url": "{% static 'p1_hard_q12.png' %}",
+    "correct_answer": "1"
+  },
+  {
+    "question": "A 50 N body on an inclined plane, 4 ft wide at the base and 3 ft high, is pulled upward by a force 30 above the plane as shown, making the body move upward uniformly. Determine the magnitude of the applied force if the coefficient of kinetic friction between the surfaces in contact is 0.25.",
+    "options": [
+      "83.4 N",
+      "11.4 N",
+      "40.4 N",
+      "120.4 N"
+    ],
+    "image_url": "{% static 'p1_hard_q13.png' %}",
+    "correct_answer": "2"
+  },
+  {
+    "question": "A 50 kg block rests on a rough horizontal floor. The coefficient of kinetic friction between the block and the floor is 0.25. If a horizontal force of 180 N acts on the block for 3 s, find the velocity of the block at the end of that time.",
+    "options": [
+      "5.9 m/s",
+      "1.2 m/s",
+      "6.1 m/s",
+      "3.6 m/s"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "Three blocks are connected as shown. The acceleration of the system is 2 to the left and the surfaces are rough. Find the tensions in the strings.",
+    "options": [
+      "T1 = 89 N, T2 = 24.9 N",
+      "T1 = 78 N, T2 = 35.9 N",
+      "T1 = 67 N, T2 = 57.9 N",
+      "T1 = 56 N, T2 = 69.9 N"
+    ],
+    "image_url": "{% static 'p1_hard_q15.png' %}",
+    "correct_answer": "1"
+  },
+  {
+    "question": "In the figure shown on the right, the coefficient of kinetic friction between the 2 kg and 3 kg block is 0.3. The horizontal surface and the pulleys are frictionless. The masses are released from rest. Determine the acceleration of each block.",
+    "options": [
+      "9.14 m/s2",
+      "3.14 m/s2",
+      "7.14 m/s2",
+      "6.14 m/s2"
+    ],
+    "image_url": "{% static 'p1_hard_q16.png' %}",
+    "correct_answer": "3"
+  },
+  {
+    "question": "A block slides down a smooth plane having an inclination of  = 15°, as shown in the figure. If the block starts from rest at the top and the length of the incline is 2 m, find its speed when it reaches the bottom of the inclined plane.",
+    "options": [
+      "4.185 m/s",
+      "3.185 m/s",
+      "6.185 m/s",
+      "9.185 m/s"
+    ],
+    "image_url": "{% static 'p1_hard_q17.png' %}",
+    "correct_answer": "1"
+  },
+  {
+    "question": "A slippery object slides down a ramp of 9m long inclined at 10∘. The kinetic friction between the object and the ramp is μk​=0.06. How long does it take for the object to reach the bottom?",
+    "options": [
+      "1 s",
+      "2 s",
+      "4 s",
+      "6 s"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A constant horizontal force of 40 N acts on a body on a smooth horizontal surface. The body starts from rest and is observed to move 100 m in 5 s.",
+    "options": [
+      "5 kg",
+      "6 kg",
+      "7 kg",
+      "8 kg"
+    ],
+    "image_url": "{% static 'p1_hard_q19.png' %}",
+    "correct_answer": "0"
+  },
+  {
+    "question": "A 3−kg box has been held fixed on a 30∘ incline by an external force, F, perpendicular to it. The coefficient of static friction between the box and the slope surface is 0.3. What minimum force is required to prevent the box from sliding along the incline?",
+    "options": [
+      "76 N",
+      "72 N",
+      "50 N",
+      "24 N"
+    ],
+    "image_url": "{% static 'p1_hard_q20.png' %}",
+    "correct_answer": "3"
+  }
+]

@@ -1,0 +1,226 @@
+[
+    {
+        "question": "Suppose you find yourself teetering on the edge of a cliff or the roof of a tall building with a heavy physics book in your hand. As you are about to fall, you suddenly remember how physics can save you! What law did you remember?",
+        "options": [
+            "law of inertia",
+            "law of gravitation",
+            "law of conservation of momentum",
+            "law of conservation of energy"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "What is the SI unit of linear momentum?",
+        "options": [
+            "kg.m2 / sec",
+            "kg.m / sec",
+            "N.sec2",
+            "N.m.sec"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Which of the following laws derive impulse moment principle?",
+        "options": [
+            "Newton's 3rd law",
+            "Newton's 2nd law",
+            "Newton's 1st law",
+            "All of the above"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "What is the coefficient of restitution (e) for elastic impact?",
+        "options": [
+            "e = 0",
+            "e = 1",
+            "e < 0",
+            "e > 1"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "If coefficient of restitution is zero during plastic impact, then ___________",
+        "options": [
+            "kinetic energy is conserved",
+            "momentum energy is conserved",
+            "bodies move away after impact",
+            "all of the above"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Coefficient of restitution is the ratio of impulse during __________",
+        "options": [
+            "plastic deformation and elastic deformation",
+            "elastic deformation and plastic deformation",
+            "restoration period and deformation period",
+            "deformation period and restoration period"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "The total momentum of a system __________, if no external impressed force acts on it.",
+        "options": [
+            "increases",
+            "decreases",
+            "remains constant",
+            "none of the above"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "In order to catch a ball, a baseball player naturally moves his or her hand backward in the direction of the ball's motion once the ball contacts the hand. This habit causes the force of impact on the players hand to be reduced in size principally because ___",
+        "options": [
+            "the resulting impact velocity is lessened",
+            "the momentum change is decreased",
+            "the time of impact is increased",
+            "the time of impact is decreased",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "Momentum is a ______ quantity",
+        "options": [
+            "Scalar",
+            "Vector",
+            "Infinite",
+            "Zero"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A 4 kg object has a momentum of 12 kg•m/s. The object's speed is ___ m/s.",
+        "options": [
+            "3",
+            "4",
+            "12",
+            "48",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A 5-N force is applied to a 3-kg ball to change its velocity from +9 m/s to +3 m/s. This impulse causes the momentum change of the ball to be ____ kg•m/s.",
+        "options": [
+            "-2.5",
+            "-10",
+            "-18",
+            "-45",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "When a mass M experiences a velocity change of v in a time of t, it experiences a force of F. Assuming the same velocity change of v, the force experienced by a mass of 2M in a time of (1/2)t is ____.",
+        "options": [
+            "2F",
+            "4F",
+            "(1/2)*F",
+            "(1/4)*F",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Consider the head-on collision between a lady bug and the windshield of a high speed bus. Which of the following statements are true?",
+        "options": [
+            "The magnitude of the force encountered by the bug is greater than that of the bus.",
+            "The magnitude of the impulse encountered by the bug is greater than that of the bus.",
+            "The magnitude of the momentum change encountered by the bug is greater than that of the bus.",
+            "The magnitude of the velocity change encountered by the bug is greater than that of the bus and The magnitude of the acceleration encountered by the bug is greater than that of the bus."
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "If an egg is dropped on concrete, it usually breaks. If an egg is dropped on grass, it may not break. What conclusion explains this result?",
+        "options": [
+            "Grass has less mass than concrete",
+            "The coefficient of friction of the grass on the egg is less than the coefficient of the concrete on the egg",
+            "The density of grass is less than the density of concrete",
+            "The egg is in contact with the grass for longer, so it absorbs less force"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "The area under the curve on a Force versus time (F versus t) graph represents",
+        "options": [
+            "Kinetic energy",
+            "Momentum",
+            "Work",
+            "Impulse"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "Angular momentum is proportional to __________",
+        "options": [
+            "Inertia and angular speed",
+            "Mass and angular speed",
+            "Angular speed and volume",
+            "Rate of change of angular speed"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "Change in momentum of an object is equal to the_______",
+        "options": [
+            "Internal Energy",
+            "Entropy",
+            "Impulse",
+            "Enthalpy"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "When a cricket bat hits a cricket ball, impulse is applied on the_________",
+        "options": [
+            "Bat",
+            "Ball",
+            "Bat and ball",
+            "No impulse is applied"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "An object of mass 2 kg has a linear momentum of magnitude 6 kg · m/s. What is this object's kinetic energy?",
+        "options": [
+            "3 J",
+            "6 J",
+            "9 J",
+            "12 J"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A ball of mass 0.5 kg, initially at rest, acquires a speed of 4 m/s immediately after being kicked by a force of strength 20 N. For how long did this force act on the ball?",
+        "options": [
+            "0.01 s",
+            "0.1 s",
+            "0.2 s",
+            "1"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    }
+]

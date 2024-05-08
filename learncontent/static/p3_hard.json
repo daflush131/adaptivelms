@@ -1,0 +1,221 @@
+[
+    {
+        "question": "A car of mass m slides across a patch of ice at a speed v with its brakes locked. It hits a dry pavement and skids to a stop in a distance d. The coefficient of kinetic friction between the tyres and the dry pavement is μ. If the car has a mass of 2m, it would have skidded a distance of",
+        "options": [
+            "0.5 d",
+            "1 d",
+            "-0.5 d",
+            "4 d",
+            "1.41 d"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "An applied force F accelerates an object of mass m on a horizontal frictionless surface, from velocity v to velocity 2v. The net work done on the object is equal to:",
+        "options": [
+            "½mv^2",
+            "1½ mv^2",
+            "1mv^2",
+            "2mv^2"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "The engine of a car does work, W, to increase the velocity of the car from 0 to v. The work done by the engine to increase the velocity from v to 2v is…",
+        "options": [
+            "W",
+            "2W",
+            "3W",
+            "4W"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Two students (student X and student Y) lift a boulder vertically from point A to point B. Student X directly lifts the boulder from point A to point B, whereas student Y uses a pulley to lift the boulder. This allows student Y to apply a force (Fy) that is three times smaller than the force applied by student X (Fx). Both students apply force upwards and take the same amount of time to complete this task. The vertical distance between point A and point B is 5m. Student Z uses an inclined plane to lift the boulder and exerts only one third of Fx. The work performed by student Z and student X is __________.",
+        "options": [
+            "the same because work is a path function in a gravitational field",
+            "different because work is a path function in a gravitational field",
+            "the same because work is a state function in a gravitational field",
+            "different because work is a state function in a gravitational field"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "An object of mass 100g moves in circular path of radius 0.5m, under the influence of a 15N force directed radially inwards towards the center of the path. How much work is done by this force as the object moves one quarter of the way around the circle?",
+        "options": [
+            "11.8J",
+            "4.8J",
+            "0J",
+            "47J",
+            "7.5J"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A block of wood is floating in space. A bullet is fired from a gun and hits the block, embedding itself in the wood and generating heat. Which of the following is conserved?",
+        "options": [
+            "Temperature",
+            "Momentum",
+            "Kinetic energy",
+            "Mechanical energy"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A rock is dropped from a given height and allowed to hit the ground. The velocity of the rock is measured upon impact with the ground. Assume there is no air resistance. In order for the velocity of the rock to be doubled before impact, which of the following is necessary?",
+        "options": [
+            "Reduce by 25% the height from which the rock is dropped",
+            "Quadruple the height from which the rock is dropped",
+            "Halve the height from which the rock is dropped",
+            "Reduce by 75% the height from which the rock is dropped",
+            "Double the height from which the rock is dropped"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "An empty mining cart has a mass of 15kg and is traveling down a track that has a slope of 40∘ to the horizontal. The cart is traveling at a rate of 10m/s when an operator notices a disturbance on the track ahead and locks the wheels of the cart. What is the speed of the cart after it has traveled 20m with the wheels locked?",
+        "options": [
+            "16.3m/s",
+            "13.2 m/s",
+            "4.7 m/s",
+            "6.8 m/s",
+            "8.3 m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A stone of mass m sits atop a hill of height h.  As it rolls downhill, which of the following is true? 1. Half way down the hill, PE = 1/2 mgh 2. Half way down the hill, PE = 1/4 mgh 3. Half way down the hill, PE = mg √h 4. Half way down the hill, PE still equals mgh.",
+        "options": ["1", "2", "3", "4"],
+        "correct_answer": "0" 
+    },
+    {
+        "question": "A child lifts a box up from the floor. The child then carries the box with constant speed to the other side of the room and puts the box down. How much work does he do on the box while walking across the floor at constant speed?",
+        "options": [
+            "zero J",
+            "more than zero J",
+            "more information needed to determine",
+            "none of the above"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "Ignoring air resistance, which of the following is true regarding the motion of a pendulum?",
+        "options": [
+            "At the bottom of the oscillation potential energy is at a maximum and kinetic energy is at a minimum",
+            "At the bottom of the oscillation potential energy is at a minimum and kinetic energy is at a minimum",
+            "At the bottom of the oscillation potential energy is at a minimum and kinetic energy is at a maximum",
+            "At the bottom of the oscillation potential energy is at a maximum and kinetic energy is at a maximum"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A rock is dropped from a given height and allowed to hit the ground. The velocity of the rock is measured upon impact with the ground. Assume there is no air resistance. In order for the velocity of the rock to be doubled before impact, which of the following is necessary?",
+        "options": [
+            "Reduce by 25% the height from which the rock is dropped",
+            "Quadruple the height from which the rock is dropped",
+            "Halve the height from which the rock is dropped",
+            "Reduce by 75% the height from which the rock is dropped"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Consider these statements: (i) Work is done on an object when a force displaces the object in the direction of the force. (ii) The mechanical energy of a system is conserved when an external force does no work on the system. (iii) The work done on an object by a net force is equal to the kinetic energy of the object. Which of the above statements is / are true?",
+        "options": [
+            "only (i)",
+            "(i) and (ii)",
+            "(ii) and (iii)",
+            "(i), (ii) and (iii)"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question":
+
+ "Two objects with a mass of 1 x 10^-3kg and 4 x 10^-3kg have equal momentum. What is the ratio of their kinetic energy?",
+        "options": [
+            "4 : 1",
+            "2 : 1",
+            "16 : 1",
+            "√2 : 1"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A job is done slowly, and an identical job is done quickly. Both jobs require the same amount of ____, but different amounts of ____. Pick the two words which fill in the blanks in their respective order.",
+        "options": [
+            "work, energy",
+            "power, work",
+            "work, power"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A person is holding a bucket by applying a force of 10N. He moves a horizontal distance of 5m and then climbs up a vertical distance of 10m. Find the total work done by him?",
+        "options": [
+            "50J",
+            "150J",
+            "100J",
+            "200J"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A gardener pushes a lawn roller through a distance of 20m. If he applies a force of 20kg weight in a direction inclined at 60° to the ground, find the work done by him. (g=9.8m/s2)",
+        "options": [
+            "400J",
+            "1960J",
+            "250J",
+            "2514J"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Statement 1: Linear momentum of a system of particles is zero. Statement 2: Kinetic energy of a system of particles is zero.",
+        "options": [
+            "1 does not imply 2 and 2 does not imply 1",
+            "1 implies 2 but 2 does not imply 1",
+            "1 does not imply 2 but 2 implies 1",
+            "1 implies 2 and 2 implies 1"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A spherical ball of mass 20kg is stationary at the top of a hill of height 100m. It rolls down a smooth surface to the ground, then climbs up another hill of height 30m and finally rolls done to a horizontal base at a height of 20m above the ground. The velocity attained by the ball is ___________",
+        "options": [
+            "10m/s",
+            "10√30m/s",
+            "40m/s",
+            "20m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "An athlete in the Olympic game covers a distance of 100m in 10s. His kinetic energy can be estimated in the range?",
+        "options": [
+            "200J – 500J",
+            "2×10^5J – 3×10^5J",
+            "20000J – 50000J",
+            "2000J – 5000J"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    }
+]

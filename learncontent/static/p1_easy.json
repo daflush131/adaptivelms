@@ -1,0 +1,222 @@
+[
+  {
+    "question": "Which of the following best describes the concept of force?",
+    "options": [
+      "A push or pull acting on an object",
+      "A measure of the amount of matter in an object",
+      "The speed of an object in a particular direction",
+      "The resistance of an object to change its state of motion"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "What force opposes the motion of an object sliding on a surface?",
+    "options": [
+      "Tension force",
+      "Normal force",
+      "Frictional force",
+      "Gravitational force"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Normal Force is?",
+    "options": [
+      "A force that pulls an object directly toward a nearby astronomical body.",
+      "A force that opposes the relative motion of a body at rest or in motion.",
+      "A force exerted by a string, rope, or cable on an object.",
+      "A force experienced by a body pressed against a surface, perpendicular to the surface."
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "According to Newton's first law of motion, an object will remain at rest or continue moving at a constant velocity unless acted upon by:",
+    "options": [
+      "Friction",
+      "Gravity",
+      "Force",
+      "Inertia"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "According to Newton's second law of motion, the acceleration of an object is directly proportional to the:",
+    "options": [
+      "Mass of the object",
+      "Force acting on the object",
+      "Distance travelled by the object",
+      "Velocity of the object"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "What is tension in a rope or string?",
+    "options": [
+      "A force that pulls the object downward",
+      "A force that pulls the object outward",
+      "A force that pulls the object upward",
+      "A force that pushes the object forward"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Which of Newton's laws states that 'For every action, there is an equal and opposite reaction'?",
+    "options": [
+      "First law",
+      "Second law",
+      "Third law",
+      "Fourth law"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Static friction acts on an object that is _______.",
+    "options": [
+      "at rest",
+      "in motion",
+      "accelerating",
+      "in free fall"
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "Kinetic friction acts on an object that is _______.",
+    "options": [
+      "at rest",
+      "in motion",
+      "accelerating",
+      "in free fall"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "The coefficient of friction is a measure of _______.",
+    "options": [
+      "the force of friction",
+      "the mass of the object",
+      "the surface area in contact",
+      "the roughness of the surfaces in contact"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A body has a mass of 1 kg and acceleration of 30 m/s2. What is the force acting on it?",
+    "options": [
+      "0.3 N",
+      "300 N",
+      "3 N",
+      "30 N"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A motorcycle weighs 120 N. Brakes are applied so that wheels stop rolling and start skidding. Find the force of friction if the coefficient of friction is 0.25.",
+    "options": [
+      "48 N",
+      "300 N",
+      "30 N",
+      "480 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "From a cable, it is used to accelerate a 100−kg body vertically upward at a constant rate of 1 m/s2. What is the maximum tension in the cable in N? Use g = 10 m/s2. Hint: Net force is equal to summation of forces (weight and tension in this case).",
+    "options": [
+      "1000 N",
+      "1100 N",
+      "900 N",
+      "1200 N"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "A mass of 4kg rests on a horizontal plane. The plane is gradually inclined until at an angle θ= 15° with the horizontal, the mass just begins to slide. What is the coefficient of static friction between the block and the surface?",
+    "options": [
+      "0.814",
+      "1.5",
+      "0.27",
+      "3.5"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A 1000−kg mass elevator has an acceleration of 1 m/s2. What is the tension in the supporting cable if the elevator is ASCENDING? Assume g = 10 m/s2.",
+    "options": [
+      "9000 N",
+      "10000 N",
+      "11000 N",
+      "8000 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A 2 kg box is sliding on a horizontal surface with a coefficient of kinetic friction of 0.2. What is the amount of the frictional force acting on the box?",
+    "options": [
+      "4 N",
+      "0.4 N",
+      "2 N",
+      "0.2 N"
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "A 4 kg box is placed on a 30-degree incline. What is the component of the weight of the box parallel to the incline?",
+    "options": [
+      "4 N",
+      "2 N",
+      "6 N",
+      "8 N"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "A 5 kg mass hangs from a rope. What is the tension in the rope if the mass is not moving (in equilibrium)? Use g = 10 m/s2.",
+    "options": [
+      "2 N",
+      "100 N",
+      "50 N",
+      "1 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A 5 kg box is placed on a frictionless incline plane that makes a 30-degree angle with the horizontal. Calculate the component of the weight of the box that acts parallel to the incline. Take g = 10 m/s2. Hint: weight parallel to incline = mgsin𝞱",
+    "options": [
+      "30 N",
+      "50 N",
+      "69 N",
+      "25 N"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A 10 kg box is placed on a rough incline plane that makes a 20-degree angle with the horizontal. The coefficient of kinetic friction between the box and the incline is 0.3. Calculate the force required to move the box up the incline with a constant velocity. Take g = 10 m/s2. Hint: normal force = mgcos𝞱",
+    "options": [
+      "59 N",
+      "15 N",
+      "28 N",
+      "60 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  }
+]

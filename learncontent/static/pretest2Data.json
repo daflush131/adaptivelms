@@ -1,0 +1,222 @@
+[
+  {
+      "question": "On which fundamental principle does a jet engine work?",
+      "options": [
+          "Conservation of mass",
+          "Conservation of energy",
+          "Conservation of linear momentum",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following statements is true regarding the conservation of momentum in elastic collisions?",
+      "options": [
+          "Total momentum is conserved, but kinetic energy is not conserved",
+          "Both total momentum and kinetic energy are conserved",
+          "Total momentum is not conserved, but kinetic energy is conserved",
+          "Neither total momentum nor kinetic energy is conserved"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What is momentum?",
+      "options": [
+          "Momentum is the force required to bring an object to rest.",
+          "Momentum is a property related to an object's motion and mass.",
+          "Momentum is the energy stored in an object's motion.",
+          "Momentum is the resistance an object encounters when moving through a medium."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "During elastic and inelastic collision, _____ is conserved.",
+      "options": [
+          "Kinetic Energy",
+          "Velocity",
+          "Mass",
+          "Momentum"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "_______ is the product of a force acting on an object and the time that the force acts.",
+      "options": [
+          "Impulse",
+          "Velocity",
+          "Kinetic Energy",
+          "Momentum"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A collision that conserves momentum but not kinetic energy.",
+      "options": [
+          "Perfectly Elastic Collision",
+          "Partly Elastic Collision",
+          "Inelastic Collision",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which has the greatest impulse?",
+      "options": [
+          "Bouncing a ball off a wall such that it hits the wall at 20 m/s and bounces off in the opposite direction at 10 m/s.",
+          "Throwing a ball with a velocity of 20 m/s when the ball is released.",
+          "Catching a ball whose velocity is 20 m/s when it first makes contact with the fielder's glove.",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which has a greater momentum: a 200-kg truck moving at 20 m/s or a 100-kg motorcycle moving at 60 m/s?",
+      "options": [
+          "Truck.",
+          "Motorcycle.",
+          "The truck and motorcycle have equal momentum.",
+          "Cannot be determined."
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "What happens to the angular momentum of a rotating object if its rotational speed doubles while its rotational inertia remains constant?",
+      "options": [
+          "Conservation of mass",
+          "Conservation of energy",
+          "Conservation of linear momentum",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "If a system consists of two point masses, where would the center of mass be located relative to the masses?",
+      "options": [
+          "At the midpoint between the two masses.",
+          "Closer to the larger mass.",
+          "Closer to the smaller mass.",
+          "At the same location as one of the masses."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "When a tennis player hits a ball with a racket, the impulse applied to the ball is equal to:",
+      "options": [
+          "The change in the ball's velocity.",
+          "The force applied to the ball.",
+          "The time over which the force is applied.",
+          "The change in the ball's momentum."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A 2200 kg car at 35 m/s strikes a stationary 1500 kg car and the two locked bumpers. What is their final common velocity just after collision?",
+      "options": [
+          "13.69 m/s",
+          "11.9 m/s",
+          "19.32 m/s",
+          "20.81 m/s"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "What velocity must a 6000 kg truck attain in order to have a momentum of 600,000 kg m/s?.",
+      "options": [
+          "100 m/s",
+          "1000 m/s",
+          "600 m/s",
+          "6000 m/s"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Truck A has a mass of 12,000 kg and velocity of 50 m/s. Truck B has a mass of 6,000 kg, what velocity must Truck B attain for it to have the same kinetic energy with Truck A?",
+      "options": [
+          "600 m/s",
+          "1000 m/s",
+          "100 m/s",
+          "6000 m/s"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A 10 kg block moving to the right on a frictionless table at 15 m/s makes a head-on collision with another 15 kg block at rest. If the collision is perfectly inelastic, what is their final velocity?",
+      "options": [
+          "10 m/s to right",
+          "15 m/s to right",
+          "20 m/s to right",
+          "50 m/s to right"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A 4 kg ball moving to the right on a frictionless table at 5 m/s makes a head-on collision with another 2 kg ball at rest. If the collision is perfectly elastic, what is their final velocity?",
+      "options": [
+          "Ball 1 = 6.67 m/s Ball 2 = 11.67 m/s to right",
+          "Ball 1 = 1.67 m/s Ball 2 = 6.67 m/s to right",
+          "Ball 1 = 11.67 m/s Ball 2 = 16.67 m/s to right",
+          "Ball 1 = 16.67 m/s Ball 2 = 21.67 m/s to right"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A steel ball of mass 0.514 kg is fastened to a cord 68.7 cm long and is released when the cord is horizontal. At the bottom of its path, the ball strikes a 2.6 kg steel block initially at rest on a frictionless surface. The collision is elastic. Find the speed of the ball right before the collision.",
+      "options": [
+          "1.67 m/s",
+          "2.67 m/s",
+          "3.67 m/s",
+          "4.67 m/s"
+      ],
+      "image_url": "{% static 'l2_q17.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "According to the Guinness Book of World Records, the fastest recorded baseball pitch was delivered by Nolan Ryan in 1974. The pitch was clocked at 45.0 m/s. Determine the impulse required to give a 0.145-kg baseball such a momentum.",
+      "options": [
+          "5.53 kg m/s",
+          "6.53 kg m/s",
+          "7.53 kg m/s",
+          "6.69 kg m/s"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Jerome plays middle linebacker for South's varsity football team. In a game against cross-town rival North, he delivered a hit to North's 82-kg running back, changing his eastward velocity of 5.6 m/s into a westward velocity of 2.5 m/s. momentum change of the running back.",
+      "options": [
+          "−254.2 kg m/s",
+          "−664.2 kg m/s",
+          "−205 kg m/s",
+          "−459.2 kg m/s"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "While playing basketball in PE class, Logan lost his balance after making a lay-up and colliding with the padded wall behind the basket. His 74-kg body decelerated from 7.6 m/s to 0 m/s in 0.16 seconds. If Logan had hit the concrete wall moving at the same speed, his momentum would have been reduced to zero in 0.0080 seconds. Determine what the force on his body would have been for such an abrupt collision.",
+      "options": [
+          "-3.0 x 103 N",
+          "-3.5 x 104 N",
+          "-6.9 x 103 N",
+          "-7.0 x 104 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  }
+]

@@ -1,0 +1,222 @@
+  [ 
+   {
+      "question": "In static equilibrium, the sum of all forces acting on an object is:",
+      "options": [
+        "Zero",
+        "Equal to the weight of the object",
+        "Equal to the normal force",
+        "Greater than zero"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "If an object is in static equilibrium, which of the following statements is true?",
+      "options": [
+        "The object must be moving with constant velocity.",
+        "The object must be at rest.",
+        "The object must be accelerating.",
+        "The object must be on a frictionless surface."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "Torque is defined as:",
+      "options": [
+        "The mass of an object times its acceleration.",
+        "The force acting on an object divided by its area.",
+        "The turning effect of a force on an object.",
+        "The energy stored in an elastic object."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "What is the net torque on an object in static equilibrium?",
+      "options": [
+        "Zero",
+        "Equal to the weight of the object",
+        "Equal to the normal force",
+        "Greater than zero"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A meter stick is balanced on a pivot point with a weight hanging off one end. To maintain equilibrium, another weight with a different mass needs to be placed on the other end further away from the pivot point. Why is this?",
+      "options": [
+        "To increase the total weight on the meter stick",
+        "To create a larger torque",
+        "To create a net upward force",
+        "The weight doesn't matter, only the mass"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "When you push a door open, what force causes it to rotate on its hinges?",
+      "options": [
+        "Gravitational force",
+        "Frictional force",
+        "Tension force",
+        "Torque"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "Which of the following scenarios does a see-saw demonstrate static equilibrium?",
+      "options": [
+        "Two children of different weights are on either end, causing one end to rise and the other to lower slowly.",
+        "Two children of equal weights are on either end, with the see-saw perfectly level and not moving.",
+        "One child sits on one end, and an adult pushes the other end to keep it moving up and down.",
+        "The see-saw is empty, but a strong wind causes one end to lift off the ground."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "How does the position of the center of gravity affect the stability of an object?",
+      "options": [
+        "A lower center of gravity increases stability.",
+        "A higher center of gravity increases stability.",
+        "The position of the center of gravity does not affect stability.",
+        "A lower center of gravity decreases stability."
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "Why are tall towers necessary for maintaining stable equilibrium in a suspension bridge?",
+      "options": [
+        "Tall towers increase the tension in the cables, reducing the load on the bridge deck.",
+        "Tall towers allow for longer cables, which can support the weight of the bridge deck more effectively.",
+        "Tall towers provide sufficient height for the cables to clear the water or terrain below the bridge.",
+        "Tall towers increase the stability of the bridge by reducing the angle at which the cables are suspended."
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "How does the distribution of weight on a beam affect its stability?",
+      "options": [
+        "Uneven weight distribution increases stability.",
+        "Even weight distribution decreases stability.",
+        "Even weight distribution increases stability.",
+        "Uneven weight distribution has no effect on stability."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A 50-N body is supported by two ropes, one making 30 with the vertical and another making 45 with the horizontal as shown in Fig. 5.1. What is the tension in the ropes?",
+      "options": [
+        "T1 = 36.6 N T2 = 25.9 N",
+        "T1 = 23.5 N T2 = 19.2 N",
+        "T1 = 47.1 N T2 = 55 N",
+        "T1 = 99.2 N T2 = 84.4 N"
+      ],
+      "image_url": "{% static 'p2_hard_q11.png' %}",
+      "correct_answer": "0"
+    },
+    {
+      "question": "Determine the weights W1, and W2 shown in Fig. 5.3, that cause the tension T in the horizontal cable to be 64 N.",
+      "options": [
+        "W1 = 23.5 N W2 = 19.2 N",
+        "W1 = 73.9 N W2 = 36.95 N",
+        "W1 = 48.7 N W2 = 24.5 N",
+        "W1 = 59.3 N W2 = 27.4 N"
+      ],
+      "image_url": "{% static 'p2_hard_q12.png' %}",
+      "correct_answer": "1"
+    },
+    {
+      "question": "Calculate the torque about point O caused by forces F1, F2 and F3. The magnitude of all the forces is 120 N and are applied a distance of 2.0 m from point O.",
+      "options": [
+        "F1 = 100 Nm F2 = 50 Nm F3 = 0 Nm",
+        "F1 = 120 Nm F2 = 60 Nm F3 = 0 Nm",
+        "F1 = 240 Nm F2 = 120 Nm F3 = 0 Nm",
+        "F1 = 480 Nm F2 = 240 Nm F3 = 0 Nm"
+      ],
+      "image_url": "{% static 'p2_hard_q13.png' %}",
+      "correct_answer": "2"
+    },
+    {
+      "question": "A uniform beam weighing 50 lbs and 12 ft long leans against a smooth wall with its lower end 6 ft away from the wall. What are the reactions on the ground and of the wall at the points of contact?",
+      "options": [
+        "F1 = 52 lbs F2 = 14.4 lbs",
+        "F1 = 26 lbs F2 = 7.2 N",
+        "F1 = 48 N F2 = 23.9 N",
+        "F1 = 39 N F2 = 32.7 N"
+      ],
+      "image_url": "{% static 'p2_hard_q14.png' %}",
+      "correct_answer": "0"
+    },
+    {
+      "question": "A uniform bar 3 m long is held by ropes at the ends making angle 60 and 30, respectively, with the horizontal. A weight of 200 N is hung 0.5 m from the left end where the 60 rope is attached. Find the tension in the rope and the weight of the bar.",
+      "options": [
+        "F1 = 120.2 N F2 = 58.88 N W  = 29.44 N",
+        "F1 = 230.9 N F2 = 133.33 N W  = 66.67 N",
+        "F1 = 369 N F2 = 266.66 N W  = 133.33 N",
+        "F1 = 456 N F2 = 457.88 N W  = 228.94 N"
+      ],
+      "image_url": "{% static 'p2_hard_q15.png' %}",
+      "correct_answer": "1"
+    },
+    {
+      "question": "A traffic light weighing 100 N hangs from a cable tied to two other cables fastened to a support. The upper cables make angles of 37.0◦ and 53.0◦ with the horizontal.Find the tension T1 and T2 in the cables.",
+      "options": [
+        "T1 = 52.9 N T2 = 38.7 N",
+        "T1 = 60.18 N T2 = 79.86 N",
+        "T1 = 80.69 N T2 = 23.7 N",
+        "T1 = 36.6 N T2 = 25.5 N"
+      ],
+      "image_url": "{% static 'p2_hard_q16.png' %}",
+      "correct_answer": "1"
+    },
+    {
+      "question": "Where must a 500 N weight be hung on a uniform 150 N pole with a length of 5 m so that a girl at one end supports ¼ as much as a man at the other end?",
+      "options": [
+        "3.75 m from the girl or 1.25 m from the man.",
+        "4.45 m from the girl or 0.55 m from the man.",
+        "3.5 m from the girl or 1.5 m from the man.",
+        "2.5 m from the girl or 2.5 m from the man."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "A springboard diver of weight 582 N stands at one end of a uniform 4.48 m diving board of weight 142 N. The board is attached to two pedestals, one at the other end of the board and the second pedestal 1.55 m from the first. Find the force in each of the two pedestals.",
+      "options": [
+        "L = -1163 N R  = 1887 N",
+        "L = -1061 N R  = 1887 N",
+        "L = -1424 N R  = 1887 N",
+        "L = -1823 N R  = 1887 N"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A ladder, whose length is 10 m and whose mass is 40 kg rests against a frictionless vertical wall. Its upper end is a distance of 7.7 m above the ground. The center of mass of the ladder is 3 1 of the way up the ladder. The coefficient of static friction between the ladder and the ground is 0.53. If a carpenter climbs 85% of the way up the ladder before it starts to slip, find the mass of the carpenter.",
+      "options": [
+        "67.8 kg",
+        "73.5 kg",
+        "58.25 kg",
+        "60.2 kg"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "Find the magnitude and direction of F3 in Fig. 5.7 for the given system to be in equilibrium.",
+      "options": [
+        "23.33°",
+        "39.99°",
+        "46.66°",
+        "16.66°"
+      ],
+      "image_url": "{% static 'p2_hard_q20.png' %}",
+      "correct_answer": "2"
+    }
+  ]

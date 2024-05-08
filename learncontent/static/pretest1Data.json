@@ -1,0 +1,219 @@
+
+[
+  {
+      "question": "Which of the following best describes the concept of force?",
+      "options": [
+          "A measure of the amount of matter in an object",
+          "A push or pull acting on an object",
+          "The speed of an object in a particular direction",
+          "The resistance of an object to change its state of motion"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "An automobile moves along a straight road at a constant speed. The friction force between the car's tire and the pavement is 2500 N, and the driving force equals 5500 N. What air resistive force is applied to the car?",
+      "options": [
+          "3000 N",
+          "3500 N",
+          "8000 N",
+          "0 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "What force opposes the motion of an object sliding on a surface?",
+      "options": [
+          "Tension force",
+          "Normal force",
+          "Frictional force",
+          "Gravitational force"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A block weighing 60 N rests on a horizontal floor. What is the minimum force that will make the block move if the coefficient of static friction is 0.20?",
+      "options": [
+          "3 N",
+          "6 N",
+          "9 N",
+          "12 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A block weighing 60 N rests on a horizontal floor. What is the minimum force that will keep the block moving at uniform speed once it starts moving if the coefficient of kinetic friction is 0.10?",
+      "options": [
+          "3 N",
+          "6 N",
+          "9 N",
+          "12 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "From a cable, it is used to accelerate a 200−kg body vertically upward at a constant rate of 2 m/s2. What is the maximum tension in the cable in N? (Take g=10 m/s2).",
+      "options": [
+          "1600",
+          "2000",
+          "1200",
+          "2400"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A scooter weighs 120 N. Brakes are applied so that wheels stop rolling and start skidding. Find the force of friction if the coefficient of friction is 0.4.",
+      "options": [
+          "480 N",
+          "48 N",
+          "300 N",
+          "30 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Which of the following best describes static friction?",
+      "options": [
+          "Friction that occurs between two surfaces in motion relative to each other",
+          "Friction that occurs between two surfaces at rest relative to each other",
+          "Friction that occurs in fluids",
+          "Friction that occurs in gases"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What is the coefficient of friction?",
+      "options": [
+          "A measure of the force of friction between two surfaces",
+          "The angle at which an object will begin to slide down a surface",
+          "The ratio of the force of friction to the normal force acting on an object",
+          "A measure of the roughness of a surface"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What factor(s) determine the maximum static frictional force between an object and a surface?",
+      "options": [
+          "The mass of the object",
+          "The relative roughness of the two surfaces in contact and the magnitude of the normal force",
+          "The velocity of the object",
+          "The coefficient of kinetic friction between the two surfaces"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "If a body has more mass, it has more inertia.",
+      "options": [
+          "True",
+          "False"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A 1000−kg mass elevator has an acceleration of 1 m/s2. What is the tension in the supporting cable if the elevator is ASCENDING? Assume g = 10 m/s2.",
+      "options": [
+          "11000 N",
+          "10000 N",
+          "9000 N",
+          "8000 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A 1000−kg mass elevator has an acceleration of 1 m/s2. What is the tension in the supporting cable if the elevator is DESCENDING? Assume g = 10 m/s2.",
+      "options": [
+          "11000 N",
+          "10000 N",
+          "9000 N",
+          "8000 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Normal Force is?",
+      "options": [
+          "A force that pulls an object directly toward a nearby astronomical body.",
+          "A force that opposes the relative motion of a body at rest or in motion.",
+          "A force exerted by a string, rope, or cable on an object.",
+          "A force experienced by a body pressed against a surface, perpendicular to the surface."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following statements is true regarding mass and weight?",
+      "options": [
+          "Mass is a measure of the amount of matter in an object, while weight is the force of gravity acting on an object.",
+          "Mass and weight are the same thing and can be used interchangeably.",
+          "Mass is the force of gravity acting on an object, while weight is a measure of the amount of matter in an object.",
+          "Mass and weight are unrelated concepts and do not affect each other."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following best describes kinetic friction?",
+      "options": [
+          "It is the force that opposes the relative motion of a body at rest.",
+          "It is the force that occurs between two objects in contact but at rest relative to each other.",
+          "It is the force that keeps an object in motion once it has been set in motion.",
+          "It is the force that opposes the motion of a body sliding along a surface."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A ball thrown upward in a moving train DOES come back into the thrower’s hand.",
+      "options": [
+          "True",
+          "False"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A 3−kg box has been held fixed on a 30∘ incline by an external force, F, perpendicular to it. The coefficient of static friction between the box and the slope surface is 0.3. What minimum force is required to prevent the box from sliding along the incline?",
+      "options": [
+          "76 N",
+          "72 N",
+          "24 N",
+          "50 N"
+      ],
+      "image_url": "{% static 'l1_q18.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "Two masses of 80 kg and 140 kg hang from a rope that runs over a pulley. You can assume that the rope is massless and inextensible, and the pulley is frictionless. Find the upward acceleration of the smaller mass.",
+      "options": [
+          "5.2 m/s²",
+          "1.5 m/s²",
+          "3.8 m/s²",
+          "2.67 m/s²"
+      ],
+      "image_url": "{% static 'l1_q19.jpg' %}",
+      "solving": "1"
+  },
+  {
+      "question": "A force of 30 N acts upon a body whose weight is 10 N. What is the mass of the body? What is its acceleration? (take g = 10 m/s²)",
+      "options": [
+          "m = 0.1 kg, a = 3 m/s²",
+          "m = 2 kg, a = 5 m/s²",
+          "m = 0.5 kg, a = 2 m/s²",
+          "m = 1 kg, a = 30 m/s²"
+      ],
+      "image_url": null,
+      "solving": "1"
+  }
+]
