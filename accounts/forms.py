@@ -18,65 +18,6 @@ class LoginForm(AuthenticationForm):
     )
 
 
-class UserProfileForm(forms.ModelForm):
-    class Meta:
-        model = UserProfile
-        fields = ['course', 'yearandsection']
-        widgets = {
-            'course': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'eg. BS Computer Engineering, BS Electrical Engineering, ...', 'id': 'course'}),
-            'yearandsection': forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'eg. 1-1,1-2,...1-6', 'id': 'year'}),
-        }
-
-class UserMainForm(UserCreationForm):
-    def __init__(self, *args, **kwargs):
-        super(UserMainForm, self).__init__(*args, **kwargs)
-
-        # Set attributes for the username field
-        self.fields['username'].widget.attrs.update({
-            'class': 'form-control',
-            'placeholder': '2024-13397-MN-1',
-            'id': 'studentNo',
-        })
-
-        # Set attributes for the email field
-        self.fields['email'].widget.attrs.update({
-            'class': 'form-control',
-            'placeholder': 'youremail@domain.com',
-            'id': 'email',
-        })
-
-        # Set attributes for the first_name field
-        self.fields['first_name'].widget.attrs.update({
-            'class': 'form-control',
-            'placeholder': 'Enter first name',
-            'id': 'firstName',
-        })
-
-        # Set attributes for the last_name field
-        self.fields['last_name'].widget.attrs.update({
-            'class': 'form-control',
-            'placeholder': 'Enter last name',
-            'id': 'lastName',
-        })
-
-        # Set attributes for the password1 field
-        self.fields['password1'].widget.attrs.update({
-            'type':'password',
-            'class': 'form-control',
-            'placeholder': 'Enter password',
-        })
-
-        # Set attributes for the password2 field
-        self.fields['password2'].widget.attrs.update({
-            'type':'password',
-            'class': 'form-control',
-            'placeholder': 'Confirm password',
-        })
-
-    class Meta:
-        model = User
-        fields = ['username', 'email', 'first_name', 'last_name', 'password1', 'password2']
-
 class CustomUserChangeForm(UserChangeForm):
     class Meta:
         model = User

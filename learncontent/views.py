@@ -2,12 +2,14 @@
 from django.http import JsonResponse
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render, get_object_or_404
-from accounts.models import ILSResult, UserProfile, PreTest
-from django.http import HttpResponseBadRequest, HttpResponse
-import os
-import json
+from accounts.models import ILSResult, UserProfile, PreTest, Difficulty
+from django.http import HttpResponseBadRequest, HttpResponse, JsonResponse
+import os, json, random
 from django.conf import settings
 from django.urls import reverse
+from django.views.decorators.http import require_GET
+from .kmeans import perform_clustering
+
 
 @login_required 
 def learncontent(request):
@@ -16,6 +18,7 @@ def learncontent(request):
 
 @login_required
 def ils(request):
+    
     return render(request, 'learncontent/ils.html')
 
 @login_required
@@ -48,12 +51,15 @@ def save_learningstyle(request):
         user_profile.save()
 
         # Redirect to a success page or perform any other action
-        return redirect('success_url')  # Replace 'success_url' with the URL of your success page
+        redirect_view_name = 'learncontent:learncontent'
+        redirect_url = reverse(redirect_view_name)
+        alert_script = f'<script> window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
 
     # If request method is not POST, return bad request
     return HttpResponseBadRequest("Invalid request method")
     
-from django.http import JsonResponse, HttpResponseBadRequest
+
 
 @login_required
 def check_answers(request):
@@ -121,7 +127,7 @@ def check_pretest_completed(lesson_number):
             if pretest_instance and getattr(pretest_instance, f'l{lesson_number}_answers', None):
                 return view_func(request, *args, **kwargs)
             else:
-                redirect_view_name = 'learncontent:pretest'
+                redirect_view_name = 'learncontent:learncontent'
                 redirect_url = reverse(redirect_view_name, kwargs={'lesson_number': lesson_number})
                 alert_message = f'Complete the Pre-Test for Lesson {lesson_number} first.'
                 alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
@@ -168,4 +174,34 @@ def pretest(request, lesson_number):
 
 @login_required
 def practice_questions(request, lesson_number):
-    return render(request,'learncontent/practice.html')
+    user_profile = UserProfile.objects.get(user=request.user)
+    
+    # Determine the lesson field name
+    lesson_field_name = f"lesson{lesson_number}"
+    
+    # Get the Difficulty instance for the user
+    difficulty_instance = Difficulty.objects.get(user=user_profile.user)
+    
+    # Retrieve the difficulty for the specific lesson number
+    difficulty = getattr(difficulty_instance, lesson_field_name, None)
+    
+    if difficulty is not None:  # Check if difficulty is not None
+        # Map cluster numbers to difficulty levels
+        if 0 < difficulty <= 3:
+            difficulty = ["easy", "medium", "hard"][difficulty - 1]
+    else:
+        # Redirect to pretest if difficulty for the specific lesson is not set
+        redirect_view_name = 'learncontent:pretest'
+        redirect_url = reverse(redirect_view_name, kwargs={'lesson_number': lesson_number})
+        alert_message = f'All students must answer the pre test first '
+        alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
+    
+    context = {
+        'user_profile': user_profile,
+        'lesson_number': lesson_number,
+        'difficulty': difficulty,
+    }
+    return render(request, 'learncontent/practice.html', context)
+
+

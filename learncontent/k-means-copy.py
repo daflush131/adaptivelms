@@ -1,3 +1,4 @@
+
 import random
 
 # Function to calculate the Euclidean distance between two points
@@ -30,21 +31,24 @@ def k_means(data, k, max_iterations=100):
 
 # Sample function to gather student data from Django model
 def get_student_data():
-    # Assuming each student's data is in the format [total_score, total_correct_items]
-    student_data = [
-        [85, 20],
-        [70, 15],
-        [90, 25],
-        [60, 10],
-        [95, 30],
-        [55, 12]
+    # Assuming each student's data is in the format [user_id, total_score, total_correct_items]
+    student_data_with_id = [
+        [222, 85, 20],
+        [233, 70, 15],
+        [100, 90, 25],
+        [344, 60, 10],
+        [343, 95, 30],
+        [643, 55, 12]
     ]
-    return student_data
+    
+    return student_data_with_id
 
-# Function to perform clustering and associate students with clusters
 def perform_clustering(k):
     # Get student data
-    student_data = get_student_data()
+    student_data_with_id = get_student_data()
+
+    # Extract only the score and correct items for clustering
+    student_data = [[score, correct_items] for _, score, correct_items in student_data_with_id]
 
     # Perform k-means clustering
     clusters = k_means(student_data, k)
@@ -52,18 +56,25 @@ def perform_clustering(k):
     # Sort clusters based on average score and average number of correct items
     sorted_clusters = sorted(clusters, key=lambda x: (sum(p[0] for p in x) / len(x), sum(p[1] for p in x) / len(x)))
 
-    # Associate each student with a cluster
+    # Associate each student with a cluster using user ID
     student_cluster_mapping = {}
     for i, cluster in enumerate(sorted_clusters):
-        for student in cluster:
-            student_cluster_mapping[tuple(student)] = i + 1  # Cluster numbering starts from 1
+        for score, correct_items in cluster:
+            # Since there's no user_id in the cluster, we don't need to unpack it
+            # Instead, we'll directly use the user_id from the student_data_with_id list
+            user_id = next(data[0] for data in student_data_with_id if data[1:] == [score, correct_items])
+            student_cluster_mapping[user_id] = i + 1  # Cluster numbering starts from 1
 
     return student_cluster_mapping
 
 # Example usage:
 num_clusters = 3
 student_cluster_mapping = perform_clustering(num_clusters)
+## Initialize an empty list to store the data
+data = []
 
-# Print the mapping of each student to their cluster
-for student, cluster in student_cluster_mapping.items():
-    print(f"Student with data {student} belongs to Cluster {cluster}")
+# Loop through the student_cluster_mapping dictionary
+for user_id, cluster in student_cluster_mapping.items():
+    # Append the user_id and cluster as a list to the data list
+    data.append([user_id, cluster])
+print(data)

@@ -10,7 +10,8 @@
         $(document).ready(function() {
             var baseUrl = "{% static '' %}";
             var lessonNumber = window.location.pathname.split('/')[2].replace('lesson', '');
-            var jsonUrl = baseUrl + "p" + lessonNumber + "_easy.json";
+            var level = "{{ difficulty }}";
+            var jsonUrl = baseUrl + "p" + lessonNumber + "_" + level + ".json";
 
             // Update title
             $('title').text('Practice Questions for Lesson ' + lessonNumber);

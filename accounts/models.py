@@ -28,7 +28,6 @@ class UserProfile(models.Model):
     course = models.CharField(max_length=100, blank=True)
     yearandsection = models.CharField(max_length=10, blank=True)
     learning_style = models.CharField(max_length=3, choices=LEARNING_STYLE_CHOICES, blank=True, null=True)
-    cluster = models.PositiveSmallIntegerField(null=True)
 
     def __str__(self):
         return self.user.username
@@ -48,9 +47,9 @@ class PreTest(models.Model):
     l3_answers = models.JSONField(null=True)
     l4_answers = models.JSONField(null=True)
 
-class PostTest(models.Model):
+class Difficulty(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    post_score1 = models.PositiveSmallIntegerField()
-    post_score2 = models.PositiveSmallIntegerField()
-    post_score3 = models.PositiveSmallIntegerField()
-    post_score4 = models.PositiveSmallIntegerField()
+    lesson1 = models.PositiveSmallIntegerField(null=True)
+    lesson2 = models.PositiveSmallIntegerField(null=True)
+    lesson3 = models.PositiveSmallIntegerField(null=True)
+    lesson4 = models.PositiveSmallIntegerField(null=True)
