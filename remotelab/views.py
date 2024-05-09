@@ -2,16 +2,18 @@
 from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
-@login_required  # Use this decorator to ensure that only authenticated users can access the dashboard
 def remotelab(request):
+    if request.user.id != 1:
+        return HttpResponseForbidden("You don't have permission to access this page.")
     # Your dashboard logic goes here
+    
     return render(request, 'remotelab/remotelab.html')
 
 from django.http import HttpResponse
 from django.views.decorators.csrf import csrf_exempt
 import json
 
-@csrf_exempt  # Disable CSRF protection for simplicity. In a production environment, use a proper setup.
+# Disable CSRF protection for simplicity. In a production environment, use a proper setup.
 def receive_time(request):
     if request.method == 'POST':
         try:
