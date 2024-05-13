@@ -8,20 +8,10 @@
             {% csrf_token %}
             <div id="pretest-container"></div>
             <button type="submit">Submit</button>
-            <button type="button" id="generate-correct-answers">Generate Correct Answers</button>
         </form>
 
         <script>
             $(document).ready(function() {
-                const correctAnswers = [2, 1, 1, 3, 0, 2, 0, 1, 1, 0, 3, 3, 0, 2, 0, 1, 2, 1, 1, 3];
-                $('#generate-correct-answers').click(function() {
-                    // Fill the form inputs with correct answers
-                    correctAnswers.forEach((correctAnswer, index) => {
-                        const questionName = `question_${index}`;
-                        $(`input[name="${questionName}"][value="${correctAnswer}"]`).prop('checked', true);
-                    });
-                });
-
                 var values = "";
                 var baseUrl = "{% static '' %}";
                 var lessonNumber = window.location.pathname.split('/')[2].replace('lesson', '');
@@ -105,7 +95,7 @@
                             // Handle the response from the server
                             console.log(response);
                             // Display a message to the user based on the response
-                            alert('You have ' + response.correct_items + ' correct answers and a total score of '+ response.total_score + ' out of 40');
+                            alert('You have succesfully submitted your answer');
                             window.location.href = "{% url 'learncontent:learncontent' %}";
                         },
                         error: function(xhr, status, error) {

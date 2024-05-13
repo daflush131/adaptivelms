@@ -1,0 +1,220 @@
+[
+  {
+      "question": "What is the first condition for equilibrium?",
+      "options": [
+          "Net force is zero.",
+          "Net acceleration is zero.",
+          "Net torque is zero.",
+          "Net velocity is zero."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following best describes statics equilibrium?",
+      "options": [
+          "The body is in static equilibrium when it is moving at a constant velocity in our selected inertial frame of reference.",
+          "The body is in static equilibrium when it is at rest in our selected inertial frame of reference",
+          "The body is in static equilibrium when it is accelerating in our selected inertial frame of reference.",
+          "None of the above."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What is the second condition for equilibrium?",
+      "options": [
+          "Net force is zero.",
+          "Net acceleration is zero.",
+          "Net torque is zero.",
+          "Net velocity is zero."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "______ is a measure of the tendency of a force to cause an object to rotate. The magnitude of ______ (L) is the product of the magnitude of force (F) and the moment arm (s).",
+      "options": [
+          "Velocity",
+          "Displacement",
+          "Acceleration",
+          "Torque"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "The body is said to be in equilibrium if it experiences linear acceleration.",
+      "options": [
+          "True",
+          "False"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "When you push a door open, what force causes it to rotate on its hinges?",
+      "options": [
+          "Gravitational force",
+          "Frictional force",
+          "Tension force",
+          "Torque"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following scenarios does a see-saw demonstrate static equilibrium?",
+      "options": [
+          "Two children of different weights are on either end, causing one end to rise and the other to lower slowly.",
+          "Two children of equal weights are on either end, with the see-saw perfectly level and not moving.",
+          "One child sits on one end, and an adult pushes the other end to keep it moving up and down.",
+          "The see-saw is empty, but a strong wind causes one end to lift off the ground."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "How does the distribution of weight on a beam affect its stability?",
+      "options": [
+          "Uneven weight distribution increases stability.",
+          "Even weight distribution decreases stability.",
+          "Even weight distribution increases stability.",
+          "Uneven weight distribution has no effect on stability."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "How does the position of the center of gravity affect the stability of an object?",
+      "options": [
+          "A lower center of gravity increases stability.",
+          "A higher center of gravity increases stability.",
+          "The position of the center of gravity does not affect stability.",
+          "A lower center of gravity decreases stability."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Why are tall towers necessary for maintaining stable equilibrium in a suspension bridge?",
+      "options": [
+          "Tall towers increase the tension in the cables, reducing the load on the bridge deck.",
+          "Tall towers allow for longer cables, which can support the weight of the bridge deck more effectively.",
+          "Tall towers provide sufficient height for the cables to clear the water or terrain below the bridge.",
+          "Tall towers increase the stability of the bridge by reducing the angle at which the cables are suspended."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A uniform 25 N beam 6 m long is carried by two men A and B, one at each end of the beam. A load of 45 N is placed on the beam and man A exerts a force of 20 N, what force does man B exert?",
+      "options": [
+          "20 N",
+          "45 N",
+          "50 N",
+          "70 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A 3 m long weightless beam is supported at each end by cables. A painter weighing 900 N stands 1 m from the left cable. Calculate the tension in each cable, suppose that the left cable is T1 and the right cable is T2.",
+      "options": [
+          "T1 = 300 N T2 = 600 N",
+          "T1 = 600 N T2 = 300 N",
+          "T1 = 450 N T2 = 450 N",
+          "T1 = 500 N T2 = 400 N"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A uniform pole 20 ft. long and weighing 80 lbs is held by a boy 2 ft from one end while a man carries the same pole 5 ft from the other end. A load of 100 lbs is placed so that the man will carry twice as much weight as the boy, how much force does the boy and man exert?",
+      "options": [
+          "Boy = 33 lbs Man = 66 lbs",
+          "Boy = 120 lbs Man = 60 lbs",
+          "Boy = 60 lbs Man = 120 lbs",
+          "Boy = 90 lbs Man = 90 lbs"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Suppose one truck is parked on a bridge as shown in Figure 1. The truck weighs 1000 lbs which is acting through its center of gravity (CG). The bridge weighs 200 lbs per feet, which is uniformly distributed. We can assume the bridge is rigid. What is the value of F1 (force in left side of bridge) and F2 (force in right side of bridge) ?",
+      "options": [
+          "F1 = 9000 lbs F2 = 7000 lbs",
+          "F1 = 1100 lbs F2 = 5000 lbs",
+          "F1 = 8500 lbs F2 = 7500 lbs",
+          "F1 = 8167 lbs F2 = 7833 lbs"
+      ],
+      "image_url": "{% static 'l4_q14.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "Determine the weights W1, and W2 shown in the Fig. 2, that cause the tension T in the horizontal cable to be 64 N.",
+      "options": [
+          "W1 = 67.8 N W2 = 43.05 N",
+          "W1 = 73.9 N W2 = 36.95 N",
+          "W1 = 80.2 N W2 = 30.8 N",
+          "W1 = 55.6 N W2 = 48.4 N"
+      ],
+      "image_url": "{% static 'l4_q15.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "A 50-N body is supported by two ropes, one making 30 with the vertical and another making 45 with the horizontal as shown in Fig. 3. What is the tension in the ropes?",
+      "options": [
+          "T1 = 52.9 N T2 = 38.7 N",
+          "T1 = 60.69 N T2 = 23.7 N",
+          "T1 = 45.2 N T2 = 30.69 N",
+          "T1 = 36.6 N T2 = 25.5 N"
+      ],
+      "image_url": "{% static 'l4_q16.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "Determine the tension developed in wires CA and CB required for equilibrium of 10-kg cylinder",
+      "options": [
+          "CA = 90.74 N CB = 180.31 N",
+          "CA = 79.89 N CB = 90.31 N",
+          "CA = 69.04 N CB = 180.31 N",
+          "CA = 180.62 N CB = 190.31 N"
+      ],
+      "image_url": "{% static 'l4_q17.png' %}",
+      "solving": "1"
+  },
+  {
+      "question": "A traffic light weighing 100 N hangs from a cable tied to two other cables fastened to a support. The upper cables make angles of 37.0◦ and 53.0◦ with the horizontal.Find the tension T1 and T2 in the cables.",
+      "options": [
+          "T1 = 52.9 N T2 = 38.7 N",
+          "T1 = 60.69 N T2 = 23.7 N",
+          "T1 = 30.18 N T2 = 79.86 N",
+          "T1 = 36.6 N T2 = 25.5 N"
+      ],
+      "image_url": "{% static 'l4_q18.jpg' %}",
+      "solving": "1"
+  },
+  {
+      "question": "Where must a 500 N weight be hung on a uniform 150 N pole with a length of 5 m so that a girl at one end supports ¼ as much as a man at the other end?",
+      "options": [
+          "4.45 m from the girl or 0.55 m from the man.",
+          "3.75 m from the girl or 1.25 m from the man.",
+          "3.5 m from the girl or 1.5 m from the man.",
+          "2.5 m from the girl or 2.5 m from the man."
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Weights of 2, 4, 6 and 8 N are fastened to the corners of a 2 m  2 m frame. If it weighs 10 N, where would the fulcrum (the support point) be placed to balance the frame and the weights?",
+      "options": [
+          "Closer to the 4 N weight",
+          "Closer to the 6 N weight",
+          "Closer to the 8 N weight",
+          "At the center of the frame."
+      ],
+      "image_url": null,
+      "solving": "1"
+  }
+]

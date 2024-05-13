@@ -1,0 +1,229 @@
+[
+    {
+        "question": "Consider the head-on collision between a lady bug and the windshield of a high speed bus. Which of the following statements are true?",
+        "options": [
+            "The magnitude of the force encountered by the bug is greater than that of the bus.",
+            "The magnitude of the impulse encountered by the bug is greater than that of the bus.",
+            "The magnitude of the momentum change encountered by the bug is greater than that of the bus.",
+            "The magnitude of the velocity change encountered by the bug is greater than that of the bus and The magnitude of the acceleration encountered by the bug is greater than that of the bus."
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "An object of 30 kg is moved with a velocity of 2 m/s on a horizontal smooth surface. What is the velocity of the block for 4 seconds if force of 40 N is applied on it in the direction of force?",
+        "options": [
+            "2 m/s",
+            "4.6 m/s",
+            "7.33 m/s",
+            "9.33 m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "A man with a mass of m is painting a house. He stands on a tall ladder of height h. He leans over and falls straight down off the ladder. If he is in the air for s seconds, what will be his momentum right before he hits the ground?",
+        "options": [
+            "mg/h",
+            "mg/s",
+            "(mg)(s)",
+            "12mv2"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A 0.12kg tennis ball strikes a racket, moving at 35m/s. After striking the racket, it bounces back at a speed of 45m/s. What is the change in momentum? ",
+        "options": [
+            "−0.6kg∗m/s",
+            "−9.6kg∗m/s",
+            "4.8kg∗m/s",
+            "1.2kg∗m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A 50kg crate slides along the floor for 10s before stopping. If it was initially moving with a velocity of 12m/s, what is the force of friction?",
+        "options": [
+            "−600N",
+            "−10N",
+            "−100N",
+            "−6N",
+            "−60N"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A 100kg crate slides along a floor with a starting velocity of 21ms. If the force due to friction is −8N, how long will it take for the box to come to rest?",
+        "options": [
+            "262.5s",
+            "284.5s",
+            "121.3s",
+            "504.2s",
+            "108.7s"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "In a billiards game, one player hits the cue ball towards another ball. The cue ball has a mass of 0.1kg and hits the other ball with a velocity of 2ms. If the collision is completely elastic and the cue ball travels with a velocity of 0.8ms after the collision, what is the mass and velocity of the other ball?",
+        "options": [
+            "2.2ms, 0.13kg",
+            "4.0ms, 0.028kg",
+            "3.1ms, 0.094kg",
+            "2.8ms, 0.043kg",
+            "3.2ms, 0.089kg"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "Two sumo wrestlers are in a match. At the start of the match, they both lunge at each other. They hit and miraculously come to a stand still. One wrestler was 200kg and traveling at a velocity of 2.3ms at the instance of collision. If the other wrestler was traveling at 2.9ms, what is his mass?",
+        "options": [
+            "262.5s",
+            "284.5s",
+            "121.3s",
+            "108.7s"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A box with a mass of 2 kg accelerates in a straight line from 4 m/s to 8 m/s due to the application of a force whose duration is 0.5 s. Find the average strength of this force.",
+        "options": [
+            "4 N",
+            "8 N",
+            "12 N",
+            "16 N"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "Two objects, one of mass 3 kg moving with a speed of 2 m/s and the other of mass 5 kg and speed 2 m/s, move toward each other and collide head-on. If the collision is perfectly inelastic, find the speed of the objects after the collision.",
+        "options": [
+            "0.25 m/s",
+            "0.5 m/s",
+            "0.75 m/s",
+            "1 m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Object 1 moves toward Object 2, whose mass is twice that of Object 1 and which is initially at rest. After their impact, the objects lock together and move with what fraction of Object 1's initial kinetic energy?",
+        "options": [
+            "1/18",
+            "1/9",
+            "1/6",
+            "⅓"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "Two frictionless carts (mass = 500 g each) are sitting at rest on a perfectly level table. The teacher taps the release so that one cart pushes off the other. If one of the carts has a speed of 2 m/s, then what is the final momentum of the system (in kg · m/s)?",
+        "options": [
+            "2,000",
+            "1,000",
+            "2",
+            "0"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+
+
+    {
+        "question": "9. A wooden block of mass M is moving at speed V in a straight line.\n\nHow fast would the bullet of mass m need to travel to stop the block (assuming that the bullet became embedded inside)?",
+        "options": [
+            "mV/(m + M)",
+            "mV/M",
+            "MV/m",
+            "(m + M)V/m"
+        ],
+        "image_url": "{% static 'p4_hard_q13.jpg' %}",
+        "correct_answer": "3"
+    },
+    {
+        "question": "Which of the following best describes a perfectly inelastic collision free of external forces?",
+        "options": [
+            "Total linear momentum is never conserved.",
+            "Total linear momentum is sometimes conserved.",
+            "Kinetic energy is never conserved.",
+            "Kinetic energy is always conserved."
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "Object 1 moves with an initial speed of v0 toward Object 2, which has a mass half that of Object 1. If the final speed of both objects after colliding is 0, what must have been the initial speed of Object 2 (assuming no external forces)?",
+        "options": [
+            "v0",
+            "2v0",
+            "v0",
+            "4v0"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "If two objects of 30 kg and 10 kg move with equal kinetic energy, then what is the ratio of magnitudes for linear momentum?",
+        "options": [
+            "√3 : 1",
+            "1 : √3",
+            "1 : 3√3",
+            "1 : 3"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A ball of mass 0.5 kg, initially at rest, acquires a speed of 4 m/s immediately after being kicked by a force of strength 20 N. For how long did this force act on the ball?",
+        "options": [
+            "0.01 s",
+            "0.1 s",
+            "0.2 s",
+            "1"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "When a mass M experiences a velocity change of v in a time of t, it experiences a force of F. Assuming the same velocity change of v, the force experienced by a mass of 2M in a time of (1/2)t is ____.",
+        "options": [
+            "2F",
+            "4F",
+            "(1/2)*F",
+            "(1/4)*F",
+            "e. none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "An object of mass 2 kg has a linear momentum of magnitude 6 kg · m/s. What is this object's kinetic energy?",
+        "options": [
+            "3 J",
+            "6 J",
+            "9 J",
+            "12 J"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "One car with a mass of 400kg is traveling east at 20ms and collides with a car of mass 800kg traveling west at 15ms. Assuming the collision is completely inellastic, what is velocity of the first car after the collision?",
+        "options": [
+            "0.0ms",
+            "1.0ms west",
+            "3.33ms west",
+            "1.0ms east",
+            "3.33ms east"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    }
+]

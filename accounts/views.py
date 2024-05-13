@@ -12,6 +12,7 @@ from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.urls import reverse_lazy
 from django.conf import settings
+from learncontent.kmeans import perform_clustering, plot_clusters
 
 
 class CustomLoginView(LoginView):
@@ -44,3 +45,43 @@ def update_profile_view(request):
 class CustomPasswordChangeView(PasswordChangeForm):
     template_name = 'accounts/change_password.html'
     success_url = reverse_lazy('accounts:edit_profile')
+
+database_data = [
+        [222, 85, 20],
+        [233, 70, 15],
+        [100, 90, 25],
+        [344, 60, 10],
+        [343, 95, 30],
+        [643, 55, 12],
+        [222, 85, 20],
+        [233, 70, 15],
+        [100, 90, 25],
+        [344, 60, 10],
+        [343, 95, 30],
+        [643, 55, 12],
+        [222, 85, 20],
+        [233, 70, 15],
+        [100, 90, 25],
+        [344, 60, 10],
+        [343, 95, 30],
+        [643, 55, 12],
+        [222, 85, 20],
+        [233, 23, 15],
+        [100, 90, 25],
+        [344, 60, 10],
+        [343, 95, 30],
+        [643, 55, 12],
+        [222, 85, 40]
+    ]
+
+num_clusters = 3
+clusters, centroids, student_cluster_mapping = perform_clustering(num_clusters,database_data)
+
+## Initialize an empty list to store the data
+data = []
+# Loop through the student_cluster_mapping dictionary
+for user_id, cluster in student_cluster_mapping.items():
+    # Append the user_id and cluster as a list to the data list
+    data.append([user_id, cluster]) 
+print(data)
+plot_clusters(clusters, centroids)

@@ -21,3 +21,4 @@ accounts/migrations/0027_userprofile_cluster.py
 accounts/migrations/0028_alter_userprofile_learning_style.py
 accounts/migrations/0029_difficulty_delete_posttest.py
 accounts/migrations/0030_remove_userprofile_cluster.py
+accounts/migrations/0031_posttest.py

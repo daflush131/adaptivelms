@@ -1,0 +1,220 @@
+[
+  {
+      "question": "When an object falls freely towards the ground, which type of energy is being converted into kinetic energy?",
+      "options": [
+          "Potential energy",
+          "Mechanical energy",
+          "Thermal energy",
+          "Nuclear energy"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "When a body is lifted, the work done by the gravitational force is positive.",
+      "options": [
+          "True",
+          "False"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What is the definition of work done by a force?",
+      "options": [
+          "The displacement of an object",
+          "The product of force and time",
+          "The product of force and displacement",
+          "The energy of an object in motion"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "The property of a body or system of bodies by virtue of which work can be performed is called _______.",
+      "options": [
+          "Energy",
+          "Power",
+          "Force",
+          "Work"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "The rate of doing work is called _______.",
+      "options": [
+          "Energy",
+          "Power",
+          "Force",
+          "Work"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which statement best describes how energy can change forms?",
+      "options": [
+          "Energy can be created or destroyed in any process.",
+          "Energy can change forms but cannot be transferred from one body to another.",
+          "Energy is transferred from one body to another, with no change in the total amount of energy.",
+          "Energy is only conserved in systems with no friction or air resistance."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which of the following statements regarding gravitational potential energy is correct?",
+      "options": [
+          "The energy stored in a body due to its motion.",
+          "The energy stored in a body due to its position relative to a reference point.",
+          "The energy required to lift a body against the force of gravity.",
+          "The energy transferred when a body falls freely towards the ground."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "When a body falls freely under gravity, then the work done by the gravity is ________.",
+      "options": [
+          "Positive",
+          "Negative",
+          "Zero",
+          "Infinity"
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "What best defines kinetic energy?",
+      "options": [
+          "The energy stored in a body due to its position relative to a reference point.",
+          "The energy required to lift a body against the force of gravity.",
+          "The energy associated with the motion of an object.",
+          "The energy transferred when a body falls freely towards the ground."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "Which statement best describes the conservation of energy?",
+      "options": [
+          "Energy can be created or destroyed in any process.",
+          "Energy can change forms but cannot be transferred from one body to another.",
+          "Energy is transferred from one body to another, with no change in the total amount of energy.",
+          "Energy is only conserved in systems with no friction or air resistance."
+      ],
+      "image_url": null,
+      "solving": "0"
+  },
+  {
+      "question": "A gardener pushes a lawn roller through a distance of 20m. If he applies a force of 20kg weight in a direction inclined at 60° to the ground, find the work done by him. (g=9.8 m/s2)",
+      "options": [
+          "400J",
+          "1960J",
+          "250J",
+          "2514J"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A person is holding a bucket by applying a force of 10N. He moves a horizontal distance of 5m and then climbs up a vertical distance of 10m. Find the total work done by him?",
+      "options": [
+          "50J",
+          "150J",
+          "100J",
+          "200J"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A machine gun fires 60 bullets per minute, with a velocity of 700 m/s. If each bullet has a mass of 50g, find the power developed by the gun. (1 kg⋅m² / s³ = 1 W)",
+      "options": [
+          "10000 W",
+          "12250 W",
+          "11000 W",
+          "13750 W"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "How much power is expended by a man who can push a load with a force of 190 lbs to a distance of 100 ft in 4 min?",
+      "options": [
+          "3500 ft-lb/min",
+          "2350 ft-lb/min",
+          "4500 ft-lb/min",
+          "4750 ft-lb/min"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A body of mass m is thrown vertically upward with a velocity of 25 m/s .How high will it rise?",
+      "options": [
+          "23.6 m",
+          "21.8 m",
+          "25.53 m",
+          "31.88 m"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "How much work is done to overcome friction when a 100 lb wooden box is pushed across a horizontal floor with a force of 50 lb, given a coefficient of sliding friction of 0.4, over a distance of 60 ft?",
+      "options": [
+          "2000 ft-lb",
+          "2200 ft-lb",
+          "2400 ft-lb",
+          "2600 ft-lb"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A 220-lb man jumps out a window into a fire net 36 ft below. The net stretches 4.4 ft before bringing him to rest and tossing him back into the air. What is the potential energy of the stretched net if no energy is dissipated?",
+      "options": [
+          "8900 ft-lb",
+          "6952 ft-lb",
+          "7920 ft-lb",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "A projectile with a mass of 2.4 kg is fired from a cliff 125 m high with an initial velocity of 150 m/s, directed 41.0º above the horizontal. What is the kinetic energy of the projectile just after firing?",
+      "options": [
+          "16 kJ",
+          "25 kJ",
+          "15 kJ",
+          "27 kJ"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "An elevator with a 10-person capacity (each person with an average mass of 68 kg) raises passengers to a height of 152 m in 55.0 s at constant speed. Find the power output of the motor assuming no frictional losses? (take g = 9.8 m/s²)",
+      "options": [
+          "18.416 kW",
+          "19.31 kW",
+          "15.69 kW",
+          "None of the above"
+      ],
+      "image_url": null,
+      "solving": "1"
+  },
+  {
+      "question": "Water is pumped from a river with a depth of 80 m to a reservoir on the surface at a rate of 10 kg/s. What is the minimum power in watts required in pumping the water up? (take g = 9.8 m/s²)",
+      "options": [
+          "7.84 kW",
+          "6.69 kW",
+          "7.32 kW",
+          "6.92 kW"
+      ],
+      "image_url": null,
+      "solving": "1"
+  }
+]

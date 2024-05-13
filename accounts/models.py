@@ -53,3 +53,18 @@ class Difficulty(models.Model):
     lesson2 = models.PositiveSmallIntegerField(null=True)
     lesson3 = models.PositiveSmallIntegerField(null=True)
     lesson4 = models.PositiveSmallIntegerField(null=True)
+
+class PostTest(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    post_score1 = models.PositiveSmallIntegerField(null=True)
+    post_items1 = models.PositiveSmallIntegerField(null=True)
+    post_score2 = models.PositiveSmallIntegerField(null=True)
+    post_items2 = models.PositiveSmallIntegerField(null=True)
+    post_score3 = models.PositiveSmallIntegerField(null=True)
+    post_items3 = models.PositiveSmallIntegerField(null=True)
+    post_score4 = models.PositiveSmallIntegerField(null=True)
+    post_items4 = models.PositiveSmallIntegerField(null=True)
+    post1_answers = models.JSONField(null=True)
+    post2_answers = models.JSONField(null=True)
+    post3_answers = models.JSONField(null=True)
+    post4_answers = models.JSONField(null=True)

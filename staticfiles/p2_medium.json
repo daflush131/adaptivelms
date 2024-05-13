@@ -1,0 +1,222 @@
+  [  
+    {
+      "question": "In static equilibrium, the sum of all forces acting on an object is:",
+      "options": [
+        "Zero",
+        "Equal to the weight of the object",
+        "Equal to the normal force",
+        "Greater than zero"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "If an object is in static equilibrium, which of the following statements is true?",
+      "options": [
+        "The object must be moving with constant velocity.",
+        "The object must be at rest.",
+        "The object must be accelerating.",
+        "The object must be on a frictionless surface."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "Torque is defined as:",
+      "options": [
+        "The mass of an object times its acceleration.",
+        "The force acting on an object divided by its area.",
+        "The turning effect of a force on an object.",
+        "The energy stored in an elastic object."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "What is the net torque on an object in static equilibrium?",
+      "options": [
+        "Zero",
+        "Equal to the weight of the object",
+        "Equal to the normal force",
+        "Greater than zero"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A meter stick is balanced on a pivot point with a weight hanging off one end. To maintain equilibrium, another weight with a different mass needs to be placed on the other end further away from the pivot point. Why is this?",
+      "options": [
+        "To increase the total weight on the meter stick",
+        "To create a larger torque",
+        "To create a net upward force",
+        "The weight doesn't matter, only the mass"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "When you push a door open, what force causes it to rotate on its hinges?",
+      "options": [
+        "Gravitational force",
+        "Frictional force",
+        "Tension force",
+        "Torque"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "Which of the following scenarios does a see-saw demonstrate static equilibrium?",
+      "options": [
+        "Two children of different weights are on either end, causing one end to rise and the other to lower slowly.",
+        "Two children of equal weights are on either end, with the see-saw perfectly level and not moving.",
+        "One child sits on one end, and an adult pushes the other end to keep it moving up and down.",
+        "The see-saw is empty, but a strong wind causes one end to lift off the ground."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "How does the position of the center of gravity affect the stability of an object?",
+      "options": [
+        "A lower center of gravity increases stability.",
+        "A higher center of gravity increases stability.",
+        "The position of the center of gravity does not affect stability.",
+        "A lower center of gravity decreases stability."
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "Why are tall towers necessary for maintaining stable equilibrium in a suspension bridge?",
+      "options": [
+        "Tall towers increase the tension in the cables, reducing the load on the bridge deck.",
+        "Tall towers allow for longer cables, which can support the weight of the bridge deck more effectively.",
+        "Tall towers provide sufficient height for the cables to clear the water or terrain below the bridge.",
+        "Tall towers increase the stability of the bridge by reducing the angle at which the cables are suspended."
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "How does the distribution of weight on a beam affect its stability?",
+      "options": [
+        "Uneven weight distribution increases stability.",
+        "Even weight distribution decreases stability.",
+        "Even weight distribution increases stability.",
+        "Uneven weight distribution has no effect on stability."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A uniform 25 N beam 6 m long is carried by two men A and B, one at each end of the beam. A load of 45 N is placed on the beam and man A exerts a force of 20 N, what force does man B exert?",
+      "options": [
+        "20 N",
+        "45 N",
+        "50 N",
+        "70 N"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A 3 m long weightless beam is supported at each end by cables. A painter weighing 900 N stands 1 m from the left cable. Calculate the tension in each cable, suppose that the left cable is T1 and the right cable is T2.",
+      "options": [
+        "T1 = 300 N T2 = 600 N",
+        "T1 = 600 N T2 = 300 N",
+        "T1 = 450 N T2 = 450 N",
+        "T1 = 500 N T2 = 400 N"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "A uniform pole 20 ft. long and weighing 80 lbs is held by a boy 2 ft from one end while a man carries the same pole 5 ft from the other end. A load of 100 lbs is placed so that the man will carry twice as much weight as the boy, how much force does the boy and man exert?",
+      "options": [
+        "Boy = 33 lb Man = 66 lb",
+        "Boy = 120 lb Man = 60 lb",
+        "Boy = 60 lb Man = 120 lb",
+        "Boy = 90 lb Man = 90 lb"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A 50-N body is supported by two ropes, one making 30 with the vertical and another making 45 with the horizontal as shown in Fig. 3. What is the tension in the ropes?",
+      "options": [
+        "T1 = 36.6 N T2 = 25.5 N",
+        "T1 = 60.69 N T2 = 23.7 N",
+        "T1 = 45.2 N T2 = 30.69 N",
+        "T1 = 52.9 N T2 = 38.7 N"
+      ],
+      "image_url": "{% static 'p2_medium_q14.png' %}",
+      "correct_answer": "0"
+    },
+    {
+      "question": "A traffic light weighing 100 N hangs from a cable tied to two other cables fastened to a support. The upper cables make angles of 37.0◦ and 53.0◦ with the horizontal.Find the tension T1 and T2 in the cables.",
+      "options": [
+        "T1 = 52.9 N T2 = 38.7 N",
+        "T1 = 60.18 N T2 = 79.86 N",
+        "T1 = 80.69 N T2 = 23.7 N",
+        "T1 = 36.6 N T2 = 25.5 N"
+      ],
+      "image_url": "{% static 'p2_medium_q15.png' %}",
+      "correct_answer": "1"
+    },
+    {
+      "question": "Where must a 500 N weight be hung on a uniform 150 N pole with a length of 5 m so that a girl at one end supports ¼ as much as a man at the other end?",
+      "options": [
+        "4.45 m from the girl or 0.55 m from the man.",
+        "3.75 m from the girl or 1.25 m from the man.",
+        "3.5 m from the girl or 1.5 m from the man.",
+        "2.5 m from the girl or 2.5 m from the man."
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "Determine the weights W1, and W2 shown in Fig. 5.3, that cause the tension T in the horizontal cable to be 64 N.",
+      "options": [
+        "W1 = 23.5 N W2 = 19.2 N",
+        "W1 = 73.9 N W2 = 36.95 N",
+        "W1 = 48.7 N W2 = 24.5 N",
+        "W1 = 59.3 N W2 = 27.4 N"
+      ],
+      "image_url": "{% static 'p2_medium_q17.png' %}",
+      "correct_answer": "1"
+    },
+    {
+      "question": "Weights of 2, 4, 6, and 8 N are fastened to the corners of a 2 m x 2 m frame. If it weighs 10 N, where would the fulcrum (the support point) be placed to balance the frame and the weights?",
+      "options": [
+        "Closer to the 4 N weight",
+        "Closer to the 6 N weight",
+        "Closer to the 8 N weight",
+        "At the center of the frame"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "Find the magnitude and direction of F3 in Fig. 5.7 for the given system to be in equilibrium.",
+      "options": [
+        "23.33°",
+        "39.99°",
+        "46.66°",
+        "16.66°"
+      ],
+      "image_url": "{% static 'p2_medium_q19.png' %}",
+      "correct_answer": "2"
+    },
+    {
+      "question": "Calculate the torque about point O caused by forces F1, F2, and F3. The magnitude of all the forces is 120 N and are applied a distance of 2.0 m from point O.",
+      "options": [
+        "F1 = 100 Nm F2 = 50 Nm F3 = 0 Nm",
+        "F1 = 120 Nm F2 = 60 Nm F3 = 0 Nm",
+        "F1 = 240 Nm F2 = 120 Nm F3 = 0 Nm",
+        "F1 = 480 Nm F2 = 240 Nm F3 = 0 Nm"
+      ],
+      "image_url": "{% static 'p2_medium_q20.png' %}",
+      "correct_answer": "2"
+    }
+  ]

@@ -1,60 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thinger.io Button</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lesson Progress</title>
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+<style>
+    body {
+        background-color: #222;
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .card {
+        background-color: #333;
+        color: #fff;
+        border-color: #333;
+    }
+
+    .progress {
+        height: 30px;
+        overflow: hidden;
+        background-color: #444;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .progress-bar {
+        transition: width 0.6s ease;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .progress-text {
+        margin-top: 5px;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .list-group-item {
+        background-color: #444;
+        border-color: #444;
+        font-size: 18px;
+    }
+
+    .list-group-item a {
+        color: #fff;
+    }
+
+    .list-group-item a:hover {
+        color: #17a2b8;
+    }
+</style>
 </head>
 <body>
-    <button id="C1">Trigger C1</button>
-    <button id="C2">Trigger C2</button>
-    <button id="C3">Trigger C3</button>
-    <button id="H1">Trigger H1</button>
-    <button id="H2">Trigger H2</button>
-    <button id="H3">Trigger H3</button>
 
-    <script>
-        // Add event listeners to each button
-        document.getElementById("C1").addEventListener("click", function() {
-            makeRequest("C1");
-        });
+<div class="container-fluid">
+    <h1>Welcome, {{ user.first_name }}</h1>
+    <div class="row mb-4">
+        <div class="col-md-6">
+            <div class="progress mb-2">
+                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+            </div>
+            <div class="progress-text">Total Lesson Progress</div>
+        </div>
+        <div class="col-md-6">
+            <div class="progress mb-2">
+                <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+            </div>
+            <div class="progress-text">Total Pre-Test Progress</div>
+        </div>
+    </div>
 
-        document.getElementById("C2").addEventListener("click", function() {
-            makeRequest("C2");
-        });
+    <div class="row">
+        <div class="col-md-6">
+            <!-- Lesson 1 Card -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    Lesson 1
+                </div>
+                <div class="card-body">
+                    <!-- Lesson 1 Content -->
+                    <ul class="list-group mt-2">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=1 %}">Pre-Test</a></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:practice_questions' lesson_number=1 %}">Practice Questions</a>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- Add more list items for Lesson 1 -->
+                    </ul>
+                </div>
+            </div>
+            <!-- Add more lesson cards here with similar structure -->
+        </div>
+        <div class="col-md-6">
+            <!-- Lesson 2 Card -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    Lesson 2
+                </div>
+                <div class="card-body">
+                    <!-- Lesson 2 Content -->
+                    <ul class="list-group mt-2">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions2" />
+                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=2 %}">Pre-Test</a></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions2" />
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:practice_questions' lesson_number=2 %}">Practice Questions</a>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- Add more list items for Lesson 2 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Lesson 3 Card -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    Lesson 3
+                </div>
+                <div class="card-body">
+                    <!-- Lesson 3 Content -->
+                    <ul class="list-group mt-2">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions3" />
+                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=3 %}">Pre-Test</a></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions3" />
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:practice_questions' lesson_number=3 %}">Practice Questions</a>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- Add more list items for Lesson 3 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <!-- Lesson 4 Card -->
+            <div class="card mb-4">
+                <div class="card-header">
+                    Lesson 4
+                </div>
+                <div class="card-body">
+                    <!-- Lesson 4 Content -->
+                    <ul class="list-group mt-2">
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions4" />
+                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=4 %}">Pre-Test</a></label>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions4" />
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:practice_questions' lesson_number=4 %}">Practice Questions</a>
+                                </label>
+                            </div>
+                        </li>
+                        <!-- Add more list items for Lesson 4 -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
-        document.getElementById("C3").addEventListener("click", function() {
-            makeRequest("C3");
-        });
-
-        document.getElementById("H1").addEventListener("click", function() {
-            makeRequest("H1");
-        });
-
-        document.getElementById("H2").addEventListener("click", function() {
-            makeRequest("H2");
-        });
-
-        document.getElementById("H3").addEventListener("click", function() {
-            makeRequest("H3");
-        });
-
-        function makeRequest(buttonId) {
-            var baseUrl = "https://backend.thinger.io/v3/users/daflush/devices/ESP8266-FREEFALL/resources/";
-            var token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkZXYiOiJFU1A4MjY2LUZSRUVGQUxMIiwiaWF0IjoxNzE0Mzk5OTI3LCJqdGkiOiI2NjJmYWFiN2VhMDkxY2NjZmMwMjhhOWEiLCJzdnIiOiJhcC1zb3V0aGVhc3QuYXdzLnRoaW5nZXIuaW8iLCJ1c3IiOiJkYWZsdXNoIn0.0Mh6cj9J1wIZf9CsQgKK5zi_2luFMsCMVigCu_wltP4";
-            var url = baseUrl + buttonId;
-
-            var xhr = new XMLHttpRequest();
-            xhr.open("POST", url, true);
-            xhr.setRequestHeader("Authorization", "Bearer " + token);
-            xhr.setRequestHeader("Content-Type", "application/json");
-            xhr.onreadystatechange = function () {
-                if (xhr.readyState === 4 && xhr.status === 200) {
-                    console.log("API call successful");
-                }
-            };
-            xhr.send(JSON.stringify({}));
-        }
-    </script>
 </body>
 </html>

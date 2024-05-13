@@ -1,0 +1,223 @@
+
+[
+  {
+    "question": "What factor(s) determine the maximum static frictional force between an object and a surface?",
+    "options": [
+      "The mass of the object",
+      "The relative roughness of the two surfaces in contact and the magnitude of the normal force",
+      "The velocity of the object",
+      "The coefficient of kinetic friction between the two surfaces"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "According to Newton's third law of motion, when you push against a wall, the wall pushes back with equal force. Why doesn't the wall move?",
+    "options": [
+      "The wall's inertia prevents it from moving.",
+      "The wall does not experience any force.",
+      "The force you exert on the wall is greater than the force the wall exerts on you.",
+      "The wall is too heavy."
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "Which of the following statements is true regarding mass and weight?",
+    "options": [
+      "Mass and weight are unrelated concepts and do not affect each other.",
+      "Mass and weight are the same thing and can be used interchangeably.",
+      "Mass is the force of gravity acting on an object, while weight is a measure of the amount of matter in an object.",
+      "Mass is a measure of the amount of matter in an object, while weight is the force of gravity acting on an object."
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "Which of the following statements is true regarding static friction?",
+    "options": [
+      "It always opposes the motion of an object.",
+      "It depends on the velocity of the object.",
+      "It is always greater than kinetic friction.",
+      "It is independent of the surfaces in contact."
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "What is the relationship between the coefficient of kinetic friction and the magnitude of the frictional force?",
+    "options": [
+      "They are directly proportional.",
+      "They are inversely proportional.",
+      "They are unrelated.",
+      "They are equal."
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "Which of the following factors affect the magnitude of the frictional force between two surfaces?",
+    "options": [
+      "The mass of the object",
+      "The velocity of the object",
+      "The roughness of the surfaces",
+      "The color of the surfaces"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "Which of Newton's laws explains why a seatbelt is necessary when a car stops suddenly?",
+    "options": [
+      "Third law",
+      "Second law",
+      "First law",
+      "Law of Supply and Demand"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "What is the relationship between the mass of an object and its acceleration when the same force is applied to it?",
+    "options": [
+      "They are inversely proportional.",
+      "They are directly proportional.",
+      "They are unrelated.",
+      "They are equal."
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "If the normal force acting on an object increases, what happens to the maximum static frictional force?",
+    "options": [
+      "It decreases.",
+      "It increases.",
+      "It remains constant.",
+      "It becomes zero."
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "How does the coefficient of static friction affect the maximum static frictional force?",
+    "options": [
+      "It has no effect.",
+      "The higher the coefficient, the lower the maximum static frictional force.",
+      "The coefficient only affects kinetic friction, not static friction.",
+      "The higher the coefficient, the higher the maximum static frictional force."
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A force of 150 N pushes a box. Starting from rest, the box achieves a velocity of 1.50 m/s in 2.5 s. Find the coefficient of sliding friction between the box and the floor. a = (vf - vi ) / t",
+    "options": [
+      "0.3 N",
+      "0.96",
+      "6",
+      "0.0611"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "Two masses of 8 kg and 12 kg are tied to each end of a string passing over a massless and frictionless pulley. Find the resulting acceleration of each mass.",
+    "options": [
+      "9.61 m/s2",
+      "6.93 m/s2",
+      "1.96 m/s2",
+      "3.69 m/s2"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "From a cable, it is used to accelerate a 100−kg body vertically upward at a constant rate of 1 m/s2. What is the maximum tension in the cable in N? Use g = 10 m/s2.",
+    "options": [
+      "1000 N",
+      "1100 N",
+      "900 N",
+      "1200 N"
+    ],
+    "image_url": null,
+    "correct_answer": "1"
+  },
+  {
+    "question": "A 1000−kg mass elevator has an acceleration of 1 m/s2. What is the tension in the supporting cable if the elevator is ASCENDING? Assume g = 10 m/s2.",
+    "options": [
+      "9000 N",
+      "10000 N",
+      "11000 N",
+      "8000 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A box weighing 100 N starts to move across a horizontal surface when a horizontal force of 25 N is applied to it, but a force of only 20 N is needed to keep it moving in uniform motion. What is the coefficient of kinetic friction?",
+    "options": [
+      "0.3 N",
+      "0.1 N",
+      "0.2 N",
+      "0.4 N"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "An unbalanced force of 50 N acts on an object weighing 100 N. What acceleration is produced?",
+    "options": [
+      "4.9 m/s2",
+      "5.9 m/s2",
+      "6.9 m/s2",
+      "9.9 m/s2"
+    ],
+    "image_url": null,
+    "correct_answer": "0"
+  },
+  {
+    "question": "A 100 kg mass lies on a frictionless table and a cord is attached to one end as shown. The cord passes over a massless, frictionless pulley at the edge of the table while a 10 kg mass hangs at the other end. Find the acceleration.",
+    "options": [
+      "0.2 m/s2",
+      "0.1 m/s2",
+      "0.3 m/s2",
+      "0.4 m/s2"
+    ],
+    "image_url": "{% static 'p1_medium_q17.png' %}",
+    "correct_answer": "1"
+  },
+  {
+    "question": "A 75−kg box is pulled over a rough surface using a horizontal force of 100N at a constant velocity. Find the coefficient of friction between the box and the surface.",
+    "options": [
+      "1.14",
+      "3.14",
+      "0.14",
+      "4.14"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  },
+  {
+    "question": "A 45 kg object rests on a 30° inclined plane. What force is exerted down the inclined plane?",
+    "options": [
+      "130.5 N",
+      "505.5 N",
+      "52.5 N",
+      "220.5 N"
+    ],
+    "image_url": null,
+    "correct_answer": "3"
+  },
+  {
+    "question": "A car of mass m is at the top of an icy 15° slope whose length is 30 m. Find the acceleration of the car. Icy surface means frictionless.",
+    "options": [
+      "9.6 m/s2",
+      "4.6 m/s2",
+      "2.6 m/s2",
+      "7.6 m/s2"
+    ],
+    "image_url": null,
+    "correct_answer": "2"
+  }
+]

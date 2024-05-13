@@ -124,14 +124,36 @@ def check_pretest_completed(lesson_number):
     def decorator(view_func):
         def _wrapped_view(request, *args, **kwargs):
             pretest_instance = PreTest.objects.filter(user=request.user).first()
-            if pretest_instance and getattr(pretest_instance, f'l{lesson_number}_answers', None):
-                return view_func(request, *args, **kwargs)
+            print(str(pretest_instance) + "hello")
+            if pretest_instance:
+                print('test1')
+                score_attr = f'score{lesson_number}'
+                items_attr = f'items{lesson_number}'
+                answers_attr = f'l{lesson_number}_answers'
+                
+                if getattr(pretest_instance, score_attr) is not None \
+                    and getattr(pretest_instance, items_attr) is not None \
+                    and getattr(pretest_instance, answers_attr) is not None:
+                    
+                    return view_func(request, *args, **kwargs)
+                else:
+                    redirect_url = reverse('learncontent:pretest', kwargs={'lesson_number': lesson_number})
+                    alert_message = f'Complete the Pre-Test for Lesson {lesson_number} first.'
+                    alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+                    return HttpResponse(alert_script)
+
             else:
-                redirect_view_name = 'learncontent:learncontent'
-                redirect_url = reverse(redirect_view_name, kwargs={'lesson_number': lesson_number})
+                # Redirect to the pre-test page for the lesson
+                redirect_url = reverse('learncontent:pretest', kwargs={'lesson_number': lesson_number})
                 alert_message = f'Complete the Pre-Test for Lesson {lesson_number} first.'
                 alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
                 return HttpResponse(alert_script)
+            
+            # Redirect to the pre-test page for the lesson
+            redirect_url = reverse('learncontent:learncontent', kwargs={'lesson_number': lesson_number})
+            alert_message = f'Complete the Pre-Test for Lesson {lesson_number} first.'
+            alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+            return HttpResponse(alert_script)
         return _wrapped_view
     return decorator
 

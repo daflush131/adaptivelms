@@ -1,0 +1,102 @@
+[
+    {
+        "question": "A car of 100kg is moving on the horizontal ground. Find work done by the gravity when the car has moved 10m.",
+        "options": ["0", "100", "1000", "10000"],
+        "correct_answer": "0"
+    },
+    {
+        "question": "An applied force F accelerates an object of mass m on a horizontal frictionless surface, from velocity v to velocity 2v. The net work done on the object is equal to: ",
+        "options": ["½mv²", "1½mv²", "mv²", "2mv"],
+        "correct_answer": "1"
+    },
+    {
+        "question": "Consider these statements: (i) Work is done on an object when a force displaces the object in the direction of the force. (ii) The mechanical energy of a system is conserved when an external force does no work on the system. (iii) The work done on an object by a net force is equal to the kinetic energy of the object. Which of the above statements is / are true?",
+        "options": ["only (i)", "(i) and (ii)", "(ii) and (iii)", "(i), (ii) and (iii)"],
+        "correct_answer": "1"
+    },
+    {
+        "question": "A car moves up a hill at constant speed. Which one of the following represents the work done by the weight of the car as it moves up the hill?",
+        "options": ["ΔEk", "-ΔEk", "ΔEp", "-ΔEp"],
+        "correct_answer": "3"
+    },
+    {
+        "question": "Two objects with a mass of 1 x 10-3kg and 4 x 10-3kg have equal momentum. What is the ratio of their kinetic energy?",
+        "options": ["4 : 1", "2 : 1", "16 : 1", "√2 : 1"],
+        "correct_answer": "0"
+    },
+    {
+        "question": "A 2kg box slides down a ramp a distance of two meters before it reaches the ground. The ramp has an angle of 30o. The coefficient of kinetic friction for the ramp is 0.1. What is the work done by gravity on the box?",
+        "options": ["35J", "40J", "10J", "20J"],
+        "correct_answer": "3"
+    },
+    {
+        "question": "What is the work done by gravity if a 50kg block is pushed along a 40m track?",
+        "options": ["10J", "15J", "5J", "0J"],
+        "correct_answer": "3"
+    },
+    {
+        "question": "A force F directed at an angle θ above the horizontal, is used to pull a crate a distance D across a level floor. The work done by the force F is …",
+        "options": ["FD", "mgsin θ", "FDcos θ", "mgDcos θ", "FD sin θ"],
+        "correct_answer": "2"
+    },
+    {
+        "question": "A fan blows the air and gives it kinetic energy. An hour after the fan has been turned off, what has happened to the kinetic energy of the air?",
+        "options": ["It disappears.", "It turns into thermal energy.", "It turns into electrical energy.", "It turns into potential energy.", "It turns into sound energy."],
+        "correct_answer": "1"
+    },
+    {
+        "question": "A block of wood is floating in space. A bullet is fired from a gun and hits the block, embedding itself in the wood and generating heat. Which of the following is conserved?",
+        "options": ["Temperature", "Momentum", "Kinetic energy", "Mechanical energy"],
+        "correct_answer": "1"
+    },
+    {
+        "question": "A rock is dropped from a given height and allowed to hit the ground. The velocity of the rock is measured upon impact with the ground. Assume there is no air resistance. In order for the velocity of the rock to be doubled before impact, which of the following is necessary?",
+        "options": ["Reduce by 25% the height from which the rock is dropped", "Quadruple the height from which the rock is dropped", "Halve the height from which the rock is dropped", "Reduce by 75% the height from which the rock is dropped", "Double the height from which the rock is dropped"],
+        "correct_answer": "1"
+    },
+    {
+        "question": "An empty mining cart has a mass of 15kg and is traveling down a track that has a slope of 40∘ to the horizontal. The cart is traveling at a rate of 10m/s when an operator notices a disturbance on the track ahead and locks the wheels of the cart. What is the speed of the cart after it has traveled 20m with the wheels locked?",
+        "options": ["16.3m/s", "13.2 m/s", "4.7 m/s", "6.8 m/s", "8.3 m/s"],
+        "correct_answer": "0"
+    },
+    {
+        "question": "How much energy is required to a accelerate a 2kg block from rest to a final speed of 5m/s?",
+        "options": ["10J", "5.0J", "25.0J", "2.5J"],
+        "correct_answer": "2"
+    },
+    {
+        "question": "A 2kg box slides down a ramp a distance of two meters before it reaches the ground. The ramp has an angle of 30o. The coefficient of kinetic friction for the ramp is 0.1. What is the gravitational potential energy of the box relative to the ground when at the top of the ramp?",
+        "options": ["20J", "35J", "10J", "40J"],
+        "correct_answer": "0"
+    },
+    {
+        "question": "A stone of mass m sits atop a hill of height h.  As it rolls downhill, which of the following is true? 1. Half way down the hill, PE = 1/2 mgh 2. Half way down the hill, PE = 1/4 mgh 3. Half way down the hill, PE = mg √h 4. Half way down the hill, PE still equals mgh.",
+        "options": ["1", "2", "3", "4"],
+        "correct_answer": "0" 
+    },
+    {
+        "question": "Ignoring air resistance, which of the following is true regarding the motion of a pendulum?",
+        "options": ["At the bottom of the oscillation potential energy is at a maximum and kinetic energy is at a minimum", "At the bottom of the oscillation potential energy is at a maximum and kinetic energy is at a maximum", "At the bottom of the oscillation potential energy is at a minimum and kinetic energy is at a minimum", "At the bottom of the oscillation potential energy is at a minimum and kinetic energy is at a maximum"],
+        "correct_answer": "3"
+    },
+    {
+        "question": "A 1200 kg car and a 2400 kg car are lifted to the same height at a constant speed in a auto service station. Lifting the more massive car requires ____ work.",
+        "options": ["less", "the same", "twice as much", "four times as much", "more than 4 times as much"],
+        "correct_answer": "2"
+    },
+    {
+        "question": "A child lifts a box up from the floor. The child then carries the box with constant speed to the other side of the room and puts the box down. How much work does he do on the box while walking across the floor at constant speed?",
+        "options": ["zero J", "more than zero J", "more information needed to determine", "none of the above"],
+        "correct_answer": "0"
+    },
+    {
+        "question": "50.0 kg crate is lifted to a height of 2.0 meters in the same time as a 25.0 kg crate is lifted to a height of 4 meters. The rate at which energy is used (i.e., power) in raising the 50.0 kg crate is ____ as the rate at which energy is used to lift the 25.0 kg crate.",
+        "options": ["twice as much", "half as much", "the same"],
+        "correct_answer": "2"
+    },
+    {
+        "question": "For a body moving in a circular path, the work done by the centripetal force is ___________",
+        "options": ["Negative", "Positive", "Constant", "Zero"],
+        "correct_answer": "3"
+    }
+]

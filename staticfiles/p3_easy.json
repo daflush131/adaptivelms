@@ -1,0 +1,229 @@
+  [ 
+   {
+      "question": "A man of 80 kg climbs up 4m high stairs in 10 sec. Find the power spent by the man.",
+      "options": [
+        "200 watts",
+        "400 watts",
+        "320 watts",
+        "None of the above"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "If air resistance is negligible, the total mechanical energy of a free-falling body",
+      "options": [
+        "remains constant.",
+        "increases.",
+        "becomes zero.",
+        "decreases."
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "Power is defined as the rate …",
+      "options": [
+        "of change of velocity.",
+        "of change of momentum.",
+        "at which work is done.",
+        "of change of displacement."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A force F directed at an angle θ above the horizontal, is used to pull a crate a distance D across a level floor. The work done by the force F is …",
+      "options": [
+        "FD",
+        "mgsin θ",
+        "FDcos θ",
+        "mgDcos θ",
+        "FD sin θ"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "A fan blows the air and gives it kinetic energy. An hour after the fan has been turned off, what has happened to the kinetic energy of the air?",
+      "options": [
+        "It disappears.",
+        "It turns into thermal energy.",
+        "It turns into electrical energy.",
+        "It turns into potential energy.",
+        "It turns into sound energy."
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A girl carries a heavy suitcase up a flight of stairs. A boy of the same weight carries the same suitcase slowly up the flight of stairs. Which statement is true?",
+      "options": [
+        "The girl did less work and had less power than the boy.",
+        "The girl had less power than the boy.",
+        "The girl did more work and had more power than the boy.",
+        "The girl had more power than the boy."
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "How much work is done to lift a 2kg block to a point 1m above its resting location?",
+      "options": [
+        "9.8J",
+        "19.6J",
+        "23.4J",
+        "2.0J"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "A student carries a 10kg stack of books 50m along a soccer field. She carries the books at a constant height of one meter above the ground and walks with a constant speed. How much work does the student do on the books?",
+      "options": [
+        "0J",
+        "50J",
+        "49kJ",
+        "500J",
+        "980J"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A 1.0kg block slides along a smooth surface at a velocity of 2m/s. The block then encounters a rough surface and continues for six meters before coming to a complete stop. What is the force of friction on the block?",
+      "options": [
+        "6N",
+        "1/6N",
+        "0N",
+        "1/3N",
+        "3N"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A block of wood is floating in space. A bullet is fired from a gun and hits the block, embedding itself in the wood and generating heat. Which of the following is conserved?",
+      "options": [
+        "Temperature",
+        "Momentum",
+        "Kinetic energy",
+        "Mechanical energy"
+      ],
+      "image_url": null,
+      "correct_answer": "1"
+    },
+    {
+      "question": "How much energy is required to accelerate a 2kg block from rest to a final speed of 5m/s?",
+      "options": [
+        "10J",
+        "5.0J",
+        "25.0J",
+        "2.5J"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A child lifts a box up from the floor. The child then carries the box with constant speed to the other side of the room and puts the box down. How much work does he do on the box while walking across the floor at constant speed?",
+      "options": [
+        "zero J",
+        "more than zero J",
+        "more information needed to determine",
+        "none of the above"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "A 10-Newton object moves to the left at 1 m/s. Its kinetic energy is approximately ____ Joules.",
+      "options": [
+        "0.5",
+        "1",
+        "10",
+        "more than 10"
+      ],
+      "image_url": null,
+      "correct_answer": "0"
+    },
+    {
+      "question": "An object at rest may have __________.",
+      "options": [
+        "Speed",
+        "Velocity",
+        "Acceleration",
+        "Energy",
+        "All of the above"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "A job is done slowly, and an identical job is done quickly. Both jobs require the same amount of ____, but different amounts of ____. Pick the two words which fill in the blanks in their respective order.",
+      "options": [
+        "energy, work",
+        "power, work",
+        "work, energy",
+        "work, power",
+        "power, energy"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "A 50.0 kg crate is lifted to a height of 2.0 meters in the same time as a 25.0 kg crate is lifted to a height of 4 meters. The rate at which energy is used (i.e., power) in raising the 50.0 kg crate is ____ as the rate at which energy is used to lift the 25.0 kg crate.",
+      "options": [
+        "twice as much",
+        "half as much",
+        "the same"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "For a body moving in a circular path, the work done by the centripetal force is ___________",
+      "options": [
+        "Negative",
+        "Positive",
+        "Constant",
+
+
+        "Zero"
+      ],
+      "image_url": null,
+      "correct_answer": "3"
+    },
+    {
+      "question": "When a body slides against a rough horizontal surface, the work done by friction is ___________",
+      "options": [
+        "Positive",
+        "Zero",
+        "Negative",
+        "Constant"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A person is holding a bucket by applying a force of 10N. He moves a horizontal distance of 5m and then climbs up a vertical distance of 10m. Find the total work done by him?",
+      "options": [
+        "50J",
+        "150J",
+        "100J",
+        "200J"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    },
+    {
+      "question": "A bullet fired from a gun can pierce a target due to its ___________",
+      "options": [
+        "Mechanical energy",
+        "Heat energy",
+        "Kinetic energy",
+        "Acceleration"
+      ],
+      "image_url": null,
+      "correct_answer": "2"
+    }
+  ]

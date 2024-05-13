@@ -1,0 +1,226 @@
+[
+    {
+        "question": "Suppose you find yourself teetering on the edge of a cliff or the roof of a tall building with a heavy physics book in your hand. As you are about to fall, you suddenly remember how physics can save you! What law did you remember?",
+        "options": [
+            "law of inertia",
+            "law of gravitation",
+            "law of conservation of momentum",
+            "law of conservation of energy"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "If two objects of 30 kg and 10 kg move with equal kinetic energy, then what is the ratio of magnitudes for linear momentum?",
+        "options": [
+            "√3 : 1",
+            "1 : √3",
+            "1 : 3√3",
+            "1 : 3"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A ball is dropped on a horizontal surface from a height of 15 m. What will be the rebounding height of the ball after striking the surface? (coefficient of restitution = 0.8)",
+        "options": [
+            "9.6 m",
+            "6.5 m",
+            "5.6 m",
+            "Insufficient data"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "Which of the following laws derive impulse moment principle?",
+        "options": [
+            "Newton's 3rd law",
+            "Newton's 2nd law",
+            "Newton's 1st law",
+            "All of the above"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Coefficient of restitution is the ratio of impulse during __________",
+        "options": [
+            "plastic deformation and elastic deformation",
+            "elastic deformation and plastic deformation",
+            "restoration period and deformation period",
+            "deformation period and restoration period"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "An object of 30 kg is moved with a velocity of 2 m/s on a horizontal smooth surface. What is the velocity of the block for 4 seconds if force of 40 N is applied on it in the direction of force?",
+        "options": [
+            "2 m/s",
+            "4.6 m/s",
+            "7.33 m/s",
+            "9.33 m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "In order to catch a ball, a baseball player naturally moves his or her hand backward in the direction of the ball's motion once the ball contacts the hand. This habit causes the force of impact on the players hand to be reduced in size principally because ___.",
+        "options": [
+            "the resulting impact velocity is lessened",
+            "the momentum change is decreased",
+            "the time of impact is increased",
+            "the time of impact is decreased",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "In a physics experiment, two equal-mass carts roll towards each other on a level, low-friction track. One cart rolls rightward at 2 m/s and the other cart rolls leftward at 1 m/s. After the carts collide, they couple (attach together) and roll together with a speed of _____________. Ignore resistive forces.",
+        "options": [
+            "0.5 m/s",
+            "0.33 m/s",
+            "0.67 m/s",
+            "1.0 m/s",
+            "none of these"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "Consider the head-on collision between a lady bug and the windshield of a high speed bus. Which of the following statements are true?",
+        "options": [
+            "The magnitude of the force encountered by the bug is greater than that of the bus.",
+            "The magnitude of the impulse encountered by the bug is greater than that of the bus.",
+            "The magnitude of the momentum change encountered by the bug is greater than that of the bus.",
+            "The magnitude of the velocity change encountered by the bug is greater than that of the bus and The magnitude of the acceleration encountered by the bug is greater than that of the bus."
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A man with a mass of m is painting a house. He stands on a tall ladder of height h. He leans over and falls straight down off the ladder. If he is in the air for s seconds, what will be his momentum right before he hits the ground?",
+        "options": [
+            "mg/h",
+            "mg/s",
+            "(mg)(s)",
+            "12mv2"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A 0.12kg tennis ball strikes a racket, moving at 35m/s. After striking the racket, it bounces back at a speed of 45m/s. What is the change in momentum?",
+        "options": [
+            "−0.6kg∗m/s",
+            "−9.6kg∗m/s",
+            "4.8kg∗m/s",
+            "−19.2kg∗m/s",
+            "1.2kg∗m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "A 50kg crate slides along the floor for 10s before stopping. If it was initially moving with a velocity of 12m/s, what is the force of friction?",
+        "options": [
+            "−600N",
+            "−10N",
+            "−100N",
+            "−60N"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A 100kg crate slides along a floor with a starting velocity of 21ms. If the force due to friction is −8N, how long will it take for the box to come to rest?",
+        "options": [
+            "262.5s",
+            "284.5s",
+            "121.3s",
+            "504.2s",
+            "108.7s"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "An object of mass 2 kg has a linear momentum of magnitude 6 kg · m/s. What is this object's kinetic energy?",
+        "options": [
+            "3 J",
+            "6 J",
+            "9 J",
+            "12 J"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "Angular momentum is proportional to __________",
+        "options": [
+            "Inertia and angular speed",
+            "Mass and angular speed",
+            "Angular speed and volume",
+            "Rate of change of angular speed"
+        ],
+        "image_url": null,
+        "correct_answer": "0"
+    },
+    {
+        "question": "A ball of mass 0.5 kg, initially at rest, acquires a speed of 4 m/s immediately after being kicked by a force of strength 20 N. For how long did this force act on the ball?",
+        "options": [
+            "0.01 s",
+            "0.1 s",
+            "0.2 s",
+            "1"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A box with a mass of 2 kg accelerates in a straight line from 4 m/s to 8 m/s due to the application of a force whose duration is 0.5 s. Find the average strength of this force.",
+        "options": [
+            "4 N",
+            "8 N",
+            "12 N",
+            "16 N"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    },
+    {
+        "question": "A ball of mass m traveling horizontally with velocity v strikes a massive vertical wall and rebounds back along its original direction with no change in speed. What is the magnitude of the impulse delivered by the wall to the ball?",
+        "options": [
+            "1/2mv",
+            "mv",
+            "2mv",
+            "4mv"
+        ],
+        "image_url": null,
+        "correct_answer": "2"
+    },
+    {
+        "question": "Two objects, one of mass 3 kg moving with a speed of 2 m/s and the other of mass 5 kg and speed 2 m/s, move toward each other and collide head-on. If the collision is perfectly inelastic, find the speed of the objects after the collision.",
+        "options": [
+            "0.25 m/s",
+            "0.5 m/s",
+            "0.75 m/s",
+            "1 m/s"
+        ],
+        "image_url": null,
+        "correct_answer": "1"
+    },
+    {
+        "question": "Object 1 moves toward Object 2, whose mass is twice that of Object 1 and which is initially at rest. After their impact, the objects lock together and move with what fraction of Object 1's initial kinetic energy?",
+        "options": [
+            "1/18",
+            "1/9",
+            "1/6",
+            "1/3"
+        ],
+        "image_url": null,
+        "correct_answer": "3"
+    }
+]
