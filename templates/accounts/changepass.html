@@ -1,0 +1,75 @@
+<!-- templates/accounts/change_password.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Change Password</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom styles -->
+    <style>
+        body {
+            background: url('') center/cover no-repeat fixed;
+            background-color: #343a40;
+            color: #ffffff;
+        }
+
+        .change-password-container {
+            max-width: 400px;
+            margin: auto;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center;
+        }
+
+        .logo {
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            color: #ffffff;
+        }
+
+        .form-group input {
+            color: #000000;
+            background-color: #ffffff;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    {% if messages %}
+        {% for message in messages %}
+            <div class="alert alert-{{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    {% endif %}
+    <div class="container change-password-container">
+        <!-- Placeholder for Logo -->
+        <img src="{% static 'logo_white.png' %}" alt="Logo" class="logo">
+        <form method="post" action="{% url 'accounts:changepassword' %}">
+            <h4>Change your password</h4>
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary btn-block">Change Password</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

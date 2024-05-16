@@ -47,9 +47,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="{% url "learncontent:learncontent" %}">Lessons</a>
                     </li>
+                    {% if user.id == 1 %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url "remotelab:remotelab" %}">Remote Lab</a>
                     </li>
+                    {% endif %}
                 </ul>
             </div>
             
@@ -58,8 +60,10 @@
                     {{ user.first_name }} <!-- Assuming user.username is available in your template context -->
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
-                    <li><a class="dropdown-item" href="">Profile</a></li>
+                    <li><a class="dropdown-item" href="{% url 'accounts:profile' %}">Profile</a></li>
+                    {% if user.id == 1 %}
                     <li><a class="dropdown-item" href="{% url 'admin:index' %}">Admin</a></li>
+                    {% endif %}
                     <li><hr class="dropdown-divider"></li>
                     <li>
                         <form action="{% url 'accounts:logout' %}" method="post">

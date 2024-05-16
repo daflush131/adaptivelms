@@ -25,8 +25,6 @@ class UserProfile(models.Model):
     ]
 
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    course = models.CharField(max_length=100, blank=True)
-    yearandsection = models.CharField(max_length=10, blank=True)
     learning_style = models.CharField(max_length=3, choices=LEARNING_STYLE_CHOICES, blank=True, null=True)
 
     def __str__(self):
@@ -68,3 +66,11 @@ class PostTest(models.Model):
     post2_answers = models.JSONField(null=True)
     post3_answers = models.JSONField(null=True)
     post4_answers = models.JSONField(null=True)
+
+class ClusterResults(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    clesson1 = models.JSONField(null=True)
+    clesson2 = models.JSONField(null=True)
+    clesson3 = models.JSONField(null=True)
+    clesson4 = models.JSONField(null=True)
+    

@@ -9,8 +9,8 @@ from .models import UserProfile
 
 class LoginForm(AuthenticationForm):
     username = forms.CharField(
-        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your Student-No'}),
-        label='Student No'
+        widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Enter your Username'}),
+        label='Username'
     )
     password = forms.CharField(
         widget=forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Enter your Password'}),
@@ -18,18 +18,19 @@ class LoginForm(AuthenticationForm):
     )
 
 
-class CustomUserChangeForm(UserChangeForm):
+class UserProfileForm(forms.ModelForm):
+    password = forms.CharField(label='New Password', widget=forms.PasswordInput, required=False)
+    confirm_password = forms.CharField(label='Confirm New Password', widget=forms.PasswordInput, required=False)
+
     class Meta:
         model = User
-        fields = ['username', 'email', 'first_name', 'last_name']
+        fields = ['username', 'first_name', 'last_name']
 
-    def __init__(self, *args, **kwargs):
-        super().__init__(*args, **kwargs)
-        self.fields.update(UserProfileForm(*args, **kwargs).fields)
+    def clean(self):
+        cleaned_data = super().clean()
+        password = cleaned_data.get('password')
+        confirm_password = cleaned_data.get('confirm_password')
 
-    def save(self, commit=True):
-        user = super().save(commit)
-        profile_form = UserProfileForm(self.cleaned_data, instance=user.userprofile)
-        if profile_form.is_valid():
-            profile_form.save()
-        return user
+        if password != confirm_password:
+            raise forms.ValidationError("Passwords do not match.")
+        return cleaned_data

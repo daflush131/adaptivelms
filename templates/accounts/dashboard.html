@@ -1,18 +1,15 @@
-
 {% extends 'accounts/base.html' %}
 {% block content %}
 <head>
   <title>Dashboard</title>
 </head>
 <style>
-
     .card {
         background-color: #333;
         color: #fff;
         border-color: #333;
         font-size: 20px;
     }
-
     .progress {
         height: 30px;
         overflow: hidden;
@@ -20,30 +17,25 @@
         margin-bottom: 20px;
         border-radius: 5px;
     }
-
     .progress-bar {
         transition: width 0.6s ease;
         font-size: 16px;
         line-height: 30px;
     }
-
     .progress-text {
         margin-top: 5px;
         text-align: center;
         font-size: 18px;
         font-weight: bold;
     }
-
     .list-group-item {
         background-color: #444;
         border-color: #444;
         font-size: 18px;
     }
-
     .list-group-item a {
         color: #fff;
     }
-
     .list-group-item a:hover {
         color: #17a2b8;
     }
@@ -53,18 +45,17 @@
     <div class="row mb-4">
         <div class="col-md-6">
             <div class="progress mb-2">
-                <div class="progress-bar bg-success" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                <div id="lessonProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
             </div>
             <div class="progress-text">Total Lesson Progress</div>
         </div>
         <div class="col-md-6">
             <div class="progress mb-2">
-                <div class="progress-bar bg-info" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">60%</div>
+                <div id="testProgressBar" class="progress-bar bg-info" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">0%</div>
             </div>
-            <div class="progress-text">Total Pre-Test Progress</div>
+            <div class="progress-text">Total Tests Progress</div>
         </div>
     </div>
-
     <div class="row">
         <div class="col-md-6">
             <!-- Lesson 1 Card -->
@@ -77,7 +68,7 @@
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="preTest1" />
                                 <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=1 %}">Pre-Test</a></label>
                             </div>
                         </li>
@@ -91,7 +82,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="postTest1" />
                                 <label class="form-check-label">
                                     <a href="{% url 'learncontent:posttest' lesson_number=1 %}">Post-Test</a>
                                 </label>
@@ -100,7 +91,6 @@
                     </ul>
                 </div>
             </div>
-            <!-- Add more lesson cards here with similar structure -->
         </div>
         <div class="col-md-6">
             <!-- Lesson 2 Card -->
@@ -113,7 +103,7 @@
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions2" />
+                                <input type="checkbox" class="form-check-input" id="preTest2" />
                                 <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=2 %}">Pre-Test</a></label>
                             </div>
                         </li>
@@ -127,7 +117,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="postTest2" />
                                 <label class="form-check-label">
                                     <a href="{% url 'learncontent:posttest' lesson_number=2 %}">Post-Test</a>
                                 </label>
@@ -148,7 +138,7 @@
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions3" />
+                                <input type="checkbox" class="form-check-input" id="preTest3" />
                                 <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=3 %}">Pre-Test</a></label>
                             </div>
                         </li>
@@ -162,7 +152,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="postTest3" />
                                 <label class="form-check-label">
                                     <a href="{% url 'learncontent:posttest' lesson_number=3 %}">Post-Test</a>
                                 </label>
@@ -183,7 +173,7 @@
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions4" />
+                                <input type="checkbox" class="form-check-input" id="preTest4" />
                                 <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=4 %}">Pre-Test</a></label>
                             </div>
                         </li>
@@ -197,7 +187,7 @@
                         </li>
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="postTest4" />
                                 <label class="form-check-label">
                                     <a href="{% url 'learncontent:posttest' lesson_number=4 %}">Post-Test</a>
                                 </label>
@@ -215,5 +205,147 @@
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-{% endblock %}
+<!-- Custom JS to handle progress calculation -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        const lessonsCount = 4;  // Total number of lessons
+        const testsPerLesson = 2;  // Number of tests per lesson (pre-test and post-test)
+        const totalLessonCheckboxes = lessonsCount * 3; // Total number of checkboxes for all lessons (3 checkboxes per lesson)
+        const totalTestCheckboxes = lessonsCount * testsPerLesson; // Total number of test checkboxes (pre-test and post-test)
 
+        $('#preTest1, #preTest2, #preTest3, #preTest4, #postTest1, #postTest2, #postTest3, #postTest4').prop('disabled', true);
+
+        // Event handler for practice question checkboxes
+        $('#practiceQuestions1, #practiceQuestions2, #practiceQuestions3, #practiceQuestions4').change(function(){
+            // Get the checkbox value (1 if checked, 0 if unchecked)
+            var checked = $(this).prop('checked') ? 1 : 0;
+            // Get the lesson number from the checkbox ID
+            var lessonNumber = $(this).attr('id').replace('practiceQuestions', '');
+            console.log('hello')
+            // Send an AJAX request to the Django view to update the attribute
+            $.ajax({
+                url: '{% url 'dashboard:update' %}',  // Replace with the URL of your Django view
+                method: 'POST',
+                data: { 
+                    checked: checked,
+                    lessonNumber: lessonNumber
+                },
+                success: function(response) {
+                    // Update the value of the practice question attribute in the HTML
+                    if (response.success) {
+                        // Update the value based on the response
+                        $('#practice_question_status').text(response.checked ? 'Checked' : 'Unchecked');
+                    } else {
+                        console.error('Failed to update practice question status');
+                    }
+                },
+                error: function(xhr, status, error) {
+                    console.error('Error:', error);
+                }
+            });
+        });
+
+        function updateLessonProgress() {
+            let totalLessonCheckedCount = 0;
+        
+            // Count checked pre-test checkboxes for all lessons
+            for (let i = 1; i <= lessonsCount; i++) {
+                if ($(`#preTest${i}`).prop('checked')) {
+                    totalLessonCheckedCount++;
+                }
+            }
+        
+            // Count checked post-test checkboxes for all lessons
+            for (let i = 1; i <= lessonsCount; i++) {
+                if ($(`#postTest${i}`).prop('checked')) {
+                    totalLessonCheckedCount++;
+                }
+            }
+        
+            // Count checked practice question checkboxes for all lessons
+            for (let i = 1; i <= lessonsCount; i++) {
+                if ($(`#practiceQuestions${i}`).prop('checked')) {
+                    totalLessonCheckedCount++;
+                }
+            }
+        
+            // Calculate total lesson progress
+            const lessonProgress = (totalLessonCheckedCount / (lessonsCount * 3)) * 100;
+            $("#lessonProgressBar").css("width", lessonProgress + "%").text(lessonProgress.toFixed(0) + "%");
+        }
+        
+
+        function updateTestProgress() {
+            let totalTestCheckedCount = 0;
+
+            // Count checked pre-test and post-test checkboxes for all lessons
+            for (let i = 1; i <= lessonsCount; i++) {
+                if ($(`#preTest${i}`).prop('checked')) {
+                    totalTestCheckedCount++;
+                }
+                if ($(`#postTest${i}`).prop('checked')) {
+                    totalTestCheckedCount++;
+                }
+            }
+
+            // Calculate total tests progress
+            const testProgress = (totalTestCheckedCount / totalTestCheckboxes) * 100;
+            $("#testProgressBar").css("width", testProgress + "%").text(testProgress.toFixed(0) + "%");
+        }
+
+        function checkInstanceTests(){
+            {% if pre_test_instance %}
+            $('#preTest1, #preTest2, #preTest3, #preTest4').prop('checked', true);
+            {% endif %}
+
+            {% if post1_exists %}
+                $('#postTest1').prop('checked', true);
+            {% endif %}
+            {% if post2_exists %}
+                $('#postTest2').prop('checked', true);
+            {% endif %}
+            {% if post3_exists %}
+                $('#postTest3').prop('checked', true);
+            {% endif %}
+            {% if post4_exists %}
+                $('#postTest4').prop('checked', true);
+            {% endif %}
+            
+            {% if p1_checked %}
+                $('#practiceQuestions1').prop('checked', true);
+            {% endif %}
+            
+            {% if p2_checked %}
+                $('#practiceQuestions2').prop('checked', true);
+            {% endif %}
+            
+            {% if p3_checked %}
+                $('#practiceQuestions3').prop('checked', true);
+            {% endif %}
+            
+            {% if p4_checked %}
+                $('#practiceQuestions4').prop('checked', true);
+            {% endif %}
+        }
+        
+        // Add event listeners to all checkboxes
+        $('.form-check-input').change(function() {
+            updateLessonProgress();
+            updateTestProgress();
+            var id = $(this).attr('id');
+            if (!id.startsWith('practiceQuestions')) {
+                alert('Pre-test and post-test checkboxes cannot be modified.');
+                return; // Exit the function to prevent further execution
+            }
+        });
+
+        // Initial call to set progress on page load
+        checkInstanceTests();
+        updateLessonProgress();
+        updateTestProgress();
+    });
+</script>
+
+
+{% endblock %}

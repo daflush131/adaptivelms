@@ -22,3 +22,10 @@ accounts/migrations/0028_alter_userprofile_learning_style.py
 accounts/migrations/0029_difficulty_delete_posttest.py
 accounts/migrations/0030_remove_userprofile_cluster.py
 accounts/migrations/0031_posttest.py
+accounts/migrations/0032_clusterresults.py
+accounts/migrations/0033_delete_clusterresults.py
+accounts/migrations/0034_clusterresults.py
+accounts/migrations/0035_remove_userprofile_course_and_more.py
+dashboard/migrations/0001_initial.py
+dashboard/migrations/0002_remove_dashboard_post_test_checked_and_more.py
+dashboard/migrations/0003_rename_practice_question_checked_dashboard_p1_checked_and_more.py

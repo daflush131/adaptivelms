@@ -1,7 +1,8 @@
-import random, os
+import random
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+
 # Function to calculate the Euclidean distance between two points
 def euclidean_distance(a, b):
     return sum((x - y) ** 2 for x, y in zip(a, b)) ** 0.5
@@ -31,7 +32,8 @@ def k_means(data, k, max_iterations=100):
     return clusters, centroids
 
 # Function to plot clusters and centroids
-def plot_clusters(clusters, centroids):
+def plot_clusters(clusters, centroids, lesson):
+    plt.clf()
     colors = ['r', 'g', 'b', 'c', 'm', 'y']
     for i, cluster in enumerate(clusters):
         x = [point[0] for point in cluster]
@@ -44,35 +46,24 @@ def plot_clusters(clusters, centroids):
     
     plt.xlabel('Total Score')
     plt.ylabel('Total Correct Items')
-    plt.title('K-means Clustering of Student Data')
+    plt.title('K-means Clustering of Student Data for ' + lesson)
     plt.legend()
     plt.grid(True)
-    
-    # Get the directory of the current script file
-    current_dir = os.path.dirname(os.path.realpath(__file__))
-    
-    # Save the plot in the same directory
-    save_path = r'C:\Users\marcp\Downloads\clustered_results.png'
-    plt.savefig(save_path)
     plt.show()
+    save_path = rf'C:\Users\marcp\Downloads\{lesson}.png'
+    plt.savefig(save_path)
 
-def perform_clustering(k, with_id):
-    # Extract only the score and correct items for clustering
-    student_data = [[score, correct_items] for _, score, correct_items in with_id]
-
-    # Perform k-means clustering
+# Function to perform clustering and associate students with clusters
+def perform_clustering(k, student_data):
     clusters, centroids = k_means(student_data, k)
-
-    # Sort clusters based on average score and average number of correct items
-    sorted_clusters = sorted(clusters, key=lambda x: (sum(p[0] for p in x) / len(x), sum(p[1] for p in x) / len(x)))
-
-    # Associate each student with a cluster using user ID
+    
+    # Sort clusters based on some criterion (e.g., the mean value of each cluster)
+    clusters = sorted(clusters, key=lambda cluster: sum(sum(dim) for dim in cluster))
+    
+    # Associate each student with a cluster
     student_cluster_mapping = {}
-    for i, cluster in enumerate(sorted_clusters):
-        for score, correct_items in cluster:
-            # Since there's no user_id in the cluster, we don't need to unpack it
-            # Instead, we'll directly use the user_id from the with_id list
-            user_id = next(data[0] for data in with_id if data[1:] == [score, correct_items])
-            student_cluster_mapping[user_id] = i + 1  # Cluster numbering starts from 1
+    for i, cluster in enumerate(clusters):
+        for student in cluster:
+            student_cluster_mapping[tuple(student)] = i + 1  # Cluster numbering starts from 1
 
-    return clusters, centroids, student_cluster_mapping
+    return clusters, centroids, student_cluster_mapping 
