@@ -98,7 +98,7 @@
                             console.log(response);
                             // Display a message to the user based on the response
                             alert('You have succesfully submitted your answer');
-                            window.location.href = "{% url 'learncontent:learncontent' %}";
+                            window.location.href = "{% url 'dashboard:dashboard' %}";
                         },
                         error: function(xhr, status, error) {
                             console.error("Failed to check answers:", error);
