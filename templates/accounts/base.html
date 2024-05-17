@@ -42,16 +42,11 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url "dashboard:dashboard" %}">Dashboard</a>
+                        <a class="nav-link" href="{% url "dashboard:dashboard" %}"> Lessons Dashboard</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url "learncontent:learncontent" %}">Lessons</a>
-                    </li>
-                    {% if user.id == 1 %}
                     <li class="nav-item">
                         <a class="nav-link" href="{% url "remotelab:remotelab" %}">Remote Lab</a>
                     </li>
-                    {% endif %}
                 </ul>
             </div>
             

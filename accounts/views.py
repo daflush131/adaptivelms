@@ -39,7 +39,7 @@ def change_password(request):
         if form.is_valid():
             user = form.save()
             update_session_auth_hash(request, user)  # Important to prevent logout
-            return redirect('accounts:checkpassword')
+            return redirect('dashboard:dashboard')
         else:
             messages.error(request, 'Please correct the error below.')
     else:

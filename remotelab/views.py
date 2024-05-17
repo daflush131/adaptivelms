@@ -3,10 +3,6 @@ from django.shortcuts import render
 from django.contrib.auth.decorators import login_required
 
 def remotelab(request):
-    if request.user.id != 1:
-        return HttpResponseForbidden("You don't have permission to access this page.")
-    # Your dashboard logic goes here
-    
     return render(request, 'remotelab/remotelab.html')
 
 from django.http import HttpResponse

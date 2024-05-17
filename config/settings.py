@@ -136,5 +136,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 SECURE_SSL_REDIRECT = False
 
-LOGIN_REDIRECT_URL = '/accounts'
+LOGIN_REDIRECT_URL = '/dashboard'
 LOGOUT_REDIRECT_URL = 'accounts/login'

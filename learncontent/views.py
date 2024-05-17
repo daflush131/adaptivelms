@@ -19,7 +19,7 @@ def learncontent(request):
 @login_required
 def ils(request):
     if ILSResult.objects.filter(user=request.user).exists():
-        redirect_view_name = 'learncontent:learncontent'
+        redirect_view_name = 'dashboard:dashboard'
         redirect_url = reverse(redirect_view_name)
         alert_message = f'You have already answered the ILS Questionnaire'
         alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
@@ -57,7 +57,7 @@ def save_learningstyle(request):
         user_profile.save()
 
         # Redirect to a success page or perform any other action
-        redirect_view_name = 'learncontent:learncontent'
+        redirect_view_name = 'dashboard:dashboard'
         redirect_url = reverse(redirect_view_name)
         alert_message = f'You have submitted the ILS Form'
         alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
@@ -164,7 +164,7 @@ def check_pretest_completed(lesson_number):
                 return HttpResponse(alert_script)
             
             # Redirect to the pre-test page for the lesson
-            redirect_url = reverse('learncontent:learncontent', kwargs={'lesson_number': lesson_number})
+            redirect_url = reverse('dashboard:dashboard', kwargs={'lesson_number': lesson_number})
             alert_message = f'Complete the Pre-Test for Lesson {lesson_number} first.'
             alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
             return HttpResponse(alert_script)
@@ -174,22 +174,46 @@ def check_pretest_completed(lesson_number):
 @login_required
 @check_pretest_completed(1)
 def lesson1(request):
-    return render(request, 'learncontent/lesson1/lesson1.html')
+    if ILSResult.objects.filter(user=request.user).exists():
+        return render(request, 'learncontent/lesson1/lesson1.html')
+    else:
+        redirect_url = reverse('learncontent:ils')  # Adjust the URL to your desired learncontent view
+        alert_message = f'Answer the ILS Questionnaire First!'
+        alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
 
 @login_required
 @check_pretest_completed(2)
 def lesson2(request):
-    return render(request, 'learncontent/lesson2/lesson2.html')
+    if ILSResult.objects.filter(user=request.user).exists():
+        return render(request, 'learncontent/lesson2/lesson2.html')
+    else:
+        redirect_url = reverse('learncontent:ils')  # Adjust the URL to your desired learncontent view
+        alert_message = f'Answer the ILS Questionnaire First!'
+        alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
 
 @login_required
 @check_pretest_completed(3)
 def lesson3(request):
-    return render(request, 'learncontent/lesson3/lesson3.html')
+    if ILSResult.objects.filter(user=request.user).exists():
+        return render(request, 'learncontent/lesson3/lesson3.html')
+    else:
+        redirect_url = reverse('learncontent:ils')  # Adjust the URL to your desired learncontent view
+        alert_message = f'Answer the ILS Questionnaire First!'
+        alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
 
 @login_required
 @check_pretest_completed(4)
 def lesson4(request):
-    return render(request, 'learncontent/lesson4/lesson4.html')
+    if ILSResult.objects.filter(user=request.user).exists():
+        return render(request, 'learncontent/lesson4/lesson4.html')
+    else:
+        redirect_url = reverse('learncontent:ils')  # Adjust the URL to your desired learncontent view
+        alert_message = f'Answer the ILS Questionnaire First!'
+        alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
+        return HttpResponse(alert_script)
 
 def pretest(request, lesson_number):
     # Fetch the PreTest instance for the current user and lesson number
@@ -198,7 +222,7 @@ def pretest(request, lesson_number):
     # Check if the PreTest instance exists and if the user has already completed the pre-test for the specified lesson
     if pretest_instance and getattr(pretest_instance, f'score{lesson_number}', None):
         # If the user has already completed the pre-test for this lesson, construct a redirect URL
-        redirect_view_name = 'learncontent:learncontent'
+        redirect_view_name = 'dashboard:dashboard'
         redirect_url = reverse(redirect_view_name)  # Adjust the URL to your desired learncontent view
         alert_message = f'You have already completed the pre-test for Lesson {lesson_number}.'
         alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
@@ -261,7 +285,7 @@ def posttest(request,lesson_number):
     if ILSResult.objects.filter(user=request.user).exists():
         if pretest_instance and getattr(pretest_instance, f'score{lesson_number}', None):
             if PostTest.objects.filter(user=request.user).exists() and getattr(posttest_instance, f'post{lesson_number}_answers') is not None:
-                redirect_url = reverse('learncontent:learncontent')  # Adjust the URL to your desired learncontent view
+                redirect_url = reverse('dashboard:dashboard')  # Adjust the URL to your desired learncontent view
                 alert_message = f'You already answered the Post Test for Lesson {lesson_number}.'
                 alert_script = f'<script>alert("{alert_message}"); window.location.href = "{redirect_url}";</script>'
                 return HttpResponse(alert_script)

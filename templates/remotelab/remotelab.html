@@ -1,139 +1,178 @@
 {% extends 'accounts/base.html' %}
 {% block content %}
-<style>
-    .form-buttons-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
+    {% if user.id != 1 %}
+        <head>
+        <title>Remote Lab - Under Construction</title>
+        <style>
+            .construction-container {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                text-align: center;
+                color: #fff;
+            }
+            .construction-icon {
+                font-size: 80px;
+                margin-bottom: 20px;
+            }
+            .construction-text {
+                font-size: 24px;
+                margin-bottom: 20px;
+            }
+            .back-to-dashboard {
+                margin-top: 30px;
+            }
+        </style>
+        </head>
+        <div class="container-fluid construction-container">
+            <div class="construction-text">
+                <h1>Remote Lab</h1>
+                <p>Our Remote Lab is currently under construction.</p>
+                <p>We're working hard to bring you an amazing experience. Stay tuned!</p>
+            </div>
+            <div class="back-to-dashboard">
+                <a href="{% url 'dashboard:dashboard' %}" class="btn btn-primary">Back to Lessons Dashboard</a>
+            </div>
+        </div>
+    {% endif %}
 
-    .centered-container {
-      margin: 0;
-      padding: 0;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh; /* Adjust the height as needed */
-    }
-
-    .rotated-iframe {
-      transform: rotate(-90deg);
-    }
-  </style>
-   
-        <h2 class="text-center">Free Fall Physics Experiment</h2>
-    
-
-    <!-- Video Window for Livestream -->
-    <div class="container">
-      <div class="row justify-content-center">
-          <div class="col-md-6">
-              <div class="video-container centered-container">
-                  <div class="centered-container">
-                      <iframe width="640" height="480" src="http://192.168.0.102:81/stream" class="rotated-iframe"></iframe>
-                  </div>
-              </div>
-          </div>
-          <div class="col-md-6">
-              <div class="form-buttons-container centered-container">
-                  <div class="text-center">
-                      <select id="height" class="form-control text-center" onclick="getHeight()" >
-                          <option value="0" disabled selected>Select height</option>
-                          <option value="1" data-height="0.5 meters">0.5 meter</option>
-                          <option value="2" data-height="1 meter">1 meter</option>
-                          <option value="3"data-height="0.5 meters">1.5 meters</option>
-                      </select>
-                      <button id="startButton" onclick="startExperiment()" class="btn btn-primary" disabled>Start Experiment</button>
-                      <button id="dropButton" onclick="dropBall()" class="btn btn-danger ml-2" disabled>Drop Ball</button>
-                      <button id="resetButton" onclick="resetExperiment()" class="btn btn-secondary ml-2" disabled>Reset Experiment</button>
-                  </div>
-                  <div class="container mt-4">
-                    <h3>Height Data Table</h3>
-                    <table class="table table-bordered">
-                        <thead>
-                            <tr>
-                                <th>Time (s)</th>
-                                <th>Height (m)</th>
-                            </tr>
-                        </thead>
-                        <tbody id="heightDataTableBody"></tbody>
-                    </table>
+    {% if user.id == 1 %}
+        <style>
+            .form-buttons-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+        
+            .centered-container {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Adjust the height as needed */
+            }
+        
+            .rotated-iframe {
+            transform: rotate(-90deg);
+            }
+        </style>
+        
+                <h2 class="text-center">Free Fall Physics Experiment</h2>
+            
+        
+            <!-- Video Window for Livestream -->
+            <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="video-container centered-container">
+                        <div class="centered-container">
+                            <iframe width="640" height="480" src="http://192.168.0.102:81/stream" class="rotated-iframe"></iframe>
+                        </div>
+                    </div>
                 </div>
-              </div>
-          </div>
-      </div>
-  </div>
-  
-  <script>
-    const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTUxNDAzNDYsImlhdCI6MTcxNTEzMzE0Niwicm9sZSI6InVzZXIiLCJ1c3IiOiJkYWZsdXNoIn0.fw1C35im8lt5Nsj2ULcz9MToYzXWpoB7u4mtf5sgT0A';
-    const baseUrl = 'https://backend.thinger.io/v3/users/daflush/devices/ESP8266-FREEFALL/resources/';
-
-    function sendCommand(command) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', baseUrl + command, true);
-        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
-        xhr.onload = function() {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                console.log(xhr.responseText);
-            } else {
-                console.error('Request failed with status:', xhr.status);
+                <div class="col-md-6">
+                    <div class="form-buttons-container centered-container">
+                        <div class="text-center">
+                            <select id="height" class="form-control text-center" onclick="getHeight()" >
+                                <option value="0" disabled selected>Select height</option>
+                                <option value="1" data-height="0.5 meters">0.5 meter</option>
+                                <option value="2" data-height="1 meter">1 meter</option>
+                                <option value="3"data-height="0.5 meters">1.5 meters</option>
+                            </select>
+                            <button id="startButton" onclick="startExperiment()" class="btn btn-primary" disabled>Start Experiment</button>
+                            <button id="dropButton" onclick="dropBall()" class="btn btn-danger ml-2" disabled>Drop Ball</button>
+                            <button id="resetButton" onclick="resetExperiment()" class="btn btn-secondary ml-2" disabled>Reset Experiment</button>
+                        </div>
+                        <div class="container mt-4">
+                            <h3>Height Data Table</h3>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Time (s)</th>
+                                        <th>Height (m)</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="heightDataTableBody"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script>
+            const accessToken = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE3MTUxNDAzNDYsImlhdCI6MTcxNTEzMzE0Niwicm9sZSI6InVzZXIiLCJ1c3IiOiJkYWZsdXNoIn0.fw1C35im8lt5Nsj2ULcz9MToYzXWpoB7u4mtf5sgT0A';
+            const baseUrl = 'https://backend.thinger.io/v3/users/daflush/devices/ESP8266-FREEFALL/resources/';
+        
+            function sendCommand(command) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', baseUrl + command, true);
+                xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        console.log(xhr.responseText);
+                    } else {
+                        console.error('Request failed with status:', xhr.status);
+                    }
+                };
+                xhr.onerror = function() {
+                    console.error('Request failed');
+                };
+                xhr.send();
             }
-        };
-        xhr.onerror = function() {
-            console.error('Request failed');
-        };
-        xhr.send();
-    }
-
-    function getHeight(heightCommand) {
-        var xhr = new XMLHttpRequest();
-        xhr.open('POST', baseUrl + heightCommand, true);
-        xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
-        xhr.onload = function() {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                console.log(xhr.responseText);
-            } else {
-                console.error('Request failed with status:', xhr.status);
+        
+            function getHeight(heightCommand) {
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', baseUrl + heightCommand, true);
+                xhr.setRequestHeader('Authorization', 'Bearer ' + accessToken);
+                xhr.onload = function() {
+                    if (xhr.status >= 200 && xhr.status < 300) {
+                        console.log(xhr.responseText);
+                    } else {
+                        console.error('Request failed with status:', xhr.status);
+                    }
+                };
+                xhr.onerror = function() {
+                    console.error('Request failed');
+                };
+                xhr.send();
             }
-        };
-        xhr.onerror = function() {
-            console.error('Request failed');
-        };
-        xhr.send();
-    }
+        
+            function startExperiment() {
+                sendCommand('C1');
+            }
+        
+            function dropBall() {
+                sendCommand('C3');
+                document.getElementById("height").value = 0;
+                getHeight('H1'); // Update server with the new height
+            }
+        
+            function resetExperiment() {
+                sendCommand('C2');
+                document.getElementById("height").value = 0;
+                getHeight('H1'); // Update server with the new height
+            }
+        </script>
+        
+        
+        
+        
+            <!-- Add Bootstrap JS and Popper.js -->
+            <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                    crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+                    integrity="sha384-UoU2DCNlT0m9WQGpmh5YAy5O0sWqouVt5afwFZgTRdAxmb3Sug8P6DAqDO1a5voB"
+                    crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6Vrj5Vcl5++i7O3UqkkDd5V9LvKsQhtx6"
+                    crossorigin="anonymous"></script>
+        <br>
+    {% endif %}
 
-    function startExperiment() {
-        sendCommand('C1');
-    }
-
-    function dropBall() {
-        sendCommand('C3');
-        document.getElementById("height").value = 0;
-        getHeight('H1'); // Update server with the new height
-    }
-
-    function resetExperiment() {
-        sendCommand('C2');
-        document.getElementById("height").value = 0;
-        getHeight('H1'); // Update server with the new height
-    }
-</script>
-
-
-
-
-    <!-- Add Bootstrap JS and Popper.js -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-            integrity="sha384-UoU2DCNlT0m9WQGpmh5YAy5O0sWqouVt5afwFZgTRdAxmb3Sug8P6DAqDO1a5voB"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6Vrj5Vcl5++i7O3UqkkDd5V9LvKsQhtx6"
-            crossorigin="anonymous"></script>
-
-
-<br>
 {% endblock %}

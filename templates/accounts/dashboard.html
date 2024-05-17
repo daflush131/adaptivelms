@@ -39,6 +39,22 @@
     .list-group-item a:hover {
         color: #17a2b8;
     }
+    .ils-card {
+        background-color: #555;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+    .ils-card a {
+        color: #17a2b8;
+        font-size: 24px;
+        text-decoration: none;
+    }
+    .ils-card a:hover {
+        color: #fff;
+    }
 </style>
 <div class="container-fluid">
     <h1>Welcome, {{ user.first_name }}</h1>
@@ -56,25 +72,36 @@
             <div class="progress-text">Total Tests Progress</div>
         </div>
     </div>
+    <div class="ils-card">
+        <h3><a href="{% url 'learncontent:ils' %}">Take the ILS Questionnaire to Start Learning</a></h3>
+    </div>
     <div class="row">
         <div class="col-md-6">
             <!-- Lesson 1 Card -->
             <div class="card mb-4">
-                <div class="card-header">
-                    Lesson 1
+                <div class="card-header text-center">
+                    <a href="{% url 'learncontent:lesson1' %}">LESSON 1</a>
                 </div>
                 <div class="card-body">
+                    <!-- Lesson 1 Description -->
+                    <h6 class="card-text">
+                        Introduction to the fundamental concepts of force and motion in physics. 
+                        Topics include Newton's laws of motion, types of forces, and their effects on objects.
+                    </h6>
+                    
                     <!-- Lesson 1 Content -->
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="preTest1" />
-                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=1 %}">Pre-Test</a></label>
+                                <input type="checkbox" class="form-check-input" id="preTest1"/>
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:pretest' lesson_number=1 %}">Pre-Test</a>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="practiceQuestions1" />
+                                <input type="checkbox" class="form-check-input" id="practiceQuestions1"/>
                                 <label class="form-check-label">
                                     <a href="{% url 'learncontent:practice_questions' lesson_number=1 %}">Practice Questions</a>
                                 </label>
@@ -95,16 +122,24 @@
         <div class="col-md-6">
             <!-- Lesson 2 Card -->
             <div class="card mb-4">
-                <div class="card-header">
-                    Lesson 2
+                <div class="card-header text-center">
+                    <a href="{% url 'learncontent:lesson2' %}">LESSON 2</a>
                 </div>
                 <div class="card-body">
+                    <!-- Lesson 2 Description -->
+                    <h6 class="card-text">
+                        Continue exploring the principles of physics with a focus on energy, work, and power.
+                        Understand the relationship between force, work, and energy, and how power is measured.
+                    </h6>
+                    
                     <!-- Lesson 2 Content -->
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="preTest2" />
-                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=2 %}">Pre-Test</a></label>
+                                <input type="checkbox" class="form-check-input" id="preTest2"/>
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:pretest' lesson_number=2 %}">Pre-Test</a>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -130,16 +165,24 @@
         <div class="col-md-6">
             <!-- Lesson 3 Card -->
             <div class="card mb-4">
-                <div class="card-header">
-                    Lesson 3
+                <div class="card-header text-center">
+                    <a href="{% url 'learncontent:lesson3' %}">LESSON 3</a>
                 </div>
                 <div class="card-body">
+                    <!-- Lesson 3 Description -->
+                    <h6 class="card-text">
+                        Dive into the world of thermodynamics. Learn about the laws of thermodynamics, heat transfer,
+                        and the behavior of gases.
+                    </h6>
+                    
                     <!-- Lesson 3 Content -->
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="preTest3" />
-                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=3 %}">Pre-Test</a></label>
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:pretest' lesson_number=3 %}">Pre-Test</a>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -165,16 +208,24 @@
         <div class="col-md-6">
             <!-- Lesson 4 Card -->
             <div class="card mb-4">
-                <div class="card-header">
-                    Lesson 4
+                <div class="card-header text-center">
+                    <a href="{% url 'learncontent:lesson4' %}">LESSON 4</a>
                 </div>
                 <div class="card-body">
+                    <!-- Lesson 4 Description -->
+                    <h6 class="card-text">
+                        Explore the concepts of electricity and magnetism. Understand the principles of electric fields,
+                        magnetic fields, and how they interact.
+                    </h6>
+                    
                     <!-- Lesson 4 Content -->
                     <ul class="list-group mt-2">
                         <li class="list-group-item">
                             <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="preTest4" />
-                                <label class="form-check-label"><a href="{% url 'learncontent:pretest' lesson_number=4 %}">Pre-Test</a></label>
+                                <input type="checkbox" class="form-check-input" id="preTest4"/>
+                                <label class="form-check-label">
+                                    <a href="{% url 'learncontent:pretest' lesson_number=4 %}">Pre-Test</a>
+                                </label>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -198,6 +249,7 @@
             </div>
         </div>
     </div>
+    
 </div>
 
 <!-- Bootstrap JS and dependencies -->
@@ -295,10 +347,22 @@
         }
 
         function checkInstanceTests(){
-            {% if pre_test_instance %}
-            $('#preTest1, #preTest2, #preTest3, #preTest4').prop('checked', true);
+            {% if pre1 %}
+                $('#preTest1').prop('checked', true);
             {% endif %}
-
+            
+            {% if pre2 %}
+                $('#preTest2').prop('checked', true);
+            {% endif %}
+            
+            {% if pre3 %}
+                $('#preTest3').prop('checked', true);
+            {% endif %}
+            
+            {% if pre4 %}
+                $('#preTest4').prop('checked', true);
+            {% endif %}
+            
             {% if post1_exists %}
                 $('#postTest1').prop('checked', true);
             {% endif %}
@@ -313,18 +377,23 @@
             {% endif %}
             
             {% if p1_checked %}
+                console.log('practice 1'+'{{p1_checked}}')
                 $('#practiceQuestions1').prop('checked', true);
+                
             {% endif %}
             
             {% if p2_checked %}
+                console.log('practice 2'+'{{p2_checked}}')
                 $('#practiceQuestions2').prop('checked', true);
             {% endif %}
             
             {% if p3_checked %}
+                console.log('practice 3'+'{{p3_checked}}')
                 $('#practiceQuestions3').prop('checked', true);
             {% endif %}
             
             {% if p4_checked %}
+                console.log('practice 4'+'{{p4_checked}}')
                 $('#practiceQuestions4').prop('checked', true);
             {% endif %}
         }
